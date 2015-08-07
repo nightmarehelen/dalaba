@@ -29,11 +29,9 @@ class Response{
             "ERROR_CODE":"'.$response->error_code.'",
             "DATA":{
                 "message":"'.$response->message.'",
-                "response_data":"'.$response->response_data.'",
-                "request_data":"'.$_POST['request_json'].'",
-                
-            }   
-                
+                "response_data":'.($response->response_data === "" ? "\"\"" :$response->response_data).',
+                "request_data":'.$_POST['request_json'].' 
+            }       
         }';
         return $result;
     }

@@ -44,10 +44,10 @@ class User_model extends CI_Model {
                                                                            .$user_infor["register_time"]."')";
         Logger::getRootLogger()->debug("sql = ".$sql);                                                                   
         $response = $db->executeUpdateAndInsert($sql);
-        if($response !== null){
+        if(!is_numeric($response)){
             if(strpos($response->message, "mysqli->errno=1062")){
                 $response->error_code = "0009";
-                $response->message = $response->message."注册用户名已存在";
+                $response->message = $response->message."用户名已存在或者邮箱已被注册";
             }
             return $response;
         }
@@ -242,5 +242,9 @@ class User_model extends CI_Model {
             return $response;
         }
          return null;
+    }
+
+    public function get_user_infor($uid){
+
     }
 }

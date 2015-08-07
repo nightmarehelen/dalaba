@@ -6,7 +6,7 @@
         <layout class="LoggerLayoutPattern">
             <param name="conversionPattern" value="%date [%logger] %F:%L %message%newline" />
         </layout>
-        <param name="file" value="E:\workbench\xiaolaba\webserver\web\dalaba\server\logs\DaLaBa.log" />
+        <param name="file" value="logs\DaLaBa.log" />
     </appender>
  
     <logger name="Foo">

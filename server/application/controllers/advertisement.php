@@ -172,7 +172,7 @@ class Advertisement extends CI_Controller {
         $response = new Response();
         $response->status = Response::STATUS_OK;
         $response->message = "请求广告类型成功";
-        $response->response_data= "{\"type\":\"company,let,promotion,personal\"}";
+        $response->response_data= "company,let,promotion,personal";
         echo Response::getResponseJson($response);
     }
 }

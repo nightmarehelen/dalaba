@@ -80,6 +80,9 @@ class User extends CI_Controller {
     public function queryCurrentLoginUserInfor(){
         Logger::getRootLogger()->debug("User::queryCurrentLoginUserInfor");
         Logger::getRootLogger()->debug("_SESSION['user_id'] = ".$_SESSION['user_id']);
+
+        $response = $this->user_model->get_user_infor($_SESSION['user_id']);
+
         $response = new Response();
         $response->status = Response::STATUS_OK;
         $response->message = "_SESSION['user_id'] = ".$_SESSION['user_id'];
@@ -105,5 +108,4 @@ class User extends CI_Controller {
         $response = $this->user_model->update_user_infor($user_infor_array["DATA"]);
         echo Response::getResponseJson($response);
     }
-
 }
