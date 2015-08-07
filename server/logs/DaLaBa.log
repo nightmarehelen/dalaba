@@ -80,3 +80,243 @@
 
 2015-08-07T14:59:12+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:81 User::queryCurrentLoginUserInfor
 2015-08-07T14:59:12+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:82 _SESSION['user_id'] = 98
+2015-08-07T15:02:09+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
+2015-08-07T15:02:09+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:77 request_json = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"LOGIN",
+    "SESSION_KEY":"",
+    "DATA":{
+        "name":"chenyang",
+        "password":"12345"
+    }
+}
+
+2015-08-07T15:02:09+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:77 request_json = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"LOGIN",
+    "SESSION_KEY":"",
+    "DATA":{
+        "name":"chenyang",
+        "password":"12345"
+    }
+}
+
+2015-08-07T15:02:09+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"LOGIN",
+    "SESSION_KEY":"",
+    "DATA":{
+        "name":"chenyang",
+        "password":"12345"
+    }
+}
+
+2015-08-07T15:02:09+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
+  ["VERSION"]=>
+  string(5) "1.0.0"
+  ["REQUEST_TYPE"]=>
+  string(5) "LOGIN"
+  ["SESSION_KEY"]=>
+  string(0) ""
+  ["DATA"]=>
+  array(2) {
+    ["name"]=>
+    string(8) "chenyang"
+    ["password"]=>
+    string(5) "12345"
+  }
+}
+
+2015-08-07T15:02:09+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
+2015-08-07T15:02:09+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenyang'
+2015-08-07T15:02:09+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
+  ["current_field"]=>
+  int(0)
+  ["field_count"]=>
+  int(10)
+  ["lengths"]=>
+  NULL
+  ["num_rows"]=>
+  int(1)
+  ["type"]=>
+  int(0)
+}
+
+2015-08-07T15:02:09+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenyang' and password = '827ccb0eea8a706c4c34a16891f84e7b'
+2015-08-07T15:02:09+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 98
+2015-08-07T15:02:09+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:145 res = object(mysqli_result)#45 (5) {
+  ["current_field"]=>
+  int(0)
+  ["field_count"]=>
+  int(1)
+  ["lengths"]=>
+  array(1) {
+    [0]=>
+    int(2)
+  }
+  ["num_rows"]=>
+  int(1)
+  ["type"]=>
+  int(0)
+}
+
+2015-08-07T15:02:56+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
+2015-08-07T15:02:56+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:77 request_json = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"LOGIN",
+    "SESSION_KEY":"",
+    "DATA":{
+        "name":"chenyang",
+        "password":"12345"
+    }
+}
+
+2015-08-07T15:02:56+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:77 request_json = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"LOGIN",
+    "SESSION_KEY":"",
+    "DATA":{
+        "name":"chenyang",
+        "password":"12345"
+    }
+}
+
+2015-08-07T15:02:56+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"LOGIN",
+    "SESSION_KEY":"",
+    "DATA":{
+        "name":"chenyang",
+        "password":"12345"
+    }
+}
+
+2015-08-07T15:02:56+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
+  ["VERSION"]=>
+  string(5) "1.0.0"
+  ["REQUEST_TYPE"]=>
+  string(5) "LOGIN"
+  ["SESSION_KEY"]=>
+  string(0) ""
+  ["DATA"]=>
+  array(2) {
+    ["name"]=>
+    string(8) "chenyang"
+    ["password"]=>
+    string(5) "12345"
+  }
+}
+
+2015-08-07T15:02:56+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
+2015-08-07T15:02:56+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenyang'
+2015-08-07T15:02:56+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
+  ["current_field"]=>
+  int(0)
+  ["field_count"]=>
+  int(10)
+  ["lengths"]=>
+  NULL
+  ["num_rows"]=>
+  int(1)
+  ["type"]=>
+  int(0)
+}
+
+2015-08-07T15:02:56+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenyang' and password = '827ccb0eea8a706c4c34a16891f84e7b'
+2015-08-07T15:02:56+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 98
+2015-08-07T15:02:56+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:145 res = object(mysqli_result)#45 (5) {
+  ["current_field"]=>
+  int(0)
+  ["field_count"]=>
+  int(1)
+  ["lengths"]=>
+  array(1) {
+    [0]=>
+    int(2)
+  }
+  ["num_rows"]=>
+  int(1)
+  ["type"]=>
+  int(0)
+}
+
+2015-08-07T15:04:09+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
+2015-08-07T15:04:09+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:77 request_json = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"LOGIN",
+    "SESSION_KEY":"",
+    "DATA":{
+        "name":"chenyang",
+        "password":"12345"
+    }
+}
+
+2015-08-07T15:04:09+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:77 request_json = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"LOGIN",
+    "SESSION_KEY":"",
+    "DATA":{
+        "name":"chenyang",
+        "password":"12345"
+    }
+}
+
+2015-08-07T15:04:09+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"LOGIN",
+    "SESSION_KEY":"",
+    "DATA":{
+        "name":"chenyang",
+        "password":"12345"
+    }
+}
+
+2015-08-07T15:04:09+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
+  ["VERSION"]=>
+  string(5) "1.0.0"
+  ["REQUEST_TYPE"]=>
+  string(5) "LOGIN"
+  ["SESSION_KEY"]=>
+  string(0) ""
+  ["DATA"]=>
+  array(2) {
+    ["name"]=>
+    string(8) "chenyang"
+    ["password"]=>
+    string(5) "12345"
+  }
+}
+
+2015-08-07T15:04:09+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
+2015-08-07T15:04:09+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenyang'
+2015-08-07T15:04:09+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
+  ["current_field"]=>
+  int(0)
+  ["field_count"]=>
+  int(10)
+  ["lengths"]=>
+  NULL
+  ["num_rows"]=>
+  int(1)
+  ["type"]=>
+  int(0)
+}
+
+2015-08-07T15:04:09+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenyang' and password = '827ccb0eea8a706c4c34a16891f84e7b'
+2015-08-07T15:04:09+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 98
+2015-08-07T15:04:09+02:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:145 res = object(mysqli_result)#45 (5) {
+  ["current_field"]=>
+  int(0)
+  ["field_count"]=>
+  int(1)
+  ["lengths"]=>
+  array(1) {
+    [0]=>
+    int(2)
+  }
+  ["num_rows"]=>
+  int(1)
+  ["type"]=>
+  int(0)
+}
+
