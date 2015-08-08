@@ -227,4 +227,5 @@ class Advertisement_model extends CI_Model {
         $response->message = "恭喜您点赞成功";
         return $response;
     }
+    
 }

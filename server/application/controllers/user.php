@@ -218,4 +218,80 @@ class User extends CI_Controller {
         }
         echo Response::getResponseJson($response);
     }
+
+    //收藏广告
+    public function collect(){
+        Logger::getRootLogger()->debug("User::collect");
+        
+        if(!Utils::isCurrentUserLogin()){ 
+            $response = new Response(); 
+            $response->status = Response::STATUS_ERROR;
+            $response->error_code = "0019";
+            $response->message = "当前用户未登录，没有操作权限";
+            echo Response::getResponseJson($response);
+            return;
+        }
+
+        $response = Utils::validate_request();
+        if(Utils::validate_request() !== null){
+            echo Response::getResponseJson($response);
+            return;
+        }
+
+        $request_json = $_POST['request_json'];
+        Logger::getRootLogger()->debug("request_json = ".$request_json);
+        
+        $request_json = json_decode($request_json, true);
+
+        if(isset($request_json["DATA"]["adv_id"]) && $request_json["DATA"]["adv_id"] !== "")
+
+            $response = $this->user_model->collect($request_json["DATA"]["adv_id"]);
+
+        else{
+            $response = new Response(); 
+            $response->status = Response::STATUS_ERROR;
+            $response->error_code = "0024";
+            $response->message = "用户ID有误";
+        }
+        echo Response::getResponseJson($response);
+
+    }
+
+    //收藏广告
+    public function uncollect(){
+        Logger::getRootLogger()->debug("User::uncollect");
+        
+        if(!Utils::isCurrentUserLogin()){ 
+            $response = new Response(); 
+            $response->status = Response::STATUS_ERROR;
+            $response->error_code = "0019";
+            $response->message = "当前用户未登录，没有操作权限";
+            echo Response::getResponseJson($response);
+            return;
+        }
+
+        $response = Utils::validate_request();
+        if(Utils::validate_request() !== null){
+            echo Response::getResponseJson($response);
+            return;
+        }
+
+        $request_json = $_POST['request_json'];
+        Logger::getRootLogger()->debug("request_json = ".$request_json);
+        
+        $request_json = json_decode($request_json, true);
+
+        if(isset($request_json["DATA"]["adv_id"]) && $request_json["DATA"]["adv_id"] !== "")
+
+            $response = $this->user_model->uncollect($request_json["DATA"]["adv_id"]);
+
+        else{
+            $response = new Response(); 
+            $response->status = Response::STATUS_ERROR;
+            $response->error_code = "0024";
+            $response->message = "用户ID有误";
+        }
+        echo Response::getResponseJson($response);
+
+    }
 }

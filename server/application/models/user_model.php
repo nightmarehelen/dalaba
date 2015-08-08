@@ -367,4 +367,66 @@ class User_model extends CI_Model {
         $response->message = "取消关注成功";
         return $response;
     }
+
+    public function collect($adv_id){
+        Logger::getRootLogger()->debug("User_model::collect");
+        $response = new Response();
+        
+        $db = new DB();
+        $db->connect();
+
+        $uid = Utils::getCurrentUserID();
+        $ts = date('Y-m-d H:i:s');
+        $sql = "insert into user_collect(uid, adv_id,ts) values('".$uid."','".$adv_id."','".$ts."')";
+        Logger::getRootLogger()->debug("sql = ".$sql); 
+        
+        $result = $db->executeUpdateAndInsert($sql);
+        
+        $response = new Response();
+        if($result instanceof Response){
+            if(strpos($result->message, "Duplicate entry") && strpos($result->message, "for key 'PRIMARY'")){
+                $response->status = Response::STATUS_ERROR;
+                $response->error_code = "0021";
+                $response->message = "无法重复收藏";
+                return $response;
+
+            }else
+                return $result;
+        }
+
+        $response = new Response();
+        $response->status = Response::STATUS_OK;
+        $response->message = "收藏成功";
+        return $response;
+    }
+
+    public function uncollect($adv_id){
+        Logger::getRootLogger()->debug("User_model::uncollect");
+        $response = new Response();
+        
+        $db = new DB();
+        $db->connect();
+
+        $uid = Utils::getCurrentUserID();
+        $ts = date('Y-m-d H:i:s');
+        $sql = "delete from  user_collect where uid = ".$uid." and adv_id = ".$adv_id;
+        Logger::getRootLogger()->debug("sql = ".$sql); 
+        
+        $result = $db->executeUpdateAndInsert($sql);
+        if($result instanceof Response)
+            return $result;
+
+        $response = new Response();
+        if($result == 0){
+            $response->status = Response::STATUS_ERROR;
+            $response->error_code = "0025";
+            $response->message = "撤销收藏失败";
+            return $response;
+        }
+
+        $response = new Response();
+        $response->status = Response::STATUS_OK;
+        $response->message = "取消收藏成功";
+        return $response;
+    }
 }
