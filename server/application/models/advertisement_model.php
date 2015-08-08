@@ -191,4 +191,40 @@ class Advertisement_model extends CI_Model {
 
         return null;
     }
+
+    public function thumb_up_for_adv($adv_infor){
+        Logger::getRootLogger()->debug("Advertisement_model::thumb_up_for_adv");
+        $uid = Utils::getCurrentUserID();
+        $adv_id = $adv_infor['adv_id'];
+        $ts = date('Y-m-d H:i:s');
+        $db = new DB();
+        $db->connect(); 
+        
+        $sql = "insert into thumb_up_for_adv(uid, adv_id,ts) values('".$uid."','".$adv_id."','".$ts."')";
+        Logger::getRootLogger()->debug("sql = ".$sql); 
+
+        $result = $db->executeUpdateAndInsert($sql);
+        
+        $response = new Response();
+        if($result instanceof Response){
+            if(strpos($result->message, "Duplicate entry") && strpos($result->message, "for key 'PRIMARY'")){
+                $response->status = Response::STATUS_ERROR;
+                $response->error_code = "0021";
+                $response->message = "无法重复点赞";
+                return $response;
+
+            }else
+                return $result;
+        }
+            
+
+        $sql = "update advertisement set zan_num = zan_num + 1 where id = ".$adv_id;
+        Logger::getRootLogger()->debug("sql = ".$sql);
+        $result = $db->executeUpdateAndInsert($sql);
+
+
+        $response->status = Response::STATUS_OK;
+        $response->message = "恭喜您点赞成功";
+        return $response;
+    }
 }

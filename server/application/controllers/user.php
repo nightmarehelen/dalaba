@@ -89,7 +89,6 @@ class User extends CI_Controller {
         echo Response::getResponseJson($response);
     }
 
-    
     public function update(){
         Logger::getRootLogger()->debug("User::update");
         
@@ -106,6 +105,117 @@ class User extends CI_Controller {
         Logger::getRootLogger()->debug("dump user_infor_array:".Utils::var2str($user_infor_array));
 
         $response = $this->user_model->update_user_infor($user_infor_array["DATA"]);
+        echo Response::getResponseJson($response);
+    }
+
+    public function get_user_infor(){
+        Logger::getRootLogger()->debug("User::get_user_infor");
+        Logger::getRootLogger()->debug("User::Utils::isCurrentUserLogin() = ".(Utils::isCurrentUserLogin() ? 'true' : 'false'));
+
+        if(!Utils::isCurrentUserLogin()){
+            $response = new Response(); 
+            $response->status = Response::STATUS_ERROR;
+            $response->error_code = "0019";
+            $response->message = "当前用户未登录，没有操作权限";
+            echo Response::getResponseJson($response);
+            return;
+        }
+
+
+        $response = Utils::validate_request();
+        if(Utils::validate_request() !== null){
+            echo Response::getResponseJson($response);
+            return;
+        }
+        
+
+        $request_json = $_POST['request_json'];
+        Logger::getRootLogger()->debug("request_json = ".$request_json);
+        
+        $request_json = json_decode($request_json, true);
+
+        if(isset($request_json["DATA"]["uid"]) && $request_json["DATA"]["uid"] !== "")
+            $response = $this->user_model->get_user_infor($request_json["DATA"]["uid"]);
+        else
+            $response = $this->user_model->get_user_infor(Utils::getCurrentUserID());
+        echo Response::getResponseJson($response);
+    }
+
+
+    public function user_focus(){
+        Logger::getRootLogger()->debug("User::user_focus");
+        
+        if(!Utils::isCurrentUserLogin()){ 
+            $response = new Response(); 
+            $response->status = Response::STATUS_ERROR;
+            $response->error_code = "0019";
+            $response->message = "当前用户未登录，没有操作权限";
+            echo Response::getResponseJson($response);
+            return;
+        }
+
+        $response = Utils::validate_request();
+        if(Utils::validate_request() !== null){
+            echo Response::getResponseJson($response);
+            return;
+        }
+
+        $request_json = $_POST['request_json'];
+        Logger::getRootLogger()->debug("request_json = ".$request_json);
+        
+        $request_json = json_decode($request_json, true);
+
+        if(isset($request_json["DATA"]["uid"]) && $request_json["DATA"]["uid"] !== "")
+
+            $response = $this->user_model->user_focus($request_json["DATA"]["uid"]);
+
+        else{
+            $response = new Response(); 
+            $response->status = Response::STATUS_ERROR;
+            $response->error_code = "0018";
+            $response->message = "用户ID有误";
+            echo Response::getResponseJson($response);
+            return;
+        }
+        echo Response::getResponseJson($response);
+    }
+    
+    //取消关注
+    public function user_unfocus(){
+        Logger::getRootLogger()->debug("User::user_unfocus");
+        
+        if(!Utils::isCurrentUserLogin()){ 
+            $response = new Response(); 
+            $response->status = Response::STATUS_ERROR;
+            $response->error_code = "0019";
+            $response->message = "当前用户未登录，没有操作权限";
+            echo Response::getResponseJson($response);
+            return;
+        }
+
+        $response = Utils::validate_request();
+        if(Utils::validate_request() !== null){
+            echo Response::getResponseJson($response);
+            return;
+        }
+
+        $request_json = $_POST['request_json'];
+        Logger::getRootLogger()->debug("request_json = ".$request_json);
+        
+        $request_json = json_decode($request_json, true);
+
+        if(isset($request_json["DATA"]["uid"]) && $request_json["DATA"]["uid"] !== "")
+
+            $response = $this->user_model->user_unfocus($request_json["DATA"]["uid"]);
+
+        else{
+            $response = new Response(); 
+            $response->status = Response::STATUS_ERROR;
+            $response->error_code = "0018";
+            $response->message = "用户ID有误";
+            echo Response::getResponseJson($response);
+            return;
+        }
         echo Response::getResponseJson($response);
     }
 }

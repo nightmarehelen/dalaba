@@ -74,7 +74,7 @@ class Utils{
             return $response;
         }
         
-        Logger::getRootLogger()->debug("request_json = ".$_POST['request_json']);
+        //Logger::getRootLogger()->debug("request_json = ".$_POST['request_json']);
 
         if(!Utils::isJson($_POST['request_json'])){
             $response->status = Response::STATUS_ERROR;

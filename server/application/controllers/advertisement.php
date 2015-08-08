@@ -169,10 +169,38 @@ class Advertisement extends CI_Controller {
 
     //获取广告类型
     public function get_advertisement_type(){
+        Logger::getRootLogger()->debug("Advertisement::get_advertisement_type");
+
         $response = new Response();
         $response->status = Response::STATUS_OK;
         $response->message = "请求广告类型成功";
         $response->response_data= "\"company,let,promotion,personal\"";
         echo Response::getResponseJson($response);
+    }
+
+    //对某个广告点赞
+    public function thumb_up_for_adv(){
+        Logger::getRootLogger()->debug("Advertisement::thumb_up_for_adv");
+        
+        $request_json = $_POST['request_json'];
+        Logger::getRootLogger()->debug("request_json = ".$request_json);
+
+        $request_json_array = json_decode($request_json, true);
+        Logger::getRootLogger()->debug("dump request_json_array:".Utils::var2str($request_json_array));
+
+
+        if(!Utils::isCurrentUserLogin()){
+            $response = new Response(); 
+            $response->status = Response::STATUS_ERROR;
+            $response->error_code = "0019";
+            $response->message = "当前用户未登录，没有操作权限";
+            echo Response::getResponseJson($response);
+            return;
+        }
+
+        
+        $response = $this->advertisement_model->thumb_up_for_adv($request_json_array["DATA"]);
+        
+        echo Response::getResponseJson($response); 
     }
 }

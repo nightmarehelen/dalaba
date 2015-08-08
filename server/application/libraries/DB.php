@@ -31,15 +31,21 @@ class DB{
 
     public function executeQuery($sql){
         $result=$this->mysqli->query($sql);
+        if(!$result){
+            $response = new Response();
+            $response->status = Response::STATUS_ERROR;
+            $response->error_code = "0008";
+            $response->message = "数据库操作:mysqli->errno=".$this->mysqli->errno."   mysqli->error = ".$this->mysqli->error;
+            return $response;
+        }
         return $result;
     }
     
     public function executeUpdateAndInsert($sql){
-        $response = new Response();
-   
         $result = $this->mysqli->query($sql);
 
         if(!$result){
+            $response = new Response();
             $response->status = Response::STATUS_ERROR;
             $response->error_code = "0008";
             $response->message = "数据库操作失败:mysqli->errno=".$this->mysqli->errno."   mysqli->error = ".$this->mysqli->error;

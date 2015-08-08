@@ -140,8 +140,13 @@ class User_model extends CI_Model {
             $row = $res->fetch_assoc();
             $_SESSION['user_id'] = $row['id'];
             Logger::getRootLogger()->debug("set session[user_id] = ".$_SESSION['user_id']);
+            
+            $last_login_time = date('Y-m-d H:i:s');
+            $sql = "update user set last_login_time = '".$last_login_time."' where id = ".$row['id'];
+            $db->executeUpdateAndInsert($sql);
         }
-
+        
+        
         Logger::getRootLogger()->debug("res = ".Utils::var2str($res));
         
 
@@ -182,7 +187,6 @@ class User_model extends CI_Model {
             return $response;
         }
         Logger::getRootLogger()->debug("res = ".Utils::var2str($res));
-
 
     }
 
@@ -228,6 +232,7 @@ class User_model extends CI_Model {
 
     public function update_user_validate($user_infor){
         Logger::getRootLogger()->debug("User_model::update_user_validate");
+        $response = new Response();
         if(isset($user_infor['email']) && !preg_match($this->email_pattern,$user_infor['email'])){
             $response->status = Response::STATUS_ERROR;
             $response->error_code = "0004";
@@ -245,6 +250,121 @@ class User_model extends CI_Model {
     }
 
     public function get_user_infor($uid){
+        Logger::getRootLogger()->debug("User_model::get_user_infor");
+
+        $response = new Response(); 
+
+        if($uid === ""){           
+            $response->status = Response::STATUS_ERROR;
+            $response->error_code = "0018";
+            $response->message = "请求用户信息时用户ID有误";
+        }
         
+
+        $db = new DB();
+        $db->connect();
+        $sql = "select name,cellphone,email,type,register_time,last_login_time  from user where id = ".$uid;
+        Logger::getRootLogger()->debug("sql = ".$sql); 
+        
+        $res = $db->executeQuery($sql);
+        
+        if($res instanceof Response)
+            return $res;
+        Logger::getRootLogger()->debug("res = ".Utils::var2str($res));
+        
+        $user_infor = "{";
+        if($row = mysqli_fetch_assoc($res)){
+           $user_infor = $user_infor.'"name":"'.$row['name'].'",';
+           $user_infor = $user_infor.'"cellphone":"'.$row['cellphone'].'",';
+           $user_infor = $user_infor.'"email":"'.$row['email'].'",';
+           $user_infor = $user_infor.'"type":"'.$row['type'].'",';
+           $user_infor = $user_infor.'"register_time":"'.$row['register_time'].'",';
+           $user_infor = $user_infor.'"last_login_time":"'.$row['last_login_time'].'"';
+        }else{
+            $response->status = Response::STATUS_ERROR;
+            $response->error_code = "0020";
+            $response->message = "未找到符合条件的用户";
+            return $response;
+        }
+        $user_infor = $user_infor."}";
+
+        $response->status = Response::STATUS_OK;
+        $response->message = "请求用户信息成功";
+        $response->response_data = $user_infor;
+        return $response;
+    }
+
+
+    public function user_focus($uid){
+        Logger::getRootLogger()->debug("User_model::user_focus");
+        $response = new Response();
+        
+        $db = new DB();
+        $db->connect();
+
+        $uid_a = Utils::getCurrentUserID();
+        $uid_b = $uid;
+        $ts = date('Y-m-d H:i:s');
+        $sql = "insert into user_focus(uid_a, uid_b,ts) values(".$uid_a.",".$uid_b.",'".$ts."')";
+        Logger::getRootLogger()->debug("sql = ".$sql); 
+
+        $result = $db->executeUpdateAndInsert($sql);
+
+        $response = new Response();
+        if($result instanceof Response){
+            if(strpos($result->message, "Duplicate entry") && strpos($result->message, "for key 'PRIMARY'")){
+                $response->status = Response::STATUS_ERROR;
+                $response->error_code = "0022";
+                $response->message = "无法重复关注";
+                return $response;
+
+            }else
+                return $result;
+        }
+
+        $sql = "update user set fans_num = fans_num + 1 where id = ".$uid_b;
+        Logger::getRootLogger()->debug("sql = ".$sql);
+        $result = $db->executeUpdateAndInsert($sql);
+
+
+        $response->status = Response::STATUS_OK;
+        $response->message = "恭喜您关注成功";
+        return $response;
+    }
+    
+    public function user_unfocus($uid){
+        Logger::getRootLogger()->debug("User_model::user_unfocus");
+        $response = new Response();
+        
+        $db = new DB();
+        $db->connect();
+
+        $uid_a = Utils::getCurrentUserID();
+        $uid_b = $uid;
+        $ts = date('Y-m-d H:i:s');
+        $sql = "delete from  user_focus where uid_a = ".$uid_a." and uid_b = ".$uid_b;
+        Logger::getRootLogger()->debug("sql = ".$sql); 
+
+        $result = $db->executeUpdateAndInsert($sql);
+
+        $response = new Response();
+        if($result instanceof Response)
+            return $result;
+
+        
+        if($result == 0){
+            $response->status = Response::STATUS_ERROR;
+            $response->error_code = "0023";
+            $response->message = "取消关注失败";
+        }
+
+        $sql = "update user set fans_num = fans_num - 1 where id = ".$uid_b;
+        Logger::getRootLogger()->debug("sql = ".$sql);
+        $result = $db->executeUpdateAndInsert($sql);
+
+
+        $response->status = Response::STATUS_OK;
+        $response->message = "取消关注成功";
+        return $response;
     }
 }

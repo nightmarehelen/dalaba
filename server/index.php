@@ -283,6 +283,8 @@ switch (ENVIRONMENT)
 	define('VIEWPATH', $view_folder);
 
 
+//设置默认时区
+date_default_timezone_set('PRC');
 
 /*
 *载入Log4php
