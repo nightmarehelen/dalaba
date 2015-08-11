@@ -279,7 +279,7 @@ class User_model extends CI_Model {
            $user_infor = $user_infor.'"email":"'.$row['email'].'",';
            $user_infor = $user_infor.'"type":"'.$row['type'].'",';
            $user_infor = $user_infor.'"register_time":"'.$row['register_time'].'",';
-           $user_infor = $user_infor.'"last_login_time":"'.$row['last_login_time'].'"';
+           $user_infor = $user_infor.'"last_login_time":"'.$row['last_login_time'].'",';
            $user_infor = $user_infor.'"fans_num":"'.$row['fans_num'].'"';
         }else{
             $response->status = Response::STATUS_ERROR;
