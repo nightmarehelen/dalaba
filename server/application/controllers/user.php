@@ -24,7 +24,7 @@ class User extends CI_Controller {
 	 */
 	public function login()
 	{   
-        $this->printRequestHeader();
+        //$this->printRequestHeader();
         Logger::getRootLogger()->debug("User::login");
         $response = Utils::validate_request();
         if(Utils::validate_request() !== null){
