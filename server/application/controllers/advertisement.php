@@ -174,7 +174,7 @@ class Advertisement extends CI_Controller {
         $response = new Response();
         $response->status = Response::STATUS_OK;
         $response->message = "请求广告类型成功";
-        $response->response_data= "\"company,let,promotion,personal\"";
+        $response->response_data= "\"expressage,supermarket,housekeeping,accommodation,catering,telegraph_pole\"";
         echo Response::getResponseJson($response);
     }
 
@@ -202,5 +202,75 @@ class Advertisement extends CI_Controller {
         $response = $this->advertisement_model->thumb_up_for_adv($request_json_array["DATA"]);
         
         echo Response::getResponseJson($response); 
+    }
+
+    //获取广告详情
+    public function get_advertisement_infor(){
+        Logger::getRootLogger()->debug("Advertisement::get_advertisement_infor");
+
+        $response = Utils::validate_request();
+        if(Utils::validate_request() !== null){
+            echo Response::getResponseJson($response);
+            return;
+        }        
+
+        $request_json = $_POST['request_json'];
+        Logger::getRootLogger()->debug("request_json = ".$request_json);
+        
+        $request_json = json_decode($request_json, true);
+        
+        $response = new Response();
+        if(isset($request_json["DATA"]["adv_id"]) && $request_json["DATA"]["adv_id"] !== "")
+
+            $response = $this->advertisement_model->get_advertisement_infor($request_json["DATA"]["adv_id"]);
+
+        else{
+            $response->status = Response::STATUS_ERROR;
+            $response->error_code = "0024";
+            $response->message = "广告ID有误";
+        }
+        
+        echo Response::getResponseJson($response);
+
+    }
+
+     //获取广告详情
+    public function delete_advertisement(){
+        Logger::getRootLogger()->debug("Advertisement::delete_advertisement");
+
+        $response = Utils::validate_request();
+        if(Utils::validate_request() !== null){
+            echo Response::getResponseJson($response);
+            return;
+        }        
+        
+
+        if(!Utils::isCurrentUserLogin()){
+            $response = new Response(); 
+            $response->status = Response::STATUS_ERROR;
+            $response->error_code = "0019";
+            $response->message = "当前用户未登录，没有操作权限";
+            echo Response::getResponseJson($response);
+            return;
+        }
+
+        $request_json = $_POST['request_json'];
+        Logger::getRootLogger()->debug("request_json = ".$request_json);
+        
+        $request_json = json_decode($request_json, true);
+        
+        $response = new Response();
+        if(isset($request_json["DATA"]["adv_id"]) && $request_json["DATA"]["adv_id"] !== "")
+
+            $response = $this->advertisement_model->delete_advertisement($request_json["DATA"]["adv_id"]);
+
+        else{
+            $response->status = Response::STATUS_ERROR;
+            $response->error_code = "0024";
+            $response->message = "广告ID有误";
+        }
+        
+        echo Response::getResponseJson($response);
+
     }
 }

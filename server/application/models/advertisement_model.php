@@ -35,14 +35,12 @@ class Advertisement_model extends CI_Model {
                                                                            .$adv_infor["image"]."','"
                                                                            .$adv_infor["fresh_content"]."')";
         Logger::getRootLogger()->debug("sql = ".$sql);                                                                   
-        $response = $db->executeUpdateAndInsert($sql);
+        $result = $db->executeUpdateAndInsert($sql);
 
-        if($response !== null){
-            return $response;
+        if($result instanceof Response){
+            return $result;
         }
         
-        
-
         return null;
     }
 
@@ -228,4 +226,72 @@ class Advertisement_model extends CI_Model {
         return $response;
     }
     
+    //获取广告详情
+    public function get_advertisement_infor($adv_id){
+        Logger::getRootLogger()->debug("User_model::get_advertisement_infor");
+
+        $response = new Response(); 
+
+        $db = new DB();
+        $db->connect();
+        $sql = "select id,uid,type,publish_position,publish_time,title,text_content,image,read_count,zan_num from advertisement where id = ".$adv_id;
+        Logger::getRootLogger()->debug("sql = ".$sql); 
+        
+        $res = $db->executeQuery($sql);
+        
+        if($res instanceof Response)
+            return $res;
+        Logger::getRootLogger()->debug("res = ".Utils::var2str($res));
+        
+        $adv_infor = "{";
+        if($row = mysqli_fetch_assoc($res)){
+           $adv_infor = $adv_infor.'"id":"'.$row['id'].'",';
+           $adv_infor = $adv_infor.'"uid":"'.$row['uid'].'",';
+           $adv_infor = $adv_infor.'"type":"'.$row['type'].'",';
+           $adv_infor = $adv_infor.'"publish_position":"'.$row['publish_position'].'",';
+           $adv_infor = $adv_infor.'"publish_time":"'.$row['publish_time'].'",';
+           $adv_infor = $adv_infor.'"title":"'.$row['title'].'",';
+           $adv_infor = $adv_infor.'"text_content":"'.$row['text_content'].'",';
+           $adv_infor = $adv_infor.'"image":"'.$row['image'].'",';
+           $adv_infor = $adv_infor.'"read_count":"'.$row['read_count'].'",';
+           $adv_infor = $adv_infor.'"zan_num":"'.$row['zan_num'].'"';
+        }else{
+            $response->status = Response::STATUS_ERROR;
+            $response->error_code = "0026";
+            $response->message = "未找到符合条件的广告";
+            return $response;
+        }
+        $adv_infor = $adv_infor."}";
+
+        $response->status = Response::STATUS_OK;
+        $response->message = "请求广告信息成功";
+        $response->response_data = $adv_infor;
+        return $response;
+    }
+
+    public function delete_advertisement($adv_id){
+        Logger::getRootLogger()->debug("User_model::delete_advertisement");
+        $uid = Utils::getCurrentUserID();
+        $response = new Response(); 
+
+        $db = new DB();
+        $db->connect();
+        $sql = "delete from advertisement where uid = ". $uid." and id = ".$adv_id;
+        Logger::getRootLogger()->debug("sql = ".$sql); 
+        
+        $res = $db->executeUpdateAndInsert($sql);
+        
+        if($res instanceof Response)
+            return $res;
+        
+        if($res == 0){
+            $response->status = Response::STATUS_ERROR;
+            $response->message = "删除广告失败";
+            return $response;
+        }
+        
+        $response->status = Response::STATUS_OK;
+        $response->message = "恭喜您删除广告成功";
+        return $response;
+    }
 }

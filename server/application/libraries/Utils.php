@@ -79,7 +79,7 @@ class Utils{
         if(!Utils::isJson($_POST['request_json'])){
             $response->status = Response::STATUS_ERROR;
             $response->message = "JSON文件格式错误";
-            Logger::getRootLogger()->error("JSON文件格式错误:".$response->message.$user_register_infor);
+            Logger::getRootLogger()->error("JSON文件格式错误:".$response->message);
             return $response;
         }
         
