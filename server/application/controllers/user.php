@@ -23,7 +23,8 @@ class User extends CI_Controller {
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function login()
-	{
+	{   
+        $this->printRequestHeader();
         Logger::getRootLogger()->debug("User::login");
         $response = Utils::validate_request();
         if(Utils::validate_request() !== null){
@@ -293,5 +294,16 @@ class User extends CI_Controller {
         }
         echo Response::getResponseJson($response);
 
+    }
+
+    public function printRequestHeader()
+    {
+    	$headers = array();
+    	foreach ($_SERVER as $key => $value) {
+    		if ('HTTP_' == substr($key, 0, 5)) {
+    			$headers[str_replace('_', '-', substr($key, 5))] = $value;
+    			echo ("_SERVER[".$key."]  =".$value."<br>");
+    		}
+    	}
     }
 }
