@@ -263,7 +263,7 @@ class User_model extends CI_Model {
 
         $db = new DB();
         $db->connect();
-        $sql = "select name,cellphone,email,type,register_time,last_login_time  from user where id = ".$uid;
+        $sql = "select name,cellphone,email,type,register_time,last_login_time,fans_num  from user where id = ".$uid;
         Logger::getRootLogger()->debug("sql = ".$sql); 
         
         $res = $db->executeQuery($sql);
@@ -280,6 +280,7 @@ class User_model extends CI_Model {
            $user_infor = $user_infor.'"type":"'.$row['type'].'",';
            $user_infor = $user_infor.'"register_time":"'.$row['register_time'].'",';
            $user_infor = $user_infor.'"last_login_time":"'.$row['last_login_time'].'"';
+           $user_infor = $user_infor.'"fans_num":"'.$row['fans_num'].'"';
         }else{
             $response->status = Response::STATUS_ERROR;
             $response->error_code = "0020";

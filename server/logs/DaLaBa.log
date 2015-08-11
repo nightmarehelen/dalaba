@@ -1,15 +1,140 @@
-2015-08-08T13:50:11+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
-2015-08-08T13:50:11+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
+2015-08-08T18:05:22+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:209 Advertisement::get_advertisement_infor
+2015-08-08T18:05:22+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:218 request_json = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"GET_ADVERTISEMENT_INFOR",
+    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
+    "DATA":{
+        "adv_id" : "39"
+    }
+}
+
+2015-08-08T18:05:22+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:231 User_model::get_advertisement_infor
+2015-08-08T18:05:22+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:238 sql = select id,uid,type,publish_position,publish_time,title,text_content,image,read_count,zan_num from advertisement where id = 39
+2015-08-08T18:05:22+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:244 res = object(mysqli_result)#47 (5) {
+  ["current_field"]=>
+  int(0)
+  ["field_count"]=>
+  int(10)
+  ["lengths"]=>
+  NULL
+  ["num_rows"]=>
+  int(1)
+  ["type"]=>
+  int(0)
+}
+
+2015-08-08T18:07:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:209 Advertisement::get_advertisement_infor
+2015-08-08T18:07:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:218 request_json = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"GET_ADVERTISEMENT_INFOR",
+    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
+    "DATA":{
+        "adv_id" : "39"
+    }
+}
+
+2015-08-08T18:07:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:231 User_model::get_advertisement_infor
+2015-08-08T18:07:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:238 sql = select id,uid,type,publish_position,publish_time,title,text_content,image,read_count,zan_num from advertisement where id = 39
+2015-08-08T18:07:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:244 res = object(mysqli_result)#47 (5) {
+  ["current_field"]=>
+  int(0)
+  ["field_count"]=>
+  int(10)
+  ["lengths"]=>
+  NULL
+  ["num_rows"]=>
+  int(1)
+  ["type"]=>
+  int(0)
+}
+
+2015-08-08T18:08:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:209 Advertisement::get_advertisement_infor
+2015-08-08T18:08:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:218 request_json = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"GET_ADVERTISEMENT_INFOR",
+    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
+    "DATA":{
+        "adv_id" : "39"
+    }
+}
+
+2015-08-08T18:08:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:231 User_model::get_advertisement_infor
+2015-08-08T18:08:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:238 sql = select id,uid,type,publish_position,publish_time,title,text_content,image,read_count,zan_num from advertisement where id = 39
+2015-08-08T18:08:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:244 res = object(mysqli_result)#47 (5) {
+  ["current_field"]=>
+  int(0)
+  ["field_count"]=>
+  int(10)
+  ["lengths"]=>
+  NULL
+  ["num_rows"]=>
+  int(1)
+  ["type"]=>
+  int(0)
+}
+
+2015-08-08T18:11:39+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:209 Advertisement::get_advertisement_infor
+2015-08-08T18:11:39+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:218 request_json = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"GET_ADVERTISEMENT_INFOR",
+    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
+    "DATA":{
+        "adv_id" : "39"
+    }
+}
+
+2015-08-08T18:11:39+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:231 User_model::get_advertisement_infor
+2015-08-08T18:11:39+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:238 sql = select id,uid,type,publish_position,publish_time,title,text_content,image,read_count,zan_num from advertisement where id = 39
+2015-08-08T18:11:39+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:244 res = object(mysqli_result)#47 (5) {
+  ["current_field"]=>
+  int(0)
+  ["field_count"]=>
+  int(10)
+  ["lengths"]=>
+  NULL
+  ["num_rows"]=>
+  int(1)
+  ["type"]=>
+  int(0)
+}
+
+2015-08-08T18:18:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:209 Advertisement::get_advertisement_infor
+2015-08-08T18:18:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:218 request_json = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"GET_ADVERTISEMENT_INFOR",
+    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
+    "DATA":{
+        "adv_id" : "39"
+    }
+}
+
+2015-08-08T18:18:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:231 User_model::get_advertisement_infor
+2015-08-08T18:18:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:238 sql = select id,uid,type,publish_position,publish_time,title,text_content,image,read_count,zan_num from advertisement where id = 39
+2015-08-08T18:18:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:244 res = object(mysqli_result)#47 (5) {
+  ["current_field"]=>
+  int(0)
+  ["field_count"]=>
+  int(10)
+  ["lengths"]=>
+  NULL
+  ["num_rows"]=>
+  int(1)
+  ["type"]=>
+  int(0)
+}
+
+2015-08-08T18:41:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
+2015-08-08T18:41:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
     "VERSION":"1.0.0",
     "REQUEST_TYPE":"LOGIN",
     "SESSION_KEY":"",
     "DATA":{
-        "name":"chenxiaoer3",
+        "name":"chenxiaoer",
         "password":"12345"
     }
 }
 
-2015-08-08T13:50:11+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
+2015-08-08T18:41:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
   ["VERSION"]=>
   string(5) "1.0.0"
   ["REQUEST_TYPE"]=>
@@ -19,15 +144,15 @@
   ["DATA"]=>
   array(2) {
     ["name"]=>
-    string(11) "chenxiaoer3"
+    string(10) "chenxiaoer"
     ["password"]=>
     string(5) "12345"
   }
 }
 
-2015-08-08T13:50:11+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-08T13:50:11+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer3'
-2015-08-08T13:50:11+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
+2015-08-08T18:41:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
+2015-08-08T18:41:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
+2015-08-08T18:41:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
   ["current_field"]=>
   int(0)
   ["field_count"]=>
@@ -40,9 +165,9 @@
   int(0)
 }
 
-2015-08-08T13:50:11+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer3' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-08T13:50:11+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 107
-2015-08-08T13:50:11+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
+2015-08-08T18:41:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
+2015-08-08T18:41:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
+2015-08-08T18:41:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
   ["current_field"]=>
   int(0)
   ["field_count"]=>
@@ -58,28 +183,245 @@
   int(0)
 }
 
-2015-08-08T13:50:11+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:144 User::user_focus
-2015-08-08T13:50:11+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:162 request_json = {
+2015-08-08T18:41:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:239 Advertisement::delete_advertisement
+2015-08-08T18:41:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:258 request_json = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"GET_ADVERTISEMENT_INFOR",
+    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
+    "DATA":{
+        "adv_id" : "39"
+    }
+}
+
+2015-08-08T18:41:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:273 User_model::delete_advertisement
+2015-08-08T18:41:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:280 sql = delete from advertisement where uid = 101 and id = 39
+2015-08-08T18:41:28+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
+2015-08-08T18:41:28+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"LOGIN",
+    "SESSION_KEY":"",
+    "DATA":{
+        "name":"chenxiaoer",
+        "password":"12345"
+    }
+}
+
+2015-08-08T18:41:28+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
+  ["VERSION"]=>
+  string(5) "1.0.0"
+  ["REQUEST_TYPE"]=>
+  string(5) "LOGIN"
+  ["SESSION_KEY"]=>
+  string(0) ""
+  ["DATA"]=>
+  array(2) {
+    ["name"]=>
+    string(10) "chenxiaoer"
+    ["password"]=>
+    string(5) "12345"
+  }
+}
+
+2015-08-08T18:41:28+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
+2015-08-08T18:41:28+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
+2015-08-08T18:41:28+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
+  ["current_field"]=>
+  int(0)
+  ["field_count"]=>
+  int(11)
+  ["lengths"]=>
+  NULL
+  ["num_rows"]=>
+  int(1)
+  ["type"]=>
+  int(0)
+}
+
+2015-08-08T18:41:28+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
+2015-08-08T18:41:28+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
+2015-08-08T18:41:28+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
+  ["current_field"]=>
+  int(0)
+  ["field_count"]=>
+  int(1)
+  ["lengths"]=>
+  array(1) {
+    [0]=>
+    int(3)
+  }
+  ["num_rows"]=>
+  int(1)
+  ["type"]=>
+  int(0)
+}
+
+2015-08-08T18:41:28+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:239 Advertisement::delete_advertisement
+2015-08-08T18:41:28+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:258 request_json = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"GET_ADVERTISEMENT_INFOR",
+    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
+    "DATA":{
+        "adv_id" : "39"
+    }
+}
+
+2015-08-08T18:41:28+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:273 User_model::delete_advertisement
+2015-08-08T18:41:28+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:280 sql = delete from advertisement where uid = 101 and id = 39
+2015-08-08T18:41:57+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
+2015-08-08T18:41:57+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"LOGIN",
+    "SESSION_KEY":"",
+    "DATA":{
+        "name":"chenxiaoer",
+        "password":"12345"
+    }
+}
+
+2015-08-08T18:41:57+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
+  ["VERSION"]=>
+  string(5) "1.0.0"
+  ["REQUEST_TYPE"]=>
+  string(5) "LOGIN"
+  ["SESSION_KEY"]=>
+  string(0) ""
+  ["DATA"]=>
+  array(2) {
+    ["name"]=>
+    string(10) "chenxiaoer"
+    ["password"]=>
+    string(5) "12345"
+  }
+}
+
+2015-08-08T18:41:57+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
+2015-08-08T18:41:57+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
+2015-08-08T18:41:57+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
+  ["current_field"]=>
+  int(0)
+  ["field_count"]=>
+  int(11)
+  ["lengths"]=>
+  NULL
+  ["num_rows"]=>
+  int(1)
+  ["type"]=>
+  int(0)
+}
+
+2015-08-08T18:41:57+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
+2015-08-08T18:41:57+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
+2015-08-08T18:41:57+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
+  ["current_field"]=>
+  int(0)
+  ["field_count"]=>
+  int(1)
+  ["lengths"]=>
+  array(1) {
+    [0]=>
+    int(3)
+  }
+  ["num_rows"]=>
+  int(1)
+  ["type"]=>
+  int(0)
+}
+
+2015-08-08T18:41:58+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:239 Advertisement::delete_advertisement
+2015-08-08T18:41:58+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:258 request_json = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"GET_ADVERTISEMENT_INFOR",
+    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
+    "DATA":{
+        "adv_id" : "40"
+    }
+}
+
+2015-08-08T18:41:58+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:273 User_model::delete_advertisement
+2015-08-08T18:41:58+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:280 sql = delete from advertisement where uid = 101 and id = 40
+2015-08-08T18:43:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:239 Advertisement::delete_advertisement
+2015-08-09T16:23:44+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:48 User::register
+2015-08-09T16:23:44+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:58 user_register_infor = {
     "version":"1.0.0",
-    "REQUEST_TYPE":"UPDATE_USER_INFOR",
+    "REQUEST_TYPE":"CREATE_USER",
     "SESSION_KEY":"",
     "DATA":{
-        "uid":"98"
+        "name":"chenxiaoer3",
+        "password":"12345",
+        "email":"chenyang123123@qq.com",
+        "cellphone":"13426370450"
     }
 }
 
-2015-08-08T13:51:21+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
-2015-08-08T13:51:21+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
+2015-08-09T16:23:44+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:61 dump user_infor_array:array(4) {
+  ["version"]=>
+  string(5) "1.0.0"
+  ["REQUEST_TYPE"]=>
+  string(11) "CREATE_USER"
+  ["SESSION_KEY"]=>
+  string(0) ""
+  ["DATA"]=>
+  array(4) {
+    ["name"]=>
+    string(11) "chenxiaoer3"
+    ["password"]=>
+    string(5) "12345"
+    ["email"]=>
+    string(21) "chenyang123123@qq.com"
+    ["cellphone"]=>
+    string(11) "13426370450"
+  }
+}
+
+2015-08-09T16:23:44+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:27 User_model::create_user
+2015-08-09T16:23:44+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:45 sql = insert into user(name, password,cellphone, email,credit_values,register_time) values('chenxiaoer3', '827ccb0eea8a706c4c34a16891f84e7b', '13426370450', 'chenyang123123@qq.com',0,'2015-08-09 16:23:44')
+2015-08-09T16:24:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:48 User::register
+2015-08-09T16:24:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:58 user_register_infor = {
+    "version":"1.0.0",
+    "REQUEST_TYPE":"CREATE_USER",
+    "SESSION_KEY":"",
+    "DATA":{
+        "name":"weichushun",
+        "password":"12345",
+        "email":"weichushun@qq.com",
+        "cellphone":"13426370460"
+    }
+}
+
+2015-08-09T16:24:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:61 dump user_infor_array:array(4) {
+  ["version"]=>
+  string(5) "1.0.0"
+  ["REQUEST_TYPE"]=>
+  string(11) "CREATE_USER"
+  ["SESSION_KEY"]=>
+  string(0) ""
+  ["DATA"]=>
+  array(4) {
+    ["name"]=>
+    string(10) "weichushun"
+    ["password"]=>
+    string(5) "12345"
+    ["email"]=>
+    string(17) "weichushun@qq.com"
+    ["cellphone"]=>
+    string(11) "13426370460"
+  }
+}
+
+2015-08-09T16:24:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:27 User_model::create_user
+2015-08-09T16:24:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:45 sql = insert into user(name, password,cellphone, email,credit_values,register_time) values('weichushun', '827ccb0eea8a706c4c34a16891f84e7b', '13426370460', 'weichushun@qq.com',0,'2015-08-09 16:24:55')
+2015-08-09T16:26:58+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
+2015-08-09T16:26:58+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
     "VERSION":"1.0.0",
     "REQUEST_TYPE":"LOGIN",
     "SESSION_KEY":"",
     "DATA":{
-        "name":"chenxiaoer3",
+        "name":"chenxiaoer",
         "password":"12345"
     }
 }
 
-2015-08-08T13:51:21+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
+2015-08-09T16:26:58+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
   ["VERSION"]=>
   string(5) "1.0.0"
   ["REQUEST_TYPE"]=>
@@ -89,15 +431,15 @@
   ["DATA"]=>
   array(2) {
     ["name"]=>
-    string(11) "chenxiaoer3"
+    string(10) "chenxiaoer"
     ["password"]=>
     string(5) "12345"
   }
 }
 
-2015-08-08T13:51:21+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-08T13:51:21+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer3'
-2015-08-08T13:51:21+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
+2015-08-09T16:26:58+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
+2015-08-09T16:26:58+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
+2015-08-09T16:26:58+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
   ["current_field"]=>
   int(0)
   ["field_count"]=>
@@ -110,9 +452,9 @@
   int(0)
 }
 
-2015-08-08T13:51:21+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer3' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-08T13:51:21+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 107
-2015-08-08T13:51:21+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
+2015-08-09T16:26:58+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
+2015-08-09T16:26:58+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
+2015-08-09T16:26:58+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
   ["current_field"]=>
   int(0)
   ["field_count"]=>
@@ -128,1187 +470,22 @@
   int(0)
 }
 
-2015-08-08T13:51:21+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:112 User::get_user_infor
-2015-08-08T13:51:21+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:113 User::Utils::isCurrentUserLogin() = true
-2015-08-08T13:51:21+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:133 request_json = {
+2015-08-09T16:26:58+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:16 Advertisement::create
+2015-08-09T16:26:58+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:25 adv_infor = {
     "VERSION":"1.0.0",
     "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
     "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
     "DATA":{
-        "uid":"98"
+        "image":"true",
+        "type":"expressage",
+        "publish_position":"",
+        "title" : "What a fucking day!",
+        "text_content":"What a fucking day!",
+        "fresh_content":""
     }
 }
 
-2015-08-08T13:51:21+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:253 User_model::get_user_infor
-2015-08-08T13:51:21+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:267 sql = select name,cellphone,email,type,register_time,last_login_time  from user where id = 107
-2015-08-08T13:51:21+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:273 res = object(mysqli_result)#44 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(6)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T13:53:35+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
-2015-08-08T13:53:35+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"LOGIN",
-    "SESSION_KEY":"",
-    "DATA":{
-        "name":"chenxiaoer3",
-        "password":"12345"
-    }
-}
-
-2015-08-08T13:53:35+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(5) "LOGIN"
-  ["SESSION_KEY"]=>
-  string(0) ""
-  ["DATA"]=>
-  array(2) {
-    ["name"]=>
-    string(11) "chenxiaoer3"
-    ["password"]=>
-    string(5) "12345"
-  }
-}
-
-2015-08-08T13:53:35+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-08T13:53:35+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer3'
-2015-08-08T13:53:35+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(11)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T13:53:35+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer3' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-08T13:53:35+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 107
-2015-08-08T13:53:35+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(1)
-  ["lengths"]=>
-  array(1) {
-    [0]=>
-    int(3)
-  }
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T13:53:36+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:112 User::get_user_infor
-2015-08-08T13:53:36+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:113 User::Utils::isCurrentUserLogin() = true
-2015-08-08T13:53:36+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:133 request_json = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
-    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
-    "DATA":{
-        "uid":"98"
-    }
-}
-
-2015-08-08T13:53:36+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:253 User_model::get_user_infor
-2015-08-08T13:53:36+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:267 sql = select name,cellphone,email,type,register_time,last_login_time  from user where id = 98
-2015-08-08T13:53:36+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:273 res = object(mysqli_result)#44 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(6)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T13:54:07+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
-2015-08-08T13:54:07+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"LOGIN",
-    "SESSION_KEY":"",
-    "DATA":{
-        "name":"chenxiaoer3",
-        "password":"12345"
-    }
-}
-
-2015-08-08T13:54:07+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(5) "LOGIN"
-  ["SESSION_KEY"]=>
-  string(0) ""
-  ["DATA"]=>
-  array(2) {
-    ["name"]=>
-    string(11) "chenxiaoer3"
-    ["password"]=>
-    string(5) "12345"
-  }
-}
-
-2015-08-08T13:54:07+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-08T13:54:07+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer3'
-2015-08-08T13:54:07+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(11)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T13:54:07+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer3' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-08T13:54:07+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 107
-2015-08-08T13:54:07+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(1)
-  ["lengths"]=>
-  array(1) {
-    [0]=>
-    int(3)
-  }
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T13:54:08+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:146 User::user_focus
-2015-08-08T13:54:08+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:164 request_json = {
-    "version":"1.0.0",
-    "REQUEST_TYPE":"UPDATE_USER_INFOR",
-    "SESSION_KEY":"",
-    "DATA":{
-        "uid":"98"
-    }
-}
-
-2015-08-08T13:54:08+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:299 User_model::user_focus
-2015-08-08T13:54:08+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:306 sql = insert into user_focus(uid_a, uid_b,ts) values(107,98,'2015-08-08 13:54:08')
-2015-08-08T13:54:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
-2015-08-08T13:54:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"LOGIN",
-    "SESSION_KEY":"",
-    "DATA":{
-        "name":"chenxiaoer3",
-        "password":"12345"
-    }
-}
-
-2015-08-08T13:54:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(5) "LOGIN"
-  ["SESSION_KEY"]=>
-  string(0) ""
-  ["DATA"]=>
-  array(2) {
-    ["name"]=>
-    string(11) "chenxiaoer3"
-    ["password"]=>
-    string(5) "12345"
-  }
-}
-
-2015-08-08T13:54:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-08T13:54:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer3'
-2015-08-08T13:54:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(11)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T13:54:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer3' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-08T13:54:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 107
-2015-08-08T13:54:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(1)
-  ["lengths"]=>
-  array(1) {
-    [0]=>
-    int(3)
-  }
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T13:54:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:146 User::user_focus
-2015-08-08T13:54:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:164 request_json = {
-    "version":"1.0.0",
-    "REQUEST_TYPE":"UPDATE_USER_INFOR",
-    "SESSION_KEY":"",
-    "DATA":{
-        "uid":"98"
-    }
-}
-
-2015-08-08T13:54:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:299 User_model::user_focus
-2015-08-08T13:54:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:309 sql = insert into user_focus(uid_a, uid_b,ts) values(107,98,'2015-08-08 13:54:47')
-2015-08-08T13:54:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:326 sql = update user set fans_num = fans_num + 1 where id = 98
-2015-08-08T13:56:01+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
-2015-08-08T13:56:01+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"LOGIN",
-    "SESSION_KEY":"",
-    "DATA":{
-        "name":"chenxiaoer3",
-        "password":"12345"
-    }
-}
-
-2015-08-08T13:56:01+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(5) "LOGIN"
-  ["SESSION_KEY"]=>
-  string(0) ""
-  ["DATA"]=>
-  array(2) {
-    ["name"]=>
-    string(11) "chenxiaoer3"
-    ["password"]=>
-    string(5) "12345"
-  }
-}
-
-2015-08-08T13:56:01+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-08T13:56:01+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer3'
-2015-08-08T13:56:01+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(11)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T13:56:01+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer3' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-08T13:56:01+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 107
-2015-08-08T13:56:01+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(1)
-  ["lengths"]=>
-  array(1) {
-    [0]=>
-    int(3)
-  }
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T13:56:01+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:146 User::user_focus
-2015-08-08T13:56:01+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:164 request_json = {
-    "version":"1.0.0",
-    "REQUEST_TYPE":"UPDATE_USER_INFOR",
-    "SESSION_KEY":"",
-    "DATA":{
-        "uid":"98"
-    }
-}
-
-2015-08-08T13:56:01+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:299 User_model::user_focus
-2015-08-08T13:56:01+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:309 sql = insert into user_focus(uid_a, uid_b,ts) values(107,98,'2015-08-08 13:56:01')
-2015-08-08T14:01:51+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
-2015-08-08T14:01:51+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"LOGIN",
-    "SESSION_KEY":"",
-    "DATA":{
-        "name":"chenxiaoer3",
-        "password":"12345"
-    }
-}
-
-2015-08-08T14:01:51+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(5) "LOGIN"
-  ["SESSION_KEY"]=>
-  string(0) ""
-  ["DATA"]=>
-  array(2) {
-    ["name"]=>
-    string(11) "chenxiaoer3"
-    ["password"]=>
-    string(5) "12345"
-  }
-}
-
-2015-08-08T14:01:51+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-08T14:01:51+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer3'
-2015-08-08T14:01:51+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(11)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T14:01:51+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer3' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-08T14:01:51+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 107
-2015-08-08T14:01:51+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(1)
-  ["lengths"]=>
-  array(1) {
-    [0]=>
-    int(3)
-  }
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T14:01:51+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:146 User::user_focus
-2015-08-08T14:01:51+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:164 request_json = {
-    "version":"1.0.0",
-    "REQUEST_TYPE":"UPDATE_USER_INFOR",
-    "SESSION_KEY":"",
-    "DATA":{
-        "uid":"98"
-    }
-}
-
-2015-08-08T14:01:51+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:299 User_model::user_focus
-2015-08-08T14:01:51+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:309 sql = insert into user_focus(uid_a, uid_b,ts) values(107,98,'2015-08-08 14:01:51')
-2015-08-08T14:02:41+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
-2015-08-08T14:02:41+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"LOGIN",
-    "SESSION_KEY":"",
-    "DATA":{
-        "name":"chenxiaoer3",
-        "password":"12345"
-    }
-}
-
-2015-08-08T14:02:41+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(5) "LOGIN"
-  ["SESSION_KEY"]=>
-  string(0) ""
-  ["DATA"]=>
-  array(2) {
-    ["name"]=>
-    string(11) "chenxiaoer3"
-    ["password"]=>
-    string(5) "12345"
-  }
-}
-
-2015-08-08T14:02:41+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-08T14:02:41+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer3'
-2015-08-08T14:02:41+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(11)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T14:02:41+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer3' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-08T14:02:41+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 107
-2015-08-08T14:02:41+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(1)
-  ["lengths"]=>
-  array(1) {
-    [0]=>
-    int(3)
-  }
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T14:02:41+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:146 User::user_focus
-2015-08-08T14:02:41+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:164 request_json = {
-    "version":"1.0.0",
-    "REQUEST_TYPE":"UPDATE_USER_INFOR",
-    "SESSION_KEY":"",
-    "DATA":{
-        "uid":"98"
-    }
-}
-
-2015-08-08T14:02:41+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:299 User_model::user_focus
-2015-08-08T14:02:41+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:309 sql = insert into user_focus(uid_a, uid_b,ts) values(107,98,'2015-08-08 14:02:41')
-2015-08-08T14:02:41+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:185 User::user_unfocus
-2015-08-08T14:02:41+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:203 request_json = {
-    "version":"1.0.0",
-    "REQUEST_TYPE":"UPDATE_USER_INFOR",
-    "SESSION_KEY":"",
-    "DATA":{
-        "uid":"98"
-    }
-}
-
-2015-08-08T14:02:41+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:299 User_model::user_focus
-2015-08-08T14:02:41+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:309 sql = insert into user_focus(uid_a, uid_b,ts) values(107,98,'2015-08-08 14:02:41')
-2015-08-08T14:03:09+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
-2015-08-08T14:03:09+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"LOGIN",
-    "SESSION_KEY":"",
-    "DATA":{
-        "name":"chenxiaoer3",
-        "password":"12345"
-    }
-}
-
-2015-08-08T14:03:09+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(5) "LOGIN"
-  ["SESSION_KEY"]=>
-  string(0) ""
-  ["DATA"]=>
-  array(2) {
-    ["name"]=>
-    string(11) "chenxiaoer3"
-    ["password"]=>
-    string(5) "12345"
-  }
-}
-
-2015-08-08T14:03:09+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-08T14:03:09+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer3'
-2015-08-08T14:03:09+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(11)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T14:03:09+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer3' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-08T14:03:09+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 107
-2015-08-08T14:03:09+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(1)
-  ["lengths"]=>
-  array(1) {
-    [0]=>
-    int(3)
-  }
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T14:03:09+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:146 User::user_focus
-2015-08-08T14:03:09+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:164 request_json = {
-    "version":"1.0.0",
-    "REQUEST_TYPE":"UPDATE_USER_INFOR",
-    "SESSION_KEY":"",
-    "DATA":{
-        "uid":"98"
-    }
-}
-
-2015-08-08T14:03:09+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:299 User_model::user_focus
-2015-08-08T14:03:09+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:309 sql = insert into user_focus(uid_a, uid_b,ts) values(107,98,'2015-08-08 14:03:09')
-2015-08-08T14:03:09+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:185 User::user_unfocus
-2015-08-08T14:03:09+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:203 request_json = {
-    "version":"1.0.0",
-    "REQUEST_TYPE":"UPDATE_USER_INFOR",
-    "SESSION_KEY":"",
-    "DATA":{
-        "uid":"98"
-    }
-}
-
-2015-08-08T14:03:09+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:336 User_model::user_unfocus
-2015-08-08T14:03:09+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:346 sql = delete from  user_focus where uid_a = 107 and uid_b = 98
-2015-08-08T14:03:09+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:362 sql = update user set fans_num = fans_num - 1 where id = 98
-2015-08-08T14:05:59+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
-2015-08-08T14:05:59+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"LOGIN",
-    "SESSION_KEY":"",
-    "DATA":{
-        "name":"chenxiaoer3",
-        "password":"12345"
-    }
-}
-
-2015-08-08T14:05:59+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(5) "LOGIN"
-  ["SESSION_KEY"]=>
-  string(0) ""
-  ["DATA"]=>
-  array(2) {
-    ["name"]=>
-    string(11) "chenxiaoer3"
-    ["password"]=>
-    string(5) "12345"
-  }
-}
-
-2015-08-08T14:05:59+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-08T14:05:59+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer3'
-2015-08-08T14:05:59+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(11)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T14:05:59+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer3' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-08T14:05:59+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 107
-2015-08-08T14:05:59+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(1)
-  ["lengths"]=>
-  array(1) {
-    [0]=>
-    int(3)
-  }
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T14:05:59+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:146 User::user_focus
-2015-08-08T14:05:59+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:164 request_json = {
-    "version":"1.0.0",
-    "REQUEST_TYPE":"UPDATE_USER_INFOR",
-    "SESSION_KEY":"",
-    "DATA":{
-        "uid":"98"
-    }
-}
-
-2015-08-08T14:05:59+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:299 User_model::user_focus
-2015-08-08T14:05:59+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:309 sql = insert into user_focus(uid_a, uid_b,ts) values(107,98,'2015-08-08 14:05:59')
-2015-08-08T14:05:59+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:326 sql = update user set fans_num = fans_num + 1 where id = 98
-2015-08-08T16:15:59+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
-2015-08-08T16:15:59+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"LOGIN",
-    "SESSION_KEY":"",
-    "DATA":{
-        "name":"chenxiaoer3",
-        "password":"12345"
-    }
-}
-
-2015-08-08T16:15:59+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(5) "LOGIN"
-  ["SESSION_KEY"]=>
-  string(0) ""
-  ["DATA"]=>
-  array(2) {
-    ["name"]=>
-    string(11) "chenxiaoer3"
-    ["password"]=>
-    string(5) "12345"
-  }
-}
-
-2015-08-08T16:15:59+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-08T16:15:59+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer3'
-2015-08-08T16:15:59+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(11)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T16:15:59+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer3' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-08T16:15:59+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 107
-2015-08-08T16:15:59+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(1)
-  ["lengths"]=>
-  array(1) {
-    [0]=>
-    int(3)
-  }
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T16:16:00+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:146 User::user_focus
-2015-08-08T16:16:00+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:164 request_json = {
-    "version":"1.0.0",
-    "REQUEST_TYPE":"UPDATE_USER_INFOR",
-    "SESSION_KEY":"",
-    "DATA":{
-        "uid":"98"
-    }
-}
-
-2015-08-08T16:16:00+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:299 User_model::user_focus
-2015-08-08T16:16:00+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:309 sql = insert into user_focus(uid_a, uid_b,ts) values(107,98,'2015-08-08 16:16:00')
-2015-08-08T16:16:31+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
-2015-08-08T16:16:31+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"LOGIN",
-    "SESSION_KEY":"",
-    "DATA":{
-        "name":"chenxiaoer2",
-        "password":"12345"
-    }
-}
-
-2015-08-08T16:16:31+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(5) "LOGIN"
-  ["SESSION_KEY"]=>
-  string(0) ""
-  ["DATA"]=>
-  array(2) {
-    ["name"]=>
-    string(11) "chenxiaoer2"
-    ["password"]=>
-    string(5) "12345"
-  }
-}
-
-2015-08-08T16:16:31+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-08T16:16:31+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer2'
-2015-08-08T16:16:31+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:146 User::user_focus
-2015-08-08T16:17:01+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
-2015-08-08T16:17:01+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"LOGIN",
-    "SESSION_KEY":"",
-    "DATA":{
-        "name":"chenxiaoer",
-        "password":"12345"
-    }
-}
-
-2015-08-08T16:17:01+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(5) "LOGIN"
-  ["SESSION_KEY"]=>
-  string(0) ""
-  ["DATA"]=>
-  array(2) {
-    ["name"]=>
-    string(10) "chenxiaoer"
-    ["password"]=>
-    string(5) "12345"
-  }
-}
-
-2015-08-08T16:17:01+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-08T16:17:01+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
-2015-08-08T16:17:01+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(11)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T16:17:01+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-08T16:17:01+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
-2015-08-08T16:17:01+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(1)
-  ["lengths"]=>
-  array(1) {
-    [0]=>
-    int(3)
-  }
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T16:17:01+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:146 User::user_focus
-2015-08-08T16:17:01+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:164 request_json = {
-    "version":"1.0.0",
-    "REQUEST_TYPE":"UPDATE_USER_INFOR",
-    "SESSION_KEY":"",
-    "DATA":{
-        "uid":"98"
-    }
-}
-
-2015-08-08T16:17:01+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:299 User_model::user_focus
-2015-08-08T16:17:01+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:309 sql = insert into user_focus(uid_a, uid_b,ts) values(101,98,'2015-08-08 16:17:01')
-2015-08-08T16:17:01+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:326 sql = update user set fans_num = fans_num + 1 where id = 98
-2015-08-08T16:18:28+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
-2015-08-08T16:18:28+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"LOGIN",
-    "SESSION_KEY":"",
-    "DATA":{
-        "name":"chenxiaoer",
-        "password":"12345"
-    }
-}
-
-2015-08-08T16:18:28+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(5) "LOGIN"
-  ["SESSION_KEY"]=>
-  string(0) ""
-  ["DATA"]=>
-  array(2) {
-    ["name"]=>
-    string(10) "chenxiaoer"
-    ["password"]=>
-    string(5) "12345"
-  }
-}
-
-2015-08-08T16:18:28+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-08T16:18:28+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
-2015-08-08T16:18:28+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(11)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T16:18:28+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-08T16:18:28+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
-2015-08-08T16:18:28+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(1)
-  ["lengths"]=>
-  array(1) {
-    [0]=>
-    int(3)
-  }
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T16:18:28+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:146 User::user_focus
-2015-08-08T16:18:28+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:164 request_json = {
-    "version":"1.0.0",
-    "REQUEST_TYPE":"UPDATE_USER_INFOR",
-    "SESSION_KEY":"",
-    "DATA":{
-        "uid":"98"
-    }
-}
-
-2015-08-08T16:18:28+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:299 User_model::user_focus
-2015-08-08T16:18:28+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:309 sql = insert into user_focus(uid_a, uid_b,ts) values(101,98,'2015-08-08 16:18:28')
-2015-08-08T16:18:28+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:326 sql = update user set fans_num = fans_num + 1 where id = 98
-2015-08-08T16:18:34+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
-2015-08-08T16:18:34+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"LOGIN",
-    "SESSION_KEY":"",
-    "DATA":{
-        "name":"chenxiaoer3",
-        "password":"12345"
-    }
-}
-
-2015-08-08T16:18:34+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(5) "LOGIN"
-  ["SESSION_KEY"]=>
-  string(0) ""
-  ["DATA"]=>
-  array(2) {
-    ["name"]=>
-    string(11) "chenxiaoer3"
-    ["password"]=>
-    string(5) "12345"
-  }
-}
-
-2015-08-08T16:18:34+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-08T16:18:34+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer3'
-2015-08-08T16:18:34+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(11)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T16:18:34+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer3' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-08T16:18:34+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 107
-2015-08-08T16:18:34+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(1)
-  ["lengths"]=>
-  array(1) {
-    [0]=>
-    int(3)
-  }
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T16:18:34+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:146 User::user_focus
-2015-08-08T16:18:34+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:164 request_json = {
-    "version":"1.0.0",
-    "REQUEST_TYPE":"UPDATE_USER_INFOR",
-    "SESSION_KEY":"",
-    "DATA":{
-        "uid":"98"
-    }
-}
-
-2015-08-08T16:18:34+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:299 User_model::user_focus
-2015-08-08T16:18:34+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:309 sql = insert into user_focus(uid_a, uid_b,ts) values(107,98,'2015-08-08 16:18:34')
-2015-08-08T16:18:34+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:326 sql = update user set fans_num = fans_num + 1 where id = 98
-2015-08-08T16:19:02+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
-2015-08-08T16:19:02+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"LOGIN",
-    "SESSION_KEY":"",
-    "DATA":{
-        "name":"chenxiaoer3",
-        "password":"12345"
-    }
-}
-
-2015-08-08T16:19:02+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(5) "LOGIN"
-  ["SESSION_KEY"]=>
-  string(0) ""
-  ["DATA"]=>
-  array(2) {
-    ["name"]=>
-    string(11) "chenxiaoer3"
-    ["password"]=>
-    string(5) "12345"
-  }
-}
-
-2015-08-08T16:19:02+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-08T16:19:03+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer3'
-2015-08-08T16:19:03+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(11)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T16:19:03+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer3' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-08T16:19:03+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 107
-2015-08-08T16:19:03+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(1)
-  ["lengths"]=>
-  array(1) {
-    [0]=>
-    int(3)
-  }
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T16:19:03+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:185 User::user_unfocus
-2015-08-08T16:19:03+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:203 request_json = {
-    "version":"1.0.0",
-    "REQUEST_TYPE":"UPDATE_USER_INFOR",
-    "SESSION_KEY":"",
-    "DATA":{
-        "uid":"98"
-    }
-}
-
-2015-08-08T16:19:03+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:336 User_model::user_unfocus
-2015-08-08T16:19:03+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:346 sql = delete from  user_focus where uid_a = 107 and uid_b = 98
-2015-08-08T16:19:03+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:362 sql = update user set fans_num = fans_num - 1 where id = 98
-2015-08-08T16:19:18+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
-2015-08-08T16:19:18+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"LOGIN",
-    "SESSION_KEY":"",
-    "DATA":{
-        "name":"chenxiaoer",
-        "password":"12345"
-    }
-}
-
-2015-08-08T16:19:18+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(5) "LOGIN"
-  ["SESSION_KEY"]=>
-  string(0) ""
-  ["DATA"]=>
-  array(2) {
-    ["name"]=>
-    string(10) "chenxiaoer"
-    ["password"]=>
-    string(5) "12345"
-  }
-}
-
-2015-08-08T16:19:18+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-08T16:19:18+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
-2015-08-08T16:19:18+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(11)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T16:19:18+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-08T16:19:18+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
-2015-08-08T16:19:18+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(1)
-  ["lengths"]=>
-  array(1) {
-    [0]=>
-    int(3)
-  }
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T16:19:18+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:185 User::user_unfocus
-2015-08-08T16:19:18+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:203 request_json = {
-    "version":"1.0.0",
-    "REQUEST_TYPE":"UPDATE_USER_INFOR",
-    "SESSION_KEY":"",
-    "DATA":{
-        "uid":"98"
-    }
-}
-
-2015-08-08T16:19:18+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:336 User_model::user_unfocus
-2015-08-08T16:19:18+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:346 sql = delete from  user_focus where uid_a = 101 and uid_b = 98
-2015-08-08T16:19:18+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:362 sql = update user set fans_num = fans_num - 1 where id = 98
-2015-08-08T16:22:13+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
-2015-08-08T16:22:13+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"LOGIN",
-    "SESSION_KEY":"",
-    "DATA":{
-        "name":"chenxiaoer",
-        "password":"12345"
-    }
-}
-
-2015-08-08T16:22:13+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(5) "LOGIN"
-  ["SESSION_KEY"]=>
-  string(0) ""
-  ["DATA"]=>
-  array(2) {
-    ["name"]=>
-    string(10) "chenxiaoer"
-    ["password"]=>
-    string(5) "12345"
-  }
-}
-
-2015-08-08T16:22:13+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-08T16:22:13+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
-2015-08-08T16:22:13+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(11)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T16:22:13+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-08T16:22:13+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
-2015-08-08T16:22:13+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(1)
-  ["lengths"]=>
-  array(1) {
-    [0]=>
-    int(3)
-  }
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T16:22:13+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:183 Advertisement::thumb_up_for_adv
-2015-08-08T16:22:13+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:186 request_json = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
-    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
-    "DATA":{
-        "adv_id":"38"
-    }
-}
-
-2015-08-08T16:22:13+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:189 dump request_json_array:array(4) {
+2015-08-09T16:26:58+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:28 dump adv_infor_array:array(4) {
   ["VERSION"]=>
   string(5) "1.0.0"
   ["REQUEST_TYPE"]=>
@@ -1316,31 +493,687 @@
   ["SESSION_KEY"]=>
   string(32) "94e9e1bd4007c83d7ab96ecb8f2b2536"
   ["DATA"]=>
-  array(1) {
-    ["adv_id"]=>
-    string(2) "38"
+  array(6) {
+    ["image"]=>
+    string(4) "true"
+    ["type"]=>
+    string(10) "expressage"
+    ["publish_position"]=>
+    string(0) ""
+    ["title"]=>
+    string(19) "What a fucking day!"
+    ["text_content"]=>
+    string(19) "What a fucking day!"
+    ["fresh_content"]=>
+    string(0) ""
   }
 }
 
-2015-08-08T16:22:13+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:196 Advertisement_model::thumb_up_for_adv
-2015-08-08T16:22:13+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:204 sql = insert into thumb_up_for_adv(uid, adv_id,ts) values('101','38','2015-08-08 16:22:13')
-2015-08-08T16:22:13+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:222 sql = update advertisement set zan_num = zan_num + 1 where id = 38
-2015-08-08T16:22:13+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:185 User::user_unfocus
-2015-08-08T16:22:13+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:203 request_json = {
+2015-08-09T16:26:58+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:34 _FILES:array(1) {
+  ["adv_img1"]=>
+  array(5) {
+    ["name"]=>
+    string(8) "kobe.jpg"
+    ["type"]=>
+    string(24) "application/octet-stream"
+    ["tmp_name"]=>
+    string(36) "D:\programming\XAMMP\tmp\phpD47F.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(13064)
+  }
+}
+
+2015-08-09T16:26:58+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:134 dump file_path:array(4) {
+  ["dirname"]=>
+  string(1) "."
+  ["basename"]=>
+  string(8) "kobe.jpg"
+  ["extension"]=>
+  string(3) "jpg"
+  ["filename"]=>
+  string(4) "kobe"
+}
+
+2015-08-09T16:26:58+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:136 dump file_path2:array(4) {
+  ["dirname"]=>
+  string(58) "E:\workbench\xiaolaba\webserver\web\dalaba\server\data\img"
+  ["basename"]=>
+  string(11) "advD4FD.tmp"
+  ["extension"]=>
+  string(3) "tmp"
+  ["filename"]=>
+  string(7) "advD4FD"
+}
+
+2015-08-09T16:26:58+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:144 dump new_name:E:/workbench/xiaolaba/webserver/web/dalaba/server/data/img/advD4FD.jpg
+2015-08-09T16:26:58+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:49 adv_infor_array[DATA][image]:string(20) "data/img/advD4FD.jpg"
+
+2015-08-09T16:26:58+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:14 Advertisement_model::create
+2015-08-09T16:26:58+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:37 sql = insert into advertisement(uid, type,publish_position, publish_time,title,text_content,image, fresh_content) values(101, 'expressage', '','2015-08-09 16:26:58','What a fucking day!','What a fucking day!','data/img/advD4FD.jpg','')
+2015-08-09T16:27:37+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:16 Advertisement::create
+2015-08-09T16:27:37+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:25 adv_infor = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
+    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
+    "DATA":{
+        "image":"true",
+        "type":"expressage",
+        "publish_position":"",
+        "title" : "What a fucking day!",
+        "text_content":"What a fucking day!",
+        "fresh_content":""
+    }
+}
+
+2015-08-09T16:27:37+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:28 dump adv_infor_array:array(4) {
+  ["VERSION"]=>
+  string(5) "1.0.0"
+  ["REQUEST_TYPE"]=>
+  string(20) "CREATE_ADVERTISEMENT"
+  ["SESSION_KEY"]=>
+  string(32) "94e9e1bd4007c83d7ab96ecb8f2b2536"
+  ["DATA"]=>
+  array(6) {
+    ["image"]=>
+    string(4) "true"
+    ["type"]=>
+    string(10) "expressage"
+    ["publish_position"]=>
+    string(0) ""
+    ["title"]=>
+    string(19) "What a fucking day!"
+    ["text_content"]=>
+    string(19) "What a fucking day!"
+    ["fresh_content"]=>
+    string(0) ""
+  }
+}
+
+2015-08-09T16:27:37+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:34 _FILES:array(1) {
+  ["adv_img1"]=>
+  array(5) {
+    ["name"]=>
+    string(8) "kobe.jpg"
+    ["type"]=>
+    string(24) "application/octet-stream"
+    ["tmp_name"]=>
+    string(36) "D:\programming\XAMMP\tmp\php6BB1.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(13064)
+  }
+}
+
+2015-08-09T16:27:37+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:134 dump file_path:array(4) {
+  ["dirname"]=>
+  string(1) "."
+  ["basename"]=>
+  string(8) "kobe.jpg"
+  ["extension"]=>
+  string(3) "jpg"
+  ["filename"]=>
+  string(4) "kobe"
+}
+
+2015-08-09T16:27:37+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:136 dump file_path2:array(4) {
+  ["dirname"]=>
+  string(58) "E:\workbench\xiaolaba\webserver\web\dalaba\server\data\img"
+  ["basename"]=>
+  string(11) "adv6C0F.tmp"
+  ["extension"]=>
+  string(3) "tmp"
+  ["filename"]=>
+  string(7) "adv6C0F"
+}
+
+2015-08-09T16:27:37+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:144 dump new_name:E:/workbench/xiaolaba/webserver/web/dalaba/server/data/img/adv6C0F.jpg
+2015-08-09T16:27:37+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:49 adv_infor_array[DATA][image]:string(20) "data/img/adv6C0F.jpg"
+
+2015-08-09T16:27:37+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:14 Advertisement_model::create
+2015-08-09T16:31:29+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
+2015-08-09T16:31:29+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"LOGIN",
+    "SESSION_KEY":"",
+    "DATA":{
+        "name":"chenxiaoer",
+        "password":"12345"
+    }
+}
+
+2015-08-09T16:31:29+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
+  ["VERSION"]=>
+  string(5) "1.0.0"
+  ["REQUEST_TYPE"]=>
+  string(5) "LOGIN"
+  ["SESSION_KEY"]=>
+  string(0) ""
+  ["DATA"]=>
+  array(2) {
+    ["name"]=>
+    string(10) "chenxiaoer"
+    ["password"]=>
+    string(5) "12345"
+  }
+}
+
+2015-08-09T16:31:29+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
+2015-08-09T16:31:29+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
+2015-08-09T16:31:29+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
+  ["current_field"]=>
+  int(0)
+  ["field_count"]=>
+  int(11)
+  ["lengths"]=>
+  NULL
+  ["num_rows"]=>
+  int(1)
+  ["type"]=>
+  int(0)
+}
+
+2015-08-09T16:31:29+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
+2015-08-09T16:31:29+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
+2015-08-09T16:31:29+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
+  ["current_field"]=>
+  int(0)
+  ["field_count"]=>
+  int(1)
+  ["lengths"]=>
+  array(1) {
+    [0]=>
+    int(3)
+  }
+  ["num_rows"]=>
+  int(1)
+  ["type"]=>
+  int(0)
+}
+
+2015-08-09T16:31:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:16 Advertisement::create
+2015-08-09T16:31:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:25 adv_infor = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
+    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
+    "DATA":{
+        "image":"true",
+        "type":"expressage",
+        "publish_position":"",
+        "title" : "What a fucking day!",
+        "text_content":"What a fucking day!",
+        "fresh_content":""
+    }
+}
+
+2015-08-09T16:31:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:28 dump adv_infor_array:array(4) {
+  ["VERSION"]=>
+  string(5) "1.0.0"
+  ["REQUEST_TYPE"]=>
+  string(20) "CREATE_ADVERTISEMENT"
+  ["SESSION_KEY"]=>
+  string(32) "94e9e1bd4007c83d7ab96ecb8f2b2536"
+  ["DATA"]=>
+  array(6) {
+    ["image"]=>
+    string(4) "true"
+    ["type"]=>
+    string(10) "expressage"
+    ["publish_position"]=>
+    string(0) ""
+    ["title"]=>
+    string(19) "What a fucking day!"
+    ["text_content"]=>
+    string(19) "What a fucking day!"
+    ["fresh_content"]=>
+    string(0) ""
+  }
+}
+
+2015-08-09T16:31:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:34 _FILES:array(1) {
+  ["adv_img1"]=>
+  array(5) {
+    ["name"]=>
+    string(8) "kobe.jpg"
+    ["type"]=>
+    string(24) "application/octet-stream"
+    ["tmp_name"]=>
+    string(36) "D:\programming\XAMMP\tmp\phpF9ED.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(13064)
+  }
+}
+
+2015-08-09T16:31:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:134 dump file_path:array(4) {
+  ["dirname"]=>
+  string(1) "."
+  ["basename"]=>
+  string(8) "kobe.jpg"
+  ["extension"]=>
+  string(3) "jpg"
+  ["filename"]=>
+  string(4) "kobe"
+}
+
+2015-08-09T16:31:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:136 dump file_path2:array(4) {
+  ["dirname"]=>
+  string(58) "E:\workbench\xiaolaba\webserver\web\dalaba\server\data\img"
+  ["basename"]=>
+  string(11) "advFA4C.tmp"
+  ["extension"]=>
+  string(3) "tmp"
+  ["filename"]=>
+  string(7) "advFA4C"
+}
+
+2015-08-09T16:31:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:144 dump new_name:E:/workbench/xiaolaba/webserver/web/dalaba/server/data/img/advFA4C.jpg
+2015-08-09T16:31:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:49 adv_infor_array[DATA][image]:string(20) "data/img/advFA4C.jpg"
+
+2015-08-09T16:31:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:14 Advertisement_model::create
+2015-08-09T16:31:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:37 sql = insert into advertisement(uid, type,publish_position, publish_time,title,text_content,image, fresh_content) values(101, 'expressage', '','2015-08-09 16:31:30','What a fucking day!','What a fucking day!','data/img/advFA4C.jpg','')
+2015-08-09T16:32:39+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:16 Advertisement::create
+2015-08-09T16:32:39+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:25 adv_infor = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
+    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
+    "DATA":{
+        "image":"true",
+        "type":"expressage",
+        "publish_position":"",
+        "title" : "What a fucking day!",
+        "text_content":"What a fucking day!",
+        "fresh_content":""
+    }
+}
+
+2015-08-09T16:32:39+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:28 dump adv_infor_array:array(4) {
+  ["VERSION"]=>
+  string(5) "1.0.0"
+  ["REQUEST_TYPE"]=>
+  string(20) "CREATE_ADVERTISEMENT"
+  ["SESSION_KEY"]=>
+  string(32) "94e9e1bd4007c83d7ab96ecb8f2b2536"
+  ["DATA"]=>
+  array(6) {
+    ["image"]=>
+    string(4) "true"
+    ["type"]=>
+    string(10) "expressage"
+    ["publish_position"]=>
+    string(0) ""
+    ["title"]=>
+    string(19) "What a fucking day!"
+    ["text_content"]=>
+    string(19) "What a fucking day!"
+    ["fresh_content"]=>
+    string(0) ""
+  }
+}
+
+2015-08-09T16:32:39+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:34 _FILES:array(1) {
+  ["adv_img1"]=>
+  array(5) {
+    ["name"]=>
+    string(8) "kobe.jpg"
+    ["type"]=>
+    string(24) "application/octet-stream"
+    ["tmp_name"]=>
+    string(35) "D:\programming\XAMMP\tmp\php96A.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(13064)
+  }
+}
+
+2015-08-09T16:32:39+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:134 dump file_path:array(4) {
+  ["dirname"]=>
+  string(1) "."
+  ["basename"]=>
+  string(8) "kobe.jpg"
+  ["extension"]=>
+  string(3) "jpg"
+  ["filename"]=>
+  string(4) "kobe"
+}
+
+2015-08-09T16:32:39+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:136 dump file_path2:array(4) {
+  ["dirname"]=>
+  string(58) "E:\workbench\xiaolaba\webserver\web\dalaba\server\data\img"
+  ["basename"]=>
+  string(10) "advA36.tmp"
+  ["extension"]=>
+  string(3) "tmp"
+  ["filename"]=>
+  string(6) "advA36"
+}
+
+2015-08-09T16:32:39+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:144 dump new_name:E:/workbench/xiaolaba/webserver/web/dalaba/server/data/img/advA36.jpg
+2015-08-09T16:32:39+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:49 adv_infor_array[DATA][image]:string(19) "data/img/advA36.jpg"
+
+2015-08-09T16:32:39+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:14 Advertisement_model::create
+2015-08-11T15:58:11+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:16 Advertisement::create
+2015-08-11T15:58:11+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:25 adv_infor = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
+    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
+    "DATA":{
+        "image":"true",
+        "type":"expressage",
+        "publish_position":"",
+        "title" : "What a fucking day!",
+        "text_content":"What a fucking day!",
+        "fresh_content":""
+    }
+}
+
+2015-08-11T15:58:11+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:28 dump adv_infor_array:array(4) {
+  ["VERSION"]=>
+  string(5) "1.0.0"
+  ["REQUEST_TYPE"]=>
+  string(20) "CREATE_ADVERTISEMENT"
+  ["SESSION_KEY"]=>
+  string(32) "94e9e1bd4007c83d7ab96ecb8f2b2536"
+  ["DATA"]=>
+  array(6) {
+    ["image"]=>
+    string(4) "true"
+    ["type"]=>
+    string(10) "expressage"
+    ["publish_position"]=>
+    string(0) ""
+    ["title"]=>
+    string(19) "What a fucking day!"
+    ["text_content"]=>
+    string(19) "What a fucking day!"
+    ["fresh_content"]=>
+    string(0) ""
+  }
+}
+
+2015-08-11T15:58:11+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:34 _FILES:array(1) {
+  ["adv_img1"]=>
+  array(5) {
+    ["name"]=>
+    string(8) "kobe.jpg"
+    ["type"]=>
+    string(24) "application/octet-stream"
+    ["tmp_name"]=>
+    string(36) "D:\programming\XAMMP\tmp\php4CBC.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(13064)
+  }
+}
+
+2015-08-11T15:58:11+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:134 dump file_path:array(4) {
+  ["dirname"]=>
+  string(1) "."
+  ["basename"]=>
+  string(8) "kobe.jpg"
+  ["extension"]=>
+  string(3) "jpg"
+  ["filename"]=>
+  string(4) "kobe"
+}
+
+2015-08-11T15:58:11+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:136 dump file_path2:array(4) {
+  ["dirname"]=>
+  string(58) "E:\workbench\xiaolaba\webserver\web\dalaba\server\data\img"
+  ["basename"]=>
+  string(11) "adv597A.tmp"
+  ["extension"]=>
+  string(3) "tmp"
+  ["filename"]=>
+  string(7) "adv597A"
+}
+
+2015-08-11T15:58:11+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:144 dump new_name:E:/workbench/xiaolaba/webserver/web/dalaba/server/data/img/adv597A.jpg
+2015-08-11T15:58:11+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:49 adv_infor_array[DATA][image]:string(20) "data/img/adv597A.jpg"
+
+2015-08-11T15:58:11+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:14 Advertisement_model::create
+2015-08-11T15:58:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
+2015-08-11T15:58:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:73 无request_json项
+2015-08-11T15:58:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:73 无request_json项
+2015-08-11T15:58:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:16 Advertisement::create
+2015-08-11T15:58:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:25 adv_infor = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
+    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
+    "DATA":{
+        "image":"true",
+        "type":"expressage",
+        "publish_position":"",
+        "title" : "What a fucking day!",
+        "text_content":"What a fucking day!",
+        "fresh_content":""
+    }
+}
+
+2015-08-11T15:58:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:28 dump adv_infor_array:array(4) {
+  ["VERSION"]=>
+  string(5) "1.0.0"
+  ["REQUEST_TYPE"]=>
+  string(20) "CREATE_ADVERTISEMENT"
+  ["SESSION_KEY"]=>
+  string(32) "94e9e1bd4007c83d7ab96ecb8f2b2536"
+  ["DATA"]=>
+  array(6) {
+    ["image"]=>
+    string(4) "true"
+    ["type"]=>
+    string(10) "expressage"
+    ["publish_position"]=>
+    string(0) ""
+    ["title"]=>
+    string(19) "What a fucking day!"
+    ["text_content"]=>
+    string(19) "What a fucking day!"
+    ["fresh_content"]=>
+    string(0) ""
+  }
+}
+
+2015-08-11T15:58:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:34 _FILES:array(1) {
+  ["adv_img1"]=>
+  array(5) {
+    ["name"]=>
+    string(8) "kobe.jpg"
+    ["type"]=>
+    string(24) "application/octet-stream"
+    ["tmp_name"]=>
+    string(36) "D:\programming\XAMMP\tmp\php8E7F.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(13064)
+  }
+}
+
+2015-08-11T15:58:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:134 dump file_path:array(4) {
+  ["dirname"]=>
+  string(1) "."
+  ["basename"]=>
+  string(8) "kobe.jpg"
+  ["extension"]=>
+  string(3) "jpg"
+  ["filename"]=>
+  string(4) "kobe"
+}
+
+2015-08-11T15:58:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:136 dump file_path2:array(4) {
+  ["dirname"]=>
+  string(58) "E:\workbench\xiaolaba\webserver\web\dalaba\server\data\img"
+  ["basename"]=>
+  string(11) "adv8EFD.tmp"
+  ["extension"]=>
+  string(3) "tmp"
+  ["filename"]=>
+  string(7) "adv8EFD"
+}
+
+2015-08-11T15:58:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:144 dump new_name:E:/workbench/xiaolaba/webserver/web/dalaba/server/data/img/adv8EFD.jpg
+2015-08-11T15:58:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:49 adv_infor_array[DATA][image]:string(20) "data/img/adv8EFD.jpg"
+
+2015-08-11T15:58:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:14 Advertisement_model::create
+2015-08-11T15:58:41+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:48 User::register
+2015-08-11T15:58:41+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:58 user_register_infor = {
     "version":"1.0.0",
-    "REQUEST_TYPE":"UPDATE_USER_INFOR",
+    "REQUEST_TYPE":"CREATE_USER",
     "SESSION_KEY":"",
     "DATA":{
-        "uid":"98"
+        "name":"weichushun",
+        "password":"12345",
+        "email":"weichushun@qq.com",
+        "cellphone":"13426370460"
     }
 }
 
-2015-08-08T16:22:13+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:336 User_model::user_unfocus
-2015-08-08T16:22:13+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:346 sql = delete from  user_focus where uid_a = 101 and uid_b = 98
-2015-08-08T16:22:13+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:362 sql = update user set fans_num = fans_num - 1 where id = 98
-2015-08-08T16:33:38+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:224 User::collect
-2015-08-08T16:33:45+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
-2015-08-08T16:33:45+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
+2015-08-11T15:58:41+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:61 dump user_infor_array:array(4) {
+  ["version"]=>
+  string(5) "1.0.0"
+  ["REQUEST_TYPE"]=>
+  string(11) "CREATE_USER"
+  ["SESSION_KEY"]=>
+  string(0) ""
+  ["DATA"]=>
+  array(4) {
+    ["name"]=>
+    string(10) "weichushun"
+    ["password"]=>
+    string(5) "12345"
+    ["email"]=>
+    string(17) "weichushun@qq.com"
+    ["cellphone"]=>
+    string(11) "13426370460"
+  }
+}
+
+2015-08-11T15:58:41+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:27 User_model::create_user
+2015-08-11T15:58:41+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:45 sql = insert into user(name, password,cellphone, email,credit_values,register_time) values('weichushun', '827ccb0eea8a706c4c34a16891f84e7b', '13426370460', 'weichushun@qq.com',0,'2015-08-11 15:58:41')
+2015-08-11T15:58:41+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:16 Advertisement::create
+2015-08-11T15:58:41+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:25 adv_infor = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
+    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
+    "DATA":{
+        "image":"true",
+        "type":"expressage",
+        "publish_position":"",
+        "title" : "What a fucking day!",
+        "text_content":"What a fucking day!",
+        "fresh_content":""
+    }
+}
+
+2015-08-11T15:58:41+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:28 dump adv_infor_array:array(4) {
+  ["VERSION"]=>
+  string(5) "1.0.0"
+  ["REQUEST_TYPE"]=>
+  string(20) "CREATE_ADVERTISEMENT"
+  ["SESSION_KEY"]=>
+  string(32) "94e9e1bd4007c83d7ab96ecb8f2b2536"
+  ["DATA"]=>
+  array(6) {
+    ["image"]=>
+    string(4) "true"
+    ["type"]=>
+    string(10) "expressage"
+    ["publish_position"]=>
+    string(0) ""
+    ["title"]=>
+    string(19) "What a fucking day!"
+    ["text_content"]=>
+    string(19) "What a fucking day!"
+    ["fresh_content"]=>
+    string(0) ""
+  }
+}
+
+2015-08-11T15:58:41+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:34 _FILES:array(1) {
+  ["adv_img1"]=>
+  array(5) {
+    ["name"]=>
+    string(8) "kobe.jpg"
+    ["type"]=>
+    string(24) "application/octet-stream"
+    ["tmp_name"]=>
+    string(36) "D:\programming\XAMMP\tmp\phpCDF0.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(13064)
+  }
+}
+
+2015-08-11T15:58:41+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:134 dump file_path:array(4) {
+  ["dirname"]=>
+  string(1) "."
+  ["basename"]=>
+  string(8) "kobe.jpg"
+  ["extension"]=>
+  string(3) "jpg"
+  ["filename"]=>
+  string(4) "kobe"
+}
+
+2015-08-11T15:58:41+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:136 dump file_path2:array(4) {
+  ["dirname"]=>
+  string(58) "E:\workbench\xiaolaba\webserver\web\dalaba\server\data\img"
+  ["basename"]=>
+  string(11) "advCE8D.tmp"
+  ["extension"]=>
+  string(3) "tmp"
+  ["filename"]=>
+  string(7) "advCE8D"
+}
+
+2015-08-11T15:58:41+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:144 dump new_name:E:/workbench/xiaolaba/webserver/web/dalaba/server/data/img/advCE8D.jpg
+2015-08-11T15:58:41+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:49 adv_infor_array[DATA][image]:string(20) "data/img/advCE8D.jpg"
+
+2015-08-11T15:58:41+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:14 Advertisement_model::create
+2015-08-11T16:00:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:48 User::register
+2015-08-11T16:00:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:58 user_register_infor = {
+    "version":"1.0.0",
+    "REQUEST_TYPE":"CREATE_USER",
+    "SESSION_KEY":"",
+    "DATA":{
+        "name":"weichushun",
+        "password":"12345",
+        "email":"weichushun@qq.com",
+        "cellphone":"13426370460"
+    }
+}
+
+2015-08-11T16:00:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:61 dump user_infor_array:array(4) {
+  ["version"]=>
+  string(5) "1.0.0"
+  ["REQUEST_TYPE"]=>
+  string(11) "CREATE_USER"
+  ["SESSION_KEY"]=>
+  string(0) ""
+  ["DATA"]=>
+  array(4) {
+    ["name"]=>
+    string(10) "weichushun"
+    ["password"]=>
+    string(5) "12345"
+    ["email"]=>
+    string(17) "weichushun@qq.com"
+    ["cellphone"]=>
+    string(11) "13426370460"
+  }
+}
+
+2015-08-11T16:00:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:27 User_model::create_user
+2015-08-11T16:00:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:45 sql = insert into user(name, password,cellphone, email,credit_values,register_time) values('weichushun', '827ccb0eea8a706c4c34a16891f84e7b', '13426370460', 'weichushun@qq.com',0,'2015-08-11 16:00:55')
+2015-08-11T16:00:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
+2015-08-11T16:00:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
     "VERSION":"1.0.0",
     "REQUEST_TYPE":"LOGIN",
     "SESSION_KEY":"",
@@ -1350,7 +1183,7 @@
     }
 }
 
-2015-08-08T16:33:45+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
+2015-08-11T16:00:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
   ["VERSION"]=>
   string(5) "1.0.0"
   ["REQUEST_TYPE"]=>
@@ -1366,9 +1199,9 @@
   }
 }
 
-2015-08-08T16:33:45+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-08T16:33:45+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
-2015-08-08T16:33:45+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
+2015-08-11T16:00:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
+2015-08-11T16:00:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
+2015-08-11T16:00:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
   ["current_field"]=>
   int(0)
   ["field_count"]=>
@@ -1381,9 +1214,9 @@
   int(0)
 }
 
-2015-08-08T16:33:45+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-08T16:33:45+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
-2015-08-08T16:33:45+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
+2015-08-11T16:00:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
+2015-08-11T16:00:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
+2015-08-11T16:00:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
   ["current_field"]=>
   int(0)
   ["field_count"]=>
@@ -1399,18 +1232,125 @@
   int(0)
 }
 
-2015-08-08T16:33:45+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:224 User::collect
-2015-08-08T16:33:45+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:242 request_json = {
+2015-08-11T16:00:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:16 Advertisement::create
+2015-08-11T16:00:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:25 adv_infor = {
     "VERSION":"1.0.0",
-    "REQUEST_TYPE":"COLLECT_ADV",
+    "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
     "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
     "DATA":{
-        "adv_id":"38"
+        "image":"true",
+        "type":"expressage",
+        "publish_position":"",
+        "title" : "What a fucking day!",
+        "text_content":"What a fucking day!",
+        "fresh_content":""
     }
 }
 
-2015-08-08T16:47:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
-2015-08-08T16:47:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
+2015-08-11T16:00:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:28 dump adv_infor_array:array(4) {
+  ["VERSION"]=>
+  string(5) "1.0.0"
+  ["REQUEST_TYPE"]=>
+  string(20) "CREATE_ADVERTISEMENT"
+  ["SESSION_KEY"]=>
+  string(32) "94e9e1bd4007c83d7ab96ecb8f2b2536"
+  ["DATA"]=>
+  array(6) {
+    ["image"]=>
+    string(4) "true"
+    ["type"]=>
+    string(10) "expressage"
+    ["publish_position"]=>
+    string(0) ""
+    ["title"]=>
+    string(19) "What a fucking day!"
+    ["text_content"]=>
+    string(19) "What a fucking day!"
+    ["fresh_content"]=>
+    string(0) ""
+  }
+}
+
+2015-08-11T16:00:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:34 _FILES:array(1) {
+  ["adv_img1"]=>
+  array(5) {
+    ["name"]=>
+    string(8) "kobe.jpg"
+    ["type"]=>
+    string(24) "application/octet-stream"
+    ["tmp_name"]=>
+    string(36) "D:\programming\XAMMP\tmp\phpDA03.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(13064)
+  }
+}
+
+2015-08-11T16:00:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:134 dump file_path:array(4) {
+  ["dirname"]=>
+  string(1) "."
+  ["basename"]=>
+  string(8) "kobe.jpg"
+  ["extension"]=>
+  string(3) "jpg"
+  ["filename"]=>
+  string(4) "kobe"
+}
+
+2015-08-11T16:00:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:136 dump file_path2:array(4) {
+  ["dirname"]=>
+  string(58) "E:\workbench\xiaolaba\webserver\web\dalaba\server\data\img"
+  ["basename"]=>
+  string(11) "advDA71.tmp"
+  ["extension"]=>
+  string(3) "tmp"
+  ["filename"]=>
+  string(7) "advDA71"
+}
+
+2015-08-11T16:00:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:144 dump new_name:E:/workbench/xiaolaba/webserver/web/dalaba/server/data/img/advDA71.jpg
+2015-08-11T16:00:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:49 adv_infor_array[DATA][image]:string(20) "data/img/advDA71.jpg"
+
+2015-08-11T16:00:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:14 Advertisement_model::create
+2015-08-11T16:00:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:37 sql = insert into advertisement(uid, type,publish_position, publish_time,title,text_content,image, fresh_content) values(101, 'expressage', '','2015-08-11 16:00:55','What a fucking day!','What a fucking day!','data/img/advDA71.jpg','')
+2015-08-11T16:08:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:48 User::register
+2015-08-11T16:08:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:58 user_register_infor = {
+    "version":"1.0.0",
+    "REQUEST_TYPE":"CREATE_USER",
+    "SESSION_KEY":"",
+    "DATA":{
+        "name":"weichushun",
+        "password":"12345",
+        "email":"weichushun@qq.com",
+        "cellphone":"13426370460"
+    }
+}
+
+2015-08-11T16:08:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:61 dump user_infor_array:array(4) {
+  ["version"]=>
+  string(5) "1.0.0"
+  ["REQUEST_TYPE"]=>
+  string(11) "CREATE_USER"
+  ["SESSION_KEY"]=>
+  string(0) ""
+  ["DATA"]=>
+  array(4) {
+    ["name"]=>
+    string(10) "weichushun"
+    ["password"]=>
+    string(5) "12345"
+    ["email"]=>
+    string(17) "weichushun@qq.com"
+    ["cellphone"]=>
+    string(11) "13426370460"
+  }
+}
+
+2015-08-11T16:08:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:27 User_model::create_user
+2015-08-11T16:08:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:45 sql = insert into user(name, password,cellphone, email,credit_values,register_time) values('weichushun', '827ccb0eea8a706c4c34a16891f84e7b', '13426370460', 'weichushun@qq.com',0,'2015-08-11 16:08:46')
+2015-08-11T16:08:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
+2015-08-11T16:08:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
     "VERSION":"1.0.0",
     "REQUEST_TYPE":"LOGIN",
     "SESSION_KEY":"",
@@ -1420,7 +1360,7 @@
     }
 }
 
-2015-08-08T16:47:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
+2015-08-11T16:08:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
   ["VERSION"]=>
   string(5) "1.0.0"
   ["REQUEST_TYPE"]=>
@@ -1436,9 +1376,9 @@
   }
 }
 
-2015-08-08T16:47:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-08T16:47:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
-2015-08-08T16:47:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
+2015-08-11T16:08:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
+2015-08-11T16:08:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
+2015-08-11T16:08:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
   ["current_field"]=>
   int(0)
   ["field_count"]=>
@@ -1451,9 +1391,9 @@
   int(0)
 }
 
-2015-08-08T16:47:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-08T16:47:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
-2015-08-08T16:47:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
+2015-08-11T16:08:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
+2015-08-11T16:08:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
+2015-08-11T16:08:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
   ["current_field"]=>
   int(0)
   ["field_count"]=>
@@ -1469,20 +1409,125 @@
   int(0)
 }
 
-2015-08-08T16:47:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:224 User::collect
-2015-08-08T16:47:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:242 request_json = {
+2015-08-11T16:08:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:16 Advertisement::create
+2015-08-11T16:08:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:25 adv_infor = {
     "VERSION":"1.0.0",
-    "REQUEST_TYPE":"COLLECT_ADV",
+    "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
     "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
     "DATA":{
-        "adv_id":"38"
+        "image":"true",
+        "type":"expressage",
+        "publish_position":"",
+        "title" : "What a fucking day!",
+        "text_content":"What a fucking day!",
+        "fresh_content":""
     }
 }
 
-2015-08-08T16:47:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:372 User_model::collect
-2015-08-08T16:47:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:382 sql = insert into user_collect(uid, adv_id,ts) values('','','2015-08-08 16:47:47')
-2015-08-08T16:48:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
-2015-08-08T16:48:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
+2015-08-11T16:08:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:28 dump adv_infor_array:array(4) {
+  ["VERSION"]=>
+  string(5) "1.0.0"
+  ["REQUEST_TYPE"]=>
+  string(20) "CREATE_ADVERTISEMENT"
+  ["SESSION_KEY"]=>
+  string(32) "94e9e1bd4007c83d7ab96ecb8f2b2536"
+  ["DATA"]=>
+  array(6) {
+    ["image"]=>
+    string(4) "true"
+    ["type"]=>
+    string(10) "expressage"
+    ["publish_position"]=>
+    string(0) ""
+    ["title"]=>
+    string(19) "What a fucking day!"
+    ["text_content"]=>
+    string(19) "What a fucking day!"
+    ["fresh_content"]=>
+    string(0) ""
+  }
+}
+
+2015-08-11T16:08:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:34 _FILES:array(1) {
+  ["adv_img1"]=>
+  array(5) {
+    ["name"]=>
+    string(8) "kobe.jpg"
+    ["type"]=>
+    string(24) "application/octet-stream"
+    ["tmp_name"]=>
+    string(35) "D:\programming\XAMMP\tmp\phpA49.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(13064)
+  }
+}
+
+2015-08-11T16:08:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:134 dump file_path:array(4) {
+  ["dirname"]=>
+  string(1) "."
+  ["basename"]=>
+  string(8) "kobe.jpg"
+  ["extension"]=>
+  string(3) "jpg"
+  ["filename"]=>
+  string(4) "kobe"
+}
+
+2015-08-11T16:08:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:136 dump file_path2:array(4) {
+  ["dirname"]=>
+  string(58) "E:\workbench\xiaolaba\webserver\web\dalaba\server\data\img"
+  ["basename"]=>
+  string(10) "advA98.tmp"
+  ["extension"]=>
+  string(3) "tmp"
+  ["filename"]=>
+  string(6) "advA98"
+}
+
+2015-08-11T16:08:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:144 dump new_name:E:/workbench/xiaolaba/webserver/web/dalaba/server/data/img/advA98.jpg
+2015-08-11T16:08:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:49 adv_infor_array[DATA][image]:string(19) "data/img/advA98.jpg"
+
+2015-08-11T16:08:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:14 Advertisement_model::create
+2015-08-11T16:08:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:37 sql = insert into advertisement(uid, type,publish_position, publish_time,title,text_content,image, fresh_content) values(101, 'expressage', '','2015-08-11 16:08:46','What a fucking day!','What a fucking day!','data/img/advA98.jpg','')
+2015-08-11T16:09:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:48 User::register
+2015-08-11T16:09:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:58 user_register_infor = {
+    "version":"1.0.0",
+    "REQUEST_TYPE":"CREATE_USER",
+    "SESSION_KEY":"",
+    "DATA":{
+        "name":"weichushun",
+        "password":"12345",
+        "email":"weichushun@qq.com",
+        "cellphone":"13426370460"
+    }
+}
+
+2015-08-11T16:09:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:61 dump user_infor_array:array(4) {
+  ["version"]=>
+  string(5) "1.0.0"
+  ["REQUEST_TYPE"]=>
+  string(11) "CREATE_USER"
+  ["SESSION_KEY"]=>
+  string(0) ""
+  ["DATA"]=>
+  array(4) {
+    ["name"]=>
+    string(10) "weichushun"
+    ["password"]=>
+    string(5) "12345"
+    ["email"]=>
+    string(17) "weichushun@qq.com"
+    ["cellphone"]=>
+    string(11) "13426370460"
+  }
+}
+
+2015-08-11T16:09:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:27 User_model::create_user
+2015-08-11T16:09:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:45 sql = insert into user(name, password,cellphone, email,credit_values,register_time) values('weichushun', '827ccb0eea8a706c4c34a16891f84e7b', '13426370460', 'weichushun@qq.com',0,'2015-08-11 16:09:20')
+2015-08-11T16:09:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
+2015-08-11T16:09:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
     "VERSION":"1.0.0",
     "REQUEST_TYPE":"LOGIN",
     "SESSION_KEY":"",
@@ -1492,7 +1537,7 @@
     }
 }
 
-2015-08-08T16:48:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
+2015-08-11T16:09:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
   ["VERSION"]=>
   string(5) "1.0.0"
   ["REQUEST_TYPE"]=>
@@ -1508,9 +1553,9 @@
   }
 }
 
-2015-08-08T16:48:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-08T16:48:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
-2015-08-08T16:48:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
+2015-08-11T16:09:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
+2015-08-11T16:09:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
+2015-08-11T16:09:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
   ["current_field"]=>
   int(0)
   ["field_count"]=>
@@ -1523,9 +1568,9 @@
   int(0)
 }
 
-2015-08-08T16:48:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-08T16:48:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
-2015-08-08T16:48:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
+2015-08-11T16:09:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
+2015-08-11T16:09:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
+2015-08-11T16:09:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
   ["current_field"]=>
   int(0)
   ["field_count"]=>
@@ -1541,20 +1586,128 @@
   int(0)
 }
 
-2015-08-08T16:48:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:224 User::collect
-2015-08-08T16:48:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:242 request_json = {
+2015-08-11T16:09:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:16 Advertisement::create
+2015-08-11T16:09:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:25 adv_infor = {
     "VERSION":"1.0.0",
-    "REQUEST_TYPE":"COLLECT_ADV",
+    "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
     "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
     "DATA":{
-        "adv_id":"38"
+        "image":"true",
+        "type":"expressage",
+        "publish_position":"",
+        "title" : "What a fucking day!",
+        "text_content":"What a fucking day!",
+        "fresh_content":""
     }
 }
 
-2015-08-08T16:48:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:372 User_model::collect
-2015-08-08T16:48:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:381 sql = insert into user_collect(uid, adv_id,ts) values('101','38','2015-08-08 16:48:46')
-2015-08-08T16:48:50+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
-2015-08-08T16:48:50+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
+2015-08-11T16:09:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:28 dump adv_infor_array:array(4) {
+  ["VERSION"]=>
+  string(5) "1.0.0"
+  ["REQUEST_TYPE"]=>
+  string(20) "CREATE_ADVERTISEMENT"
+  ["SESSION_KEY"]=>
+  string(32) "94e9e1bd4007c83d7ab96ecb8f2b2536"
+  ["DATA"]=>
+  array(6) {
+    ["image"]=>
+    string(4) "true"
+    ["type"]=>
+    string(10) "expressage"
+    ["publish_position"]=>
+    string(0) ""
+    ["title"]=>
+    string(19) "What a fucking day!"
+    ["text_content"]=>
+    string(19) "What a fucking day!"
+    ["fresh_content"]=>
+    string(0) ""
+  }
+}
+
+2015-08-11T16:09:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:34 _FILES:array(1) {
+  ["adv_img1"]=>
+  array(5) {
+    ["name"]=>
+    string(8) "kobe.jpg"
+    ["type"]=>
+    string(24) "application/octet-stream"
+    ["tmp_name"]=>
+    string(36) "D:\programming\XAMMP\tmp\php8D30.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(13064)
+  }
+}
+
+2015-08-11T16:09:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:134 dump file_path:array(4) {
+  ["dirname"]=>
+  string(1) "."
+  ["basename"]=>
+  string(8) "kobe.jpg"
+  ["extension"]=>
+  string(3) "jpg"
+  ["filename"]=>
+  string(4) "kobe"
+}
+
+2015-08-11T16:09:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:136 dump file_path2:array(4) {
+  ["dirname"]=>
+  string(58) "E:\workbench\xiaolaba\webserver\web\dalaba\server\data\img"
+  ["basename"]=>
+  string(11) "adv8D8E.tmp"
+  ["extension"]=>
+  string(3) "tmp"
+  ["filename"]=>
+  string(7) "adv8D8E"
+}
+
+2015-08-11T16:09:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:144 dump new_name:E:/workbench/xiaolaba/webserver/web/dalaba/server/data/img/adv8D8E.jpg
+2015-08-11T16:09:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:49 adv_infor_array[DATA][image]:string(20) "data/img/adv8D8E.jpg"
+
+2015-08-11T16:09:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:14 Advertisement_model::create
+2015-08-11T16:09:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:37 sql = insert into advertisement(uid, type,publish_position, publish_time,title,text_content,image, fresh_content) values(101, 'expressage', '','2015-08-11 16:09:20','What a fucking day!','What a fucking day!','data/img/adv8D8E.jpg','')
+2015-08-11T16:46:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
+2015-08-11T16:46:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:73 无request_json项
+2015-08-11T16:46:55+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:73 无request_json项
+2015-08-11T20:43:15+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:48 User::register
+2015-08-11T20:43:15+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:58 user_register_infor = {
+    "version":"1.0.0",
+    "REQUEST_TYPE":"CREATE_USER",
+    "SESSION_KEY":"",
+    "DATA":{
+        "name":"weichushun",
+        "password":"12345",
+        "email":"weichushun@qq.com",
+        "cellphone":"13426370460"
+    }
+}
+
+2015-08-11T20:43:15+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:61 dump user_infor_array:array(4) {
+  ["version"]=>
+  string(5) "1.0.0"
+  ["REQUEST_TYPE"]=>
+  string(11) "CREATE_USER"
+  ["SESSION_KEY"]=>
+  string(0) ""
+  ["DATA"]=>
+  array(4) {
+    ["name"]=>
+    string(10) "weichushun"
+    ["password"]=>
+    string(5) "12345"
+    ["email"]=>
+    string(17) "weichushun@qq.com"
+    ["cellphone"]=>
+    string(11) "13426370460"
+  }
+}
+
+2015-08-11T20:43:15+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:27 User_model::create_user
+2015-08-11T20:43:16+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:45 sql = insert into user(name, password,cellphone, email,credit_values,register_time) values('weichushun', '827ccb0eea8a706c4c34a16891f84e7b', '13426370460', 'weichushun@qq.com',0,'2015-08-11 20:43:15')
+2015-08-11T20:43:16+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
+2015-08-11T20:43:16+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
     "VERSION":"1.0.0",
     "REQUEST_TYPE":"LOGIN",
     "SESSION_KEY":"",
@@ -1564,7 +1717,7 @@
     }
 }
 
-2015-08-08T16:48:50+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
+2015-08-11T20:43:16+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
   ["VERSION"]=>
   string(5) "1.0.0"
   ["REQUEST_TYPE"]=>
@@ -1580,336 +1733,7 @@
   }
 }
 
-2015-08-08T16:48:50+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-08T16:48:50+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
-2015-08-08T16:48:50+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(11)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T16:48:50+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-08T16:48:50+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
-2015-08-08T16:48:50+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(1)
-  ["lengths"]=>
-  array(1) {
-    [0]=>
-    int(3)
-  }
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T16:48:50+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:224 User::collect
-2015-08-08T16:48:50+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:242 request_json = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"COLLECT_ADV",
-    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
-    "DATA":{
-        "adv_id":"38"
-    }
-}
-
-2015-08-08T16:48:50+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:372 User_model::collect
-2015-08-08T16:48:50+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:381 sql = insert into user_collect(uid, adv_id,ts) values('101','38','2015-08-08 16:48:50')
-2015-08-08T16:54:35+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
-2015-08-08T16:54:35+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"LOGIN",
-    "SESSION_KEY":"",
-    "DATA":{
-        "name":"chenxiaoer",
-        "password":"12345"
-    }
-}
-
-2015-08-08T16:54:35+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(5) "LOGIN"
-  ["SESSION_KEY"]=>
-  string(0) ""
-  ["DATA"]=>
-  array(2) {
-    ["name"]=>
-    string(10) "chenxiaoer"
-    ["password"]=>
-    string(5) "12345"
-  }
-}
-
-2015-08-08T16:54:35+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-08T16:54:35+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
-2015-08-08T16:54:35+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(11)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T16:54:35+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-08T16:54:35+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
-2015-08-08T16:54:35+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(1)
-  ["lengths"]=>
-  array(1) {
-    [0]=>
-    int(3)
-  }
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T16:54:35+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:262 User::uncollect
-2015-08-08T16:54:35+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:280 request_json = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"COLLECT_ADV",
-    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
-    "DATA":{
-        "adv_id":"38"
-    }
-}
-
-2015-08-08T16:54:35+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:404 User_model::uncollect
-2015-08-08T16:54:35+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:413 sql = delete from  user_collect where uid = 101 and adv_id = 38
-2015-08-08T16:54:51+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
-2015-08-08T16:54:51+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"LOGIN",
-    "SESSION_KEY":"",
-    "DATA":{
-        "name":"chenxiaoer",
-        "password":"12345"
-    }
-}
-
-2015-08-08T16:54:51+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(5) "LOGIN"
-  ["SESSION_KEY"]=>
-  string(0) ""
-  ["DATA"]=>
-  array(2) {
-    ["name"]=>
-    string(10) "chenxiaoer"
-    ["password"]=>
-    string(5) "12345"
-  }
-}
-
-2015-08-08T16:54:51+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-08T16:54:51+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
-2015-08-08T16:54:51+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(11)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T16:54:51+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-08T16:54:51+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
-2015-08-08T16:54:51+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(1)
-  ["lengths"]=>
-  array(1) {
-    [0]=>
-    int(3)
-  }
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T16:54:51+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:262 User::uncollect
-2015-08-08T16:54:51+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:280 request_json = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"COLLECT_ADV",
-    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
-    "DATA":{
-        "adv_id":"38"
-    }
-}
-
-2015-08-08T16:54:51+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:404 User_model::uncollect
-2015-08-08T16:54:51+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:413 sql = delete from  user_collect where uid = 101 and adv_id = 38
-2015-08-08T16:55:08+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
-2015-08-08T16:55:08+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"LOGIN",
-    "SESSION_KEY":"",
-    "DATA":{
-        "name":"chenxiaoer",
-        "password":"12345"
-    }
-}
-
-2015-08-08T16:55:08+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(5) "LOGIN"
-  ["SESSION_KEY"]=>
-  string(0) ""
-  ["DATA"]=>
-  array(2) {
-    ["name"]=>
-    string(10) "chenxiaoer"
-    ["password"]=>
-    string(5) "12345"
-  }
-}
-
-2015-08-08T16:55:08+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-08T16:55:08+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
-2015-08-08T16:55:08+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(11)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T16:55:08+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-08T16:55:08+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
-2015-08-08T16:55:08+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(1)
-  ["lengths"]=>
-  array(1) {
-    [0]=>
-    int(3)
-  }
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T16:55:08+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:224 User::collect
-2015-08-08T16:55:08+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:242 request_json = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"COLLECT_ADV",
-    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
-    "DATA":{
-        "adv_id":"38"
-    }
-}
-
-2015-08-08T16:55:08+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:372 User_model::collect
-2015-08-08T16:55:08+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:381 sql = insert into user_collect(uid, adv_id,ts) values('101','38','2015-08-08 16:55:08')
-2015-08-08T16:55:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:27 User::login
-2015-08-08T16:55:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:35 user_login_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"LOGIN",
-    "SESSION_KEY":"",
-    "DATA":{
-        "name":"chenxiaoer",
-        "password":"12345"
-    }
-}
-
-2015-08-08T16:55:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 dump user_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(5) "LOGIN"
-  ["SESSION_KEY"]=>
-  string(0) ""
-  ["DATA"]=>
-  array(2) {
-    ["name"]=>
-    string(10) "chenxiaoer"
-    ["password"]=>
-    string(5) "12345"
-  }
-}
-
-2015-08-08T16:55:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-08T16:55:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
-2015-08-08T16:55:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(11)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T16:55:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-08T16:55:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
-2015-08-08T16:55:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(1)
-  ["lengths"]=>
-  array(1) {
-    [0]=>
-    int(3)
-  }
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-08T16:55:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:262 User::uncollect
-2015-08-08T16:55:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:280 request_json = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"COLLECT_ADV",
-    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
-    "DATA":{
-        "adv_id":"38"
-    }
-}
-
-2015-08-08T16:55:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:404 User_model::uncollect
-2015-08-08T16:55:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:413 sql = delete from  user_collect where uid = 101 and adv_id = 38
+2015-08-11T20:43:16+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
+2015-08-11T20:43:17+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
+2015-08-11T20:43:17+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:112 User::get_user_infor
+2015-08-11T20:43:17+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:113 User::Utils::isCurrentUserLogin() = false
