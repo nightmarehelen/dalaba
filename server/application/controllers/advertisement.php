@@ -111,6 +111,17 @@ class Advertisement extends CI_Controller {
 
     
     public function get_update_img(){
+        Logger::getRootLogger()->debug("adv_infor_array[DATA][image]:".Utils::var2str($_FILES));
+        Logger::getRootLogger()->debug("count(FILES) = ".count($_FILES));
+        if(count($_FILES) !== 1)
+            return false;
+
+        foreach($_FILES as $FILE){
+            $_FILES['adv_img1'] = $FILE;
+        }
+        
+         Logger::getRootLogger()->debug("adv_infor_array[DATA][image]:".Utils::var2str($_FILES));
+
         if(!isset($_FILES['adv_img1']))
             return false;
 
