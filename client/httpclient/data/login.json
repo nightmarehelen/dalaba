@@ -1,0 +1,9 @@
+{
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"LOGIN",
+    "SESSION_KEY":"",
+    "DATA":{
+        "name":"chenxiaoer",
+        "password":"12345"
+    }
+}

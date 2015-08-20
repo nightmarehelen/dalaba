@@ -6,7 +6,7 @@ class Advertisement extends CI_Controller {
 
     public function __construct(){
         parent::__construct();
-        $this->temp_img_dir=  $_SERVER['DOCUMENT_ROOT']."\data\img";
+        $this->temp_img_dir=  $_SERVER['DOCUMENT_ROOT']."/data/img";
         $this->img_file_prefix = "adv";
         $this->load->model('advertisement_model');
     }
@@ -129,8 +129,12 @@ class Advertisement extends CI_Controller {
             Logger::getRootLogger()->debug("get upload file failed:". $_FILES["adv_img1"]["error"]);
             return false;
         }
-
+        
+        Logger::getRootLogger()->debug("this->img_file_prefix = ".$this->img_file_prefix);
+        Logger::getRootLogger()->debug("this->temp_img_dir = ".$this->temp_img_dir);
         $filename = tempnam($this->temp_img_dir,$this->img_file_prefix);
+
+        Logger::getRootLogger()->debug("filename = ".$filename);
         if (!unlink($filename)){
             Logger::getRootLogger()->error("delete temp file failed");
             return false;

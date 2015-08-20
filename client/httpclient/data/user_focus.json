@@ -1,0 +1,8 @@
+{
+    "version":"1.0.0",
+    "REQUEST_TYPE":"UPDATE_USER_INFOR",
+    "SESSION_KEY":"",
+    "DATA":{
+        "uid":"98"
+    }
+}

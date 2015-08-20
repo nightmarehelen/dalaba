@@ -1,0 +1,13 @@
+{
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
+    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
+    "DATA":{
+        "image":"true",
+        "type":"expressage",
+        "publish_position":"",
+        "title" : "What a fucking day!",
+        "text_content":"What a fucking day!",
+        "fresh_content":""
+    }
+}

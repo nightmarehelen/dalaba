@@ -1,0 +1,9 @@
+{
+    "version":"1.0.0",
+    "REQUEST_TYPE":"UPDATE_USER_INFOR",
+    "SESSION_KEY":"",
+    "DATA":{
+        "email":"chenyang2@qq.com",
+        "cellphone":"13426370455"
+    }
+}

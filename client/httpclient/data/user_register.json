@@ -1,0 +1,11 @@
+{
+    "version":"1.0.0",
+    "REQUEST_TYPE":"CREATE_USER",
+    "SESSION_KEY":"",
+    "DATA":{
+        "name":"weichushun",
+        "password":"12345",
+        "email":"weichushun@qq.com",
+        "cellphone":"13426370460"
+    }
+}
