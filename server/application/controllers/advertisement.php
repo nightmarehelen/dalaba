@@ -21,6 +21,15 @@ class Advertisement extends CI_Controller {
             return;
         }
         
+        if(!Utils::isCurrentUserLogin()){
+            $response = new Response();
+            $response->status = Response::STATUS_ERROR;
+            $response->error_code = "0013";
+            $response->message = "用户尚未登陆，没有更新广告的权限";
+            echo Response::getResponseJson($response);
+            return;
+        }
+
         $adv_infor = $_POST['request_json'];
         Logger::getRootLogger()->debug("adv_infor = ".$adv_infor);
 

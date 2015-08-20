@@ -89,15 +89,6 @@ class Advertisement_model extends CI_Model {
     public function update_adv_validate($adv_infor){
         Logger::getRootLogger()->debug("Advertisement_model::update_adv_validate");
         $response = new Response();
-        
-        if(!Utils::isCurrentUserLogin()){
-            $response->status = Response::STATUS_ERROR;
-            $response->error_code = "0013";
-            $response->message = "用户尚未登陆，没有更新广告的权限";
-            return $response;
-        }
-
-        
 
         if(!isset($adv_infor["title"]) || !isset($adv_infor["text_content"])  || empty($adv_infor["title"]) || empty($adv_infor["text_content"])){
             $response->status = Response::STATUS_ERROR;
