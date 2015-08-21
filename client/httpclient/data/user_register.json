@@ -3,9 +3,9 @@
     "REQUEST_TYPE":"CREATE_USER",
     "SESSION_KEY":"",
     "DATA":{
-        "name":"weichushun",
+        "name":"weichushunlalla",
         "password":"12345",
-        "email":"weichushun@qq.com",
+        "email":"weichushun2@qq.com",
         "cellphone":"13426370460"
     }
 }

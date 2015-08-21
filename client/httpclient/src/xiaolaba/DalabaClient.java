@@ -23,12 +23,10 @@ public class DalabaClient
 	public static HttpClient client = new HttpClient(); 
 	public static String phpSessionID = "";
 	public static void main(String[] args) throws IOException {  
-		//test();
 		//register();
 		login(); 
-		//queryCurrentLoginUserInfor();
 		//updateUserInfor();
-		createAdvertisement();
+		//createAdvertisement();
 		//updateAdvertisement();
 		//get_published();
 		//get_advertisement_type();
@@ -40,18 +38,21 @@ public class DalabaClient
 		//uncollect();
 		//get_advertisement_infor();
 		//delete_advertisement();
+		get_nearby_published();
 	 }  
 	
 	private static void register(){
 		String json = getStringFromFile("data/user_register.json");
 		StringPart simcard = new StringPart( "request_json" , json); 
+		simcard.setCharSet("UTF-8");
 		StringPart[] pairs = new StringPart[]{simcard};
 		call("/index.php/user/register", pairs, null);
 	}
 	
 	private static void login(){
 		String json = getStringFromFile("data/login.json");
-		StringPart simcard = new StringPart( "request_json" , json); 
+		StringPart simcard = new StringPart( "request_json" , json);
+		simcard.setCharSet("UTF-8");
 		StringPart[] pairs = new StringPart[]{simcard};
 		//files[1] = new File("data/ti2.png");
 		call("/index.php/user/login", pairs, null);
@@ -60,6 +61,7 @@ public class DalabaClient
 	private static void queryCurrentLoginUserInfor(){
 		String json = getStringFromFile("data/query_user_infor.json");
 		StringPart simcard = new StringPart( "request_json" , json);
+		simcard.setCharSet("UTF-8");
 		StringPart[] pairs = new StringPart[]{simcard};
 		call("/index.php/user/queryCurrentLoginUserInfor", pairs, null);
 	}
@@ -68,13 +70,15 @@ public class DalabaClient
 	private static void updateUserInfor(){
 		String json = getStringFromFile("data/user_infor_update.json");
 		StringPart simcard = new StringPart( "request_json" , json);
+		simcard.setCharSet("UTF-8");
 		StringPart[] pairs = new StringPart[]{simcard};
-		call("/index.php/user/updateUserInfor", pairs, null);
+		call("/index.php/user/update", pairs, null);
 	}
 	
 	private static void createAdvertisement() throws FileNotFoundException{
 		String json = getStringFromFile("data/createAdvertisement.json");
 		StringPart simcard = new StringPart( "request_json" , json);
+		simcard.setCharSet("UTF-8");
 		StringPart[] pairs = new StringPart[]{simcard};
 		
 		
@@ -92,6 +96,7 @@ public class DalabaClient
 	private static void updateAdvertisement() throws FileNotFoundException{
 		String json = getStringFromFile("data/updateAdvertisement.json");
 		StringPart simcard = new StringPart( "request_json" , json);
+		simcard.setCharSet("UTF-8");
 		StringPart[] pairs = new StringPart[]{simcard};
 		
 		
@@ -109,6 +114,7 @@ public class DalabaClient
 	private static void get_published() throws FileNotFoundException{
 		String json = getStringFromFile("data/get_published.json");
 		StringPart simcard = new StringPart( "request_json" , json);
+		simcard.setCharSet("UTF-8");
 		StringPart[] pairs = new StringPart[]{simcard};
 		
 		call("/index.php/advertisement/get_published", pairs, null);
@@ -119,6 +125,7 @@ public class DalabaClient
 	private static void get_user_infor() throws FileNotFoundException{
 		String json = getStringFromFile("data/get_user_infor.json");
 		StringPart simcard = new StringPart( "request_json" , json);
+		simcard.setCharSet("UTF-8");
 		StringPart[] pairs = new StringPart[]{simcard};
 		call("/index.php/user/get_user_infor", pairs, null);
 		//call("/index.php/advertisement/upload", pairs, files);
@@ -128,6 +135,7 @@ public class DalabaClient
 	private static void get_advertisement_type() throws FileNotFoundException{
 		
 		StringPart simcard = new StringPart( "request_json" , "");
+		simcard.setCharSet("UTF-8");
 		StringPart[] pairs = new StringPart[]{simcard};
 		call("/index.php/advertisement/get_advertisement_type", pairs, null);
 	}
@@ -135,6 +143,7 @@ public class DalabaClient
 	private static void thumb_up_for_adv() throws FileNotFoundException{
 		String json = getStringFromFile("data/thumb_up_for_adv.json");
 		StringPart simcard = new StringPart( "request_json" , json);
+		simcard.setCharSet("UTF-8");
 		StringPart[] pairs = new StringPart[]{simcard};
 		call("/index.php/advertisement/thumb_up_for_adv", pairs, null);
 	}
@@ -143,6 +152,7 @@ public class DalabaClient
 	private static void user_focus() throws FileNotFoundException{
 		String json = getStringFromFile("data/user_focus.json");
 		StringPart simcard = new StringPart( "request_json" , json);
+		simcard.setCharSet("UTF-8");
 		StringPart[] pairs = new StringPart[]{simcard};
 		call("/index.php/user/user_focus", pairs, null);
 	}
@@ -150,6 +160,7 @@ public class DalabaClient
 	private static void user_unfocus() throws FileNotFoundException{
 		String json = getStringFromFile("data/user_focus.json");
 		StringPart simcard = new StringPart( "request_json" , json);
+		simcard.setCharSet("UTF-8");
 		StringPart[] pairs = new StringPart[]{simcard};
 		call("/index.php/user/user_unfocus", pairs, null);
 	}
@@ -157,6 +168,7 @@ public class DalabaClient
 	private static void collect() throws FileNotFoundException{
 		String json = getStringFromFile("data/collect.json");
 		StringPart simcard = new StringPart( "request_json" , json);
+		simcard.setCharSet("UTF-8");
 		StringPart[] pairs = new StringPart[]{simcard};
 		call("/index.php/user/collect", pairs, null);
 	}
@@ -164,6 +176,7 @@ public class DalabaClient
 	private static void uncollect() throws FileNotFoundException{
 		String json = getStringFromFile("data/collect.json");
 		StringPart simcard = new StringPart( "request_json" , json);
+		simcard.setCharSet("UTF-8");
 		StringPart[] pairs = new StringPart[]{simcard};
 		call("/index.php/user/uncollect", pairs, null);
 	}
@@ -171,6 +184,7 @@ public class DalabaClient
 	private static void get_advertisement_infor() throws FileNotFoundException{
 		String json = getStringFromFile("data/get_advertisement_infor.json");
 		StringPart simcard = new StringPart( "request_json" , json);
+		simcard.setCharSet("UTF-8");
 		StringPart[] pairs = new StringPart[]{simcard};
 		call("/index.php/advertisement/get_advertisement_infor", pairs, null);
 	}
@@ -178,16 +192,27 @@ public class DalabaClient
 	private static void delete_advertisement() throws FileNotFoundException{
 		String json = getStringFromFile("data/delete_advertisement.json");
 		StringPart simcard = new StringPart( "request_json" , json);
+		simcard.setCharSet("UTF-8");
 		StringPart[] pairs = new StringPart[]{simcard};
 		call("/index.php/advertisement/delete_advertisement", pairs, null);
 	}
 	
+	private static void get_nearby_published(){
+		String json = getStringFromFile("data/get_nearby_published.json");
+		StringPart simcard = new StringPart( "request_json" , json);
+		simcard.setCharSet("UTF-8");
+		StringPart[] pairs = new StringPart[]{simcard};
+		call("/index.php/advertisement/get_nearby_published", pairs, null);
+	}
 	//httpclient 调用，是否包含
 	private static void call(String url, StringPart[] pairs, FilePart[] files){
 		System.out.println("call url"+url+"**********************************************");
 		try{
 			client.getHostConfiguration().setHost( "127.0.0.1" , 80, "http" );
 			PostMethod post = new PostMethod(url);
+			//client.getParams().setParameter(HttpMethodParams.HTTP_CONTENT_CHARSET, "UTF-8");
+			//post.getParams().setParameter(HttpMethodParams.HTTP_CONTENT_CHARSET, "UTF-8");
+			//post.setRequestHeader("Content-Type", "text/html;charset=UTF-8");
 			
 			if(!phpSessionID.equals(""))
 				post.addRequestHeader("PHPSESSID", phpSessionID);
@@ -214,8 +239,8 @@ public class DalabaClient
 				client.getHttpConnectionManager().getParams().setConnectionTimeout(5000);
 			
 			
-			client.executeMethod(post);   //��ӡ���������ص�״̬   
-			System.out.println(post.getStatusLine());   //��ӡ���ҳ��  
+			client.executeMethod(post); 
+			System.out.println(post.getStatusLine());
 			String response=new String(post.getResponseBodyAsString().getBytes("UTF-8"));
 			for(Header hdr: post.getResponseHeaders()){
 				System.out.println("Header["+hdr.getName()+"]="+hdr.getValue());
@@ -265,4 +290,16 @@ public class DalabaClient
 		System.out.println(response);
 		post.releaseConnection();
 	}
+	
+	//Inner class for UTF-8 support     
+	public static class UTF8PostMethod extends PostMethod{     
+	    public UTF8PostMethod(String url){     
+	    super(url);     
+	    }     
+	    @Override     
+	    public String getRequestCharSet() {     
+	        //return super.getRequestCharSet();     
+	        return "UTF-8";     
+	    }  
+	}  
 }

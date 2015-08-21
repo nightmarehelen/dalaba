@@ -26,14 +26,16 @@ class Advertisement_model extends CI_Model {
         $db = new DB();
         $db->connect();
         
-        $sql = "insert into advertisement(uid, type,publish_position, publish_time,title,text_content,image, fresh_content) values($uid, '"
-                                                                           .$adv_infor['type']."', '"
-                                                                           .$adv_infor["publish_position"]."','"
+        $sql = "insert into advertisement(uid, type, publish_time,title,text_content,image, fresh_content,address,lat,lng) values($uid, '"
+                                                                           .$adv_infor['type']."', '"     
                                                                            .$publish_time."','"
                                                                            .$adv_infor["title"]."','"
                                                                            .$adv_infor["text_content"]."','"
                                                                            .$adv_infor["image"]."','"
-                                                                           .$adv_infor["fresh_content"]."')";
+                                                                           .$adv_infor["fresh_content"]."','"
+                                                                           .$adv_infor["publish_position"]["addr"]."','"
+                                                                           .$adv_infor["publish_position"]["lat"]."','"
+                                                                           .$adv_infor["publish_position"]["lng"]."')";
         Logger::getRootLogger()->debug("sql = ".$sql);                                                                   
         $result = $db->executeUpdateAndInsert($sql);
 
@@ -60,11 +62,13 @@ class Advertisement_model extends CI_Model {
         $db = new DB();
         $db->connect();       
         $sql = "update advertisement set type = '".$adv_infor['type']."',
-                                         publish_position = '".$adv_infor["publish_position"]."', 
                                          title ='".$adv_infor["title"]."',
                                          text_content ='".$adv_infor["text_content"]."',
                                          image ='".$adv_infor["image"]."', 
-                                         fresh_content ='".$adv_infor["fresh_content"]."'
+                                         fresh_content ='".$adv_infor["fresh_content"]."',
+                                         lat = '".$adv_infor["publish_position"]["lat"]."',
+                                         lng = '".$adv_infor["publish_position"]["lng"]."',
+                                         address = '".$adv_infor["publish_position"]["address"]."'
                                          where id = ".$adv_infor["id"]." and uid = ".$uid;
                                                                           
         Logger::getRootLogger()->debug("sql = ".$sql);                                                                   
@@ -141,7 +145,9 @@ class Advertisement_model extends CI_Model {
 
         $db = new DB();
         $db->connect();       
-        $sql = "select * from advertisement where uid = ".$uid." order by last_update_time desc  limit ".$adv_infor["start"].", ".$adv_infor["count"];
+        $sql = "select advertisement.id id,uid,advertisement.type type,publish_time,title,text_content,image,read_count,"
+               ."zan_num,address,user.name user_name,lat,lng from advertisement inner join user on user.id = uid "
+               ." where uid = ".$uid." order by last_update_time desc  limit ".$adv_infor["start"].", ".$adv_infor["count"];
                                                                                  
         Logger::getRootLogger()->debug("sql = ".$sql);                                                                   
         $result = $db->executeQuery($sql);
@@ -150,7 +156,26 @@ class Advertisement_model extends CI_Model {
 
         Logger::getRootLogger()->debug("ret:".Utils::var2str($ret));
         
-        $adv_infor = json_encode($ret);
+        $adv_infor = "[";
+        foreach($ret as $item) {
+            $adv_infor = $adv_infor."{";
+            $adv_infor = $adv_infor.'"id":"'.$item['id'].'",';
+            $adv_infor = $adv_infor.'"uid":"'.$item['uid'].'",';
+            $adv_infor = $adv_infor.'"user_name":"'.$item['user_name'].'",';
+            $adv_infor = $adv_infor.'"type":"'.$item['type'].'",';
+            $adv_infor = $adv_infor.'"publish_time":"'.$item['publish_time'].'",';
+            $adv_infor = $adv_infor.'"title":"'.$item['title'].'",';
+            $adv_infor = $adv_infor.'"text_content":"'.$item['text_content'].'",';
+            $adv_infor = $adv_infor.'"image":"'.$item['image'].'",';
+            $adv_infor = $adv_infor.'"read_count":"'.$item['read_count'].'",';
+            $adv_infor = $adv_infor.'"zan_num":"'.$item['zan_num'].'",';
+            $adv_infor = $adv_infor.'"address":"'.$item['address'].'",';
+            $adv_infor = $adv_infor."},";
+        }
+
+        $adv_infor = substr($adv_infor, 0, -1);
+        
+        $adv_infor = $adv_infor."]";
         Logger::getRootLogger()->debug("adv_infor:".$adv_infor);
         
         $response = new Response();
@@ -219,13 +244,13 @@ class Advertisement_model extends CI_Model {
     
     //获取广告详情
     public function get_advertisement_infor($adv_id){
-        Logger::getRootLogger()->debug("User_model::get_advertisement_infor");
+        Logger::getRootLogger()->debug("Advertisement_model::get_advertisement_infor");
 
         $response = new Response(); 
 
         $db = new DB();
         $db->connect();
-        $sql = "select id,uid,type,publish_position,publish_time,title,text_content,image,read_count,zan_num from advertisement where id = ".$adv_id;
+        $sql = "select id,uid,type,publish_time,title,text_content,image,read_count,zan_num,address from advertisement where id = ".$adv_id;
         Logger::getRootLogger()->debug("sql = ".$sql); 
         
         $res = $db->executeQuery($sql);
@@ -239,13 +264,13 @@ class Advertisement_model extends CI_Model {
            $adv_infor = $adv_infor.'"id":"'.$row['id'].'",';
            $adv_infor = $adv_infor.'"uid":"'.$row['uid'].'",';
            $adv_infor = $adv_infor.'"type":"'.$row['type'].'",';
-           $adv_infor = $adv_infor.'"publish_position":"'.$row['publish_position'].'",';
            $adv_infor = $adv_infor.'"publish_time":"'.$row['publish_time'].'",';
            $adv_infor = $adv_infor.'"title":"'.$row['title'].'",';
            $adv_infor = $adv_infor.'"text_content":"'.$row['text_content'].'",';
            $adv_infor = $adv_infor.'"image":"'.$row['image'].'",';
            $adv_infor = $adv_infor.'"read_count":"'.$row['read_count'].'",';
            $adv_infor = $adv_infor.'"zan_num":"'.$row['zan_num'].'"';
+           $adv_infor = $adv_infor.'"address":"'.$row['address'].'"';
         }else{
             $response->status = Response::STATUS_ERROR;
             $response->error_code = "0026";
@@ -261,7 +286,7 @@ class Advertisement_model extends CI_Model {
     }
 
     public function delete_advertisement($adv_id){
-        Logger::getRootLogger()->debug("User_model::delete_advertisement");
+        Logger::getRootLogger()->debug("Advertisement_model::delete_advertisement");
         $uid = Utils::getCurrentUserID();
         $response = new Response(); 
 
@@ -285,4 +310,66 @@ class Advertisement_model extends CI_Model {
         $response->message = "恭喜您删除广告成功";
         return $response;
     }
+
+    public function get_nearby_published($lat, $lng, $distance){
+        Logger::getRootLogger()->debug("Advertisement_model::get_nearby_published");
+        $response = new Response(); 
+
+        $points = Utils::distance2points($distance, $lat, $lng);
+        $db = new DB();
+        $db->connect();
+        $sql = "select advertisement.id id,uid,advertisement.type type,publish_time,title,text_content,image,read_count,"
+               ."zan_num,address,user.name user_name,lat,lng from advertisement inner join user on user.id = uid "
+               ."where (lat <= {$points[0]['lat']}  and lng <= {$points[0]['lng']}) "
+               ."and (lat >= {$points[1]['lat']}  and lng <= {$points[1]['lng']}) "
+               ."and (lat >= {$points[2]['lat']}  and lng >= {$points[2]['lng']}) "
+               ."and (lat <= {$points[3]['lat']}  and lng >= {$points[3]['lng']}) ";
+        Logger::getRootLogger()->debug("sql = ".$sql); 
+        
+        $res = $db->executeQuery($sql);
+        
+        if($res instanceof Response)
+            return $res;
+        Logger::getRootLogger()->debug("res = ".Utils::var2str($res));
+        
+        $unsorted = array();
+        while ($row = mysqli_fetch_assoc($res)) {
+            $distance = Utils::distanceSimplify($lat, $lng, $row['lat'], $row['lng']);
+            $row['distance'] = $distance;
+            array_push($unsorted, $row);
+        }
+        /* free result set */
+        mysqli_free_result($res);
+        
+        $sorted = Utils::sort_adv_by_distance($unsorted);
+
+        $adv_infor = "[";
+        foreach($sorted as $item) {
+            $adv_infor = $adv_infor."{";
+            $adv_infor = $adv_infor.'"id":"'.$item['id'].'",';
+            $adv_infor = $adv_infor.'"uid":"'.$item['uid'].'",';
+            $adv_infor = $adv_infor.'"user_name":"'.$item['uid'].'",';
+            $adv_infor = $adv_infor.'"type":"'.$item['type'].'",';
+            $adv_infor = $adv_infor.'"publish_time":"'.$item['publish_time'].'",';
+            $adv_infor = $adv_infor.'"title":"'.$item['title'].'",';
+            $adv_infor = $adv_infor.'"text_content":"'.$item['text_content'].'",';
+            $adv_infor = $adv_infor.'"image":"'.$item['image'].'",';
+            $adv_infor = $adv_infor.'"read_count":"'.$item['read_count'].'",';
+            $adv_infor = $adv_infor.'"zan_num":"'.$item['zan_num'].'",';
+            $adv_infor = $adv_infor.'"address":"'.$item['address'].'",';
+            $adv_infor = $adv_infor.'"distance":"'.$item['distance'] .'"';
+            $adv_infor = $adv_infor."},";
+        }
+
+        $adv_infor = substr($adv_infor, 0, -1);
+        
+        $adv_infor = $adv_infor."]";
+
+        $response->status = Response::STATUS_OK;
+        $response->message = "请求广告信息成功";
+        $response->response_data = $adv_infor;
+        return $response;
+        
+    }
+
 }

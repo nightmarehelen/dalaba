@@ -4,6 +4,7 @@
     "SESSION_KEY":"",
     "DATA":{
         "name":"chenxiaoer",
-        "password":"12345"
+        "password":"12345",
+        "test":"你妹呀！"
     }
 }

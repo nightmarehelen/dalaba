@@ -14,7 +14,8 @@ class Advertisement extends CI_Controller {
     //创建广告
     public function create(){
         Logger::getRootLogger()->debug("Advertisement::create");
-
+        //Logger::getRootLogger()->debug(Utils::var2str(getallheaders()));
+        Logger::getRootLogger()->debug(Utils::get_http_raw());
         $response = Utils::validate_request();
         if(Utils::validate_request() !== null){
             echo Response::getResponseJson($response);
@@ -296,5 +297,47 @@ class Advertisement extends CI_Controller {
         
         echo Response::getResponseJson($response);
 
+    }
+
+    public function get_nearby_published(){
+        Logger::getRootLogger()->debug("Advertisement::get_nearby_published");
+
+        $response = Utils::validate_request();
+        if(Utils::validate_request() !== null){
+            echo Response::getResponseJson($response);
+            return;
+        }        
+        
+        $request_json = $_POST['request_json'];
+        Logger::getRootLogger()->debug("request_json = ".$request_json);
+        
+        $request_json = json_decode($request_json, true);
+
+        
+        
+        $lat = floatval($request_json["DATA"]["lat"]);
+        $lng = floatval($request_json["DATA"]["lng"]);
+        $distance = intval($request_json["DATA"]["distance"]);
+        Logger::getRootLogger()->debug("lat = ".$lat);
+        Logger::getRootLogger()->debug("lng = ".$lng);
+        Logger::getRootLogger()->debug("distance = ".$distance);
+        
+        if(abs($lat) > 90 || abs($lng) > 180){
+            $response = new Response();
+            $response->status = Response::STATUS_ERROR;
+            $response->message = "经纬度有误";
+            echo Response::getResponseJson($response);
+            return;
+        }
+        
+        $response = $this->advertisement_model->get_nearby_published($lat, $lng, $distance);
+        echo Response::getResponseJson($response);
+
+    }
+
+    public function test(){
+        Logger::getRootLogger()->debug("Utils::var2str(_POST) = ".Utils::var2str($_POST));
+        echo Utils::var2str($_POST);
+        echo "What a fucking day!";
     }
 }

@@ -1,13 +1,42 @@
 {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
-    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
-    "DATA":{
-        "image":"true",
-        "type":"expressage",
-        "publish_position":"",
-        "title" : "What a fucking day!",
-        "text_content":"What a fucking day!",
-        "fresh_content":""
+    "VERSION": "1.0.0",
+    "REQUEST_TYPE": "CREATE_ADVERTISEMENT",
+    "SESSION_KEY": "94e9e1bd4007c83d7ab96ecb8f2b2536",
+    "DATA": {
+        "image": "true",
+        "type": "expressage",
+        "publish_position1": {
+            "addr": "北航大运村1号楼",
+            "lat": "39.983699",
+            "lng": "116.351785"
+        },
+        "publish_position2": {
+            "addr": "世宁大厦 ",
+            "lat": "39.991428",
+            "lng": "116.358689"
+        },
+        "publish_positio3": {
+            "addr": "知春路地铁站",
+            "lat": "39.982092",
+            "lng": "116.346656"
+        },
+        "publish_position4": {
+            "addr": "清河安宁里小区",
+            "lat": "40.05208",
+            "lng": "116.336307"
+        },
+        "publish_position5": {
+            "addr": "四拨子公交站",
+            "lat": "40.050804",
+            "lng": "116.343952"
+        },
+        "publish_position": {
+            "addr": "上林溪",
+            "lat": "40.053405",
+            "lng": "116.333267"
+        },
+        "title": "你妹呀!",
+        "text_content": "你逗我玩呢!",
+        "fresh_content": ""
     }
 }

@@ -1,0 +1,11 @@
+{
+    "version":"1.0.0",
+    "REQUEST_TYPE":" DELETE_ADVERTISEMENT ",
+    "SESSION_KEY":"",
+    "DATA":{
+        "lat":"39.985403",
+        "lng":"116.357112",
+        "distance":"5000"
+            
+    }
+}

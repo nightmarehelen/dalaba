@@ -26,6 +26,8 @@ class User extends CI_Controller {
 	{   
         //$this->printRequestHeader();
         Logger::getRootLogger()->debug("User::login");
+        Logger::getRootLogger()->debug("get_http_raw:".Utils::get_http_raw());
+        Logger::getRootLogger()->debug("_SERVER:".Utils::var2str($_SERVER));
         $response = Utils::validate_request();
         if(Utils::validate_request() !== null){
             echo Response::getResponseJson($response);

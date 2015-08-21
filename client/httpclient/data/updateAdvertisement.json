@@ -3,10 +3,14 @@
     "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
     "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
     "DATA":{
-        "id":"27",
+        "id":"90",
         "image":"true",
         "type":"personal",
-        "publish_position":"",
+        "publish_position": {
+            "address": "上林溪",
+            "lat": "40.053405",
+            "lng": "116.333267"
+        },
         "title" : "What a fucking day!",
         "text_content":"11111111",
         "fresh_content":""
