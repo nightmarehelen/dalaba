@@ -169,7 +169,7 @@ class Advertisement_model extends CI_Model {
             $adv_infor = $adv_infor.'"image":"'.$item['image'].'",';
             $adv_infor = $adv_infor.'"read_count":"'.$item['read_count'].'",';
             $adv_infor = $adv_infor.'"zan_num":"'.$item['zan_num'].'",';
-            $adv_infor = $adv_infor.'"address":"'.$item['address'].'",';
+            $adv_infor = $adv_infor.'"address":"'.$item['address'].'"';
             $adv_infor = $adv_infor."},";
         }
 
