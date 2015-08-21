@@ -156,7 +156,7 @@ class Advertisement_model extends CI_Model {
 
         Logger::getRootLogger()->debug("ret:".Utils::var2str($ret));
         
-        $adv_infor = "{";
+        $adv_infor = "[";
         foreach($ret as $item) {
             $adv_infor = $adv_infor."{";
             $adv_infor = $adv_infor.'"id":"'.$item['id'].'",';
@@ -172,10 +172,11 @@ class Advertisement_model extends CI_Model {
             $adv_infor = $adv_infor.'"address":"'.$item['address'].'"';
             $adv_infor = $adv_infor."},";
         }
-
-        $adv_infor = substr($adv_infor, 0, -1);
         
-        $adv_infor = $adv_infor."}";
+        if(count($ret) > 0 )
+            $adv_infor = substr($adv_infor, 0, -1);
+        
+        $adv_infor = $adv_infor."]";
         Logger::getRootLogger()->debug("adv_infor:".$adv_infor);
         
         $response = new Response();
