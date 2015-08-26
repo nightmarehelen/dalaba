@@ -349,7 +349,7 @@ class Advertisement_model extends CI_Model {
             $adv_infor = $adv_infor."{";
             $adv_infor = $adv_infor.'"id":"'.$item['id'].'",';
             $adv_infor = $adv_infor.'"uid":"'.$item['uid'].'",';
-            $adv_infor = $adv_infor.'"user_name":"'.$item['uid'].'",';
+            $adv_infor = $adv_infor.'"user_name":"'.$item['user_name'].'",';
             $adv_infor = $adv_infor.'"type":"'.$item['type'].'",';
             $adv_infor = $adv_infor.'"publish_time":"'.$item['publish_time'].'",';
             $adv_infor = $adv_infor.'"title":"'.$item['title'].'",';
