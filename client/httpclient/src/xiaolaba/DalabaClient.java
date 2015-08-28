@@ -34,11 +34,11 @@ public class DalabaClient
 		//thumb_up_for_adv();
 		//user_focus();
 		//user_unfocus();
-		//collect();
+		collect();
 		//uncollect();
 		//get_advertisement_infor();
 		//delete_advertisement();
-		get_nearby_published();
+		//get_nearby_published();
 	 }  
 	
 	private static void register(){

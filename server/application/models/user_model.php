@@ -300,10 +300,18 @@ class User_model extends CI_Model {
         Logger::getRootLogger()->debug("User_model::user_focus");
         $response = new Response();
         
+        $uid_a = Utils::getCurrentUserID();
+        if($uid == $uid_a){
+            $response->status = Response::STATUS_ERROR;
+            $response->error_code = "0028";
+            $response->message = "用户无法关注自己";
+            return $response;
+        }
+        
         $db = new DB();
         $db->connect();
 
-        $uid_a = Utils::getCurrentUserID();
+        
         $uid_b = $uid;
         $ts = date('Y-m-d H:i:s');
         $sql = "insert into user_focus(uid_a, uid_b,ts) values(".$uid_a.",".$uid_b.",'".$ts."')";
@@ -377,11 +385,26 @@ class User_model extends CI_Model {
         $db->connect();
 
         $uid = Utils::getCurrentUserID();
+    
+        $sql = "select uid from advertisement where id = $adv_id";
+        $res = $db->executeQuery($sql);
+        while ($row = mysqli_fetch_assoc($res)) {
+            $adv_uid =  $row['uid'];
+        }
+
+        if($adv_uid == $uid){
+            $response->status = Response::STATUS_ERROR;
+            $response->error_code = "0029";
+            $response->message = "用户无法收藏自己的广告";
+            return $response;
+        }
+         
         $ts = date('Y-m-d H:i:s');
         $sql = "insert into user_collect(uid, adv_id,ts) values('".$uid."','".$adv_id."','".$ts."')";
         Logger::getRootLogger()->debug("sql = ".$sql); 
         
         $result = $db->executeUpdateAndInsert($sql);
+
         
         $response = new Response();
         if($result instanceof Response){

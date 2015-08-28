@@ -323,10 +323,11 @@ class Advertisement_model extends CI_Model {
 
         $cuid = Utils::getCurrentUserID();
         $sql = "select advertisement.id id,advertisement.uid,advertisement.type type,publish_time,title,text_content,image,read_count,"
-               ."zan_num,address,user.name user_name,lat,lng,user_collect.adv_id collected,user_focus.uid_b focused from advertisement "
+               ."zan_num,address,user.name user_name,lat,lng,user_collect.adv_id collected,user_focus.uid_b focused,thumb_up_for_adv.adv_id thumbed_up from advertisement "
                ."inner join user on user.id = uid "
                ."left join user_collect on user_collect.uid = $cuid and advertisement.id = user_collect.adv_id  "
                ."left join user_focus on user_focus.uid_b = advertisement.uid and user_focus.uid_a = $cuid "
+               ."left join thumb_up_for_adv on thumb_up_for_adv.adv_id = advertisement.id and thumb_up_for_adv.uid = $cuid "
                ."where (lat <= {$points[0]['lat']}  and lng <= {$points[0]['lng']}) "
                ."and (lat >= {$points[1]['lat']}  and lng <= {$points[1]['lng']}) "
                ."and (lat >= {$points[2]['lat']}  and lng >= {$points[2]['lng']}) "
@@ -366,7 +367,8 @@ class Advertisement_model extends CI_Model {
             $adv_infor = $adv_infor.'"addr":"'.$item['address'].'",';
             $adv_infor = $adv_infor.'"distance":"'.$item['distance'] .'",';
             $adv_infor = $adv_infor.'"focused":"'.($item['focused'] == "" ? "false" : "true") .'",';
-            $adv_infor = $adv_infor.'"collected":"'.($item['collected'] == "" ? "false" : "true") .'"';
+            $adv_infor = $adv_infor.'"collected":"'.($item['collected'] == "" ? "false" : "true") .'",';
+            $adv_infor = $adv_infor.'"thumbed_up":"'.($item['thumbed_up'] == "" ? "false" : "true") .'"';
             $adv_infor = $adv_infor."},";
         }
 
