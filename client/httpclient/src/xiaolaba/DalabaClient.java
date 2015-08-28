@@ -32,9 +32,10 @@ public class DalabaClient
 		//get_advertisement_type();
 		//get_user_infor();
 		//thumb_up_for_adv();
+		undo_thumb_up_for_adv();
 		//user_focus();
 		//user_unfocus();
-		collect();
+		//collect();
 		//uncollect();
 		//get_advertisement_infor();
 		//delete_advertisement();
@@ -148,6 +149,13 @@ public class DalabaClient
 		call("/index.php/advertisement/thumb_up_for_adv", pairs, null);
 	}
 	
+	private static void undo_thumb_up_for_adv() throws FileNotFoundException{
+		String json = getStringFromFile("data/undo_thumb_up_for_adv.json");
+		StringPart simcard = new StringPart( "request_json" , json);
+		simcard.setCharSet("UTF-8");
+		StringPart[] pairs = new StringPart[]{simcard};
+		call("/index.php/advertisement/undo_thumb_up_for_adv", pairs, null);
+	}
 	
 	private static void user_focus() throws FileNotFoundException{
 		String json = getStringFromFile("data/user_focus.json");

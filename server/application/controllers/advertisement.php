@@ -228,7 +228,32 @@ class Advertisement extends CI_Controller {
         
         echo Response::getResponseJson($response); 
     }
+    
+    public function undo_thumb_up_for_adv(){
+        Logger::getRootLogger()->debug("Advertisement::undo_thumb_up_for_adv");
+        
+        $request_json = $_POST['request_json'];
+        Logger::getRootLogger()->debug("request_json = ".$request_json);
 
+        $request_json_array = json_decode($request_json, true);
+        Logger::getRootLogger()->debug("dump request_json_array:".Utils::var2str($request_json_array));
+
+
+        if(!Utils::isCurrentUserLogin()){
+            $response = new Response(); 
+            $response->status = Response::STATUS_ERROR;
+            $response->error_code = "0019";
+            $response->message = "当前用户未登录，没有操作权限";
+            echo Response::getResponseJson($response);
+            return;
+        }
+
+        
+        $response = $this->advertisement_model->undo_thumb_up_for_adv($request_json_array["DATA"]);
+        
+        echo Response::getResponseJson($response); 
+
+    }
     //获取广告详情
     public function get_advertisement_infor(){
         Logger::getRootLogger()->debug("Advertisement::get_advertisement_infor");

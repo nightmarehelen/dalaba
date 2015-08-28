@@ -238,12 +238,36 @@ class Advertisement_model extends CI_Model {
         Logger::getRootLogger()->debug("sql = ".$sql);
         $result = $db->executeUpdateAndInsert($sql);
 
-
+        
         $response->status = Response::STATUS_OK;
         $response->message = "恭喜您点赞成功";
         return $response;
     }
     
+
+    public function undo_thumb_up_for_adv($adv_infor){
+        Logger::getRootLogger()->debug("Advertisement_model::undo_thumb_up_for_adv");
+        $uid = Utils::getCurrentUserID();
+        $adv_id = $adv_infor['adv_id'];
+        $ts = date('Y-m-d H:i:s');
+        $db = new DB();
+        $db->connect(); 
+        
+        $sql = "delete from thumb_up_for_adv where uid = $uid and adv_id = $adv_id";
+        Logger::getRootLogger()->debug("sql = ".$sql); 
+
+        $result = $db->executeUpdateAndInsert($sql);   
+
+        $sql = "update advertisement set zan_num = zan_num -1 1 where id = ".$adv_id;
+        Logger::getRootLogger()->debug("sql = ".$sql);
+        $result = $db->executeUpdateAndInsert($sql);
+
+        $response = new Response();
+        $response->status = Response::STATUS_OK;
+        $response->message = "恭喜您取消点赞成功";
+        return $response;
+    }
+
     //获取广告详情
     public function get_advertisement_infor($adv_id){
         Logger::getRootLogger()->debug("Advertisement_model::get_advertisement_infor");
@@ -323,7 +347,7 @@ class Advertisement_model extends CI_Model {
 
         $cuid = Utils::getCurrentUserID();
         $sql = "select advertisement.id id,advertisement.uid,advertisement.type type,publish_time,title,text_content,image,read_count,"
-               ."zan_num,address,user.name user_name,lat,lng,user_collect.adv_id collected,user_focus.uid_b focused,thumb_up_for_adv.adv_id thumbed_up from advertisement "
+               ."zan_num,address,user.name user_name,lat,lng,user_collect.adv_id collected,user_focus.uid_b focused,thumb_up_for_adv.adv_id zaned from advertisement "
                ."inner join user on user.id = uid "
                ."left join user_collect on user_collect.uid = $cuid and advertisement.id = user_collect.adv_id  "
                ."left join user_focus on user_focus.uid_b = advertisement.uid and user_focus.uid_a = $cuid "
@@ -368,7 +392,7 @@ class Advertisement_model extends CI_Model {
             $adv_infor = $adv_infor.'"distance":"'.$item['distance'] .'",';
             $adv_infor = $adv_infor.'"focused":"'.($item['focused'] == "" ? "false" : "true") .'",';
             $adv_infor = $adv_infor.'"collected":"'.($item['collected'] == "" ? "false" : "true") .'",';
-            $adv_infor = $adv_infor.'"thumbed_up":"'.($item['thumbed_up'] == "" ? "false" : "true") .'"';
+            $adv_infor = $adv_infor.'"zaned":"'.($item['zaned'] == "" ? "false" : "true") .'"';
             $adv_infor = $adv_infor."},";
         }
 
