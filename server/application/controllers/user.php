@@ -311,4 +311,81 @@ class User extends CI_Controller {
 
     public function test(){
     }
+
+    public function my_collect(){
+
+
+    }
+
+    public function get_my_focus(){
+        Logger::getRootLogger()->debug("User::get_my_focus");
+        
+        if(!Utils::isCurrentUserLogin()){ 
+            $response = new Response(); 
+            $response->status = Response::STATUS_ERROR;
+            $response->error_code = "0019";
+            $response->message = "当前用户未登录，没有操作权限";
+            echo Response::getResponseJson($response);
+            return;
+        }
+
+        $response = Utils::validate_request();
+        if(Utils::validate_request() !== null){
+            echo Response::getResponseJson($response);
+            return;
+        }
+
+        $request_json = $_POST['request_json'];
+        Logger::getRootLogger()->debug("request_json = ".$request_json);
+        
+        $request_json = json_decode($request_json, true);
+
+        
+        $response = $this->user_model->get_my_focus();
+
+        echo Response::getResponseJson($response);
+
+    }
+
+    public function get_my_collect(){
+        Logger::getRootLogger()->debug("User::get_my_collect");
+        
+        if(!Utils::isCurrentUserLogin()){ 
+            $response = new Response(); 
+            $response->status = Response::STATUS_ERROR;
+            $response->error_code = "0019";
+            $response->message = "当前用户未登录，没有操作权限";
+            echo Response::getResponseJson($response);
+            return;
+        }
+
+        $response = Utils::validate_request();
+        if(Utils::validate_request() !== null){
+            echo Response::getResponseJson($response);
+            return;
+        }
+
+        $request_json = $_POST['request_json'];
+        Logger::getRootLogger()->debug("request_json = ".$request_json);
+        
+        $request_json = json_decode($request_json, true);
+
+        $lat = floatval($request_json["DATA"]["lat"]);
+        $lng = floatval($request_json["DATA"]["lng"]);
+    
+        Logger::getRootLogger()->debug("lat = ".$lat);
+        Logger::getRootLogger()->debug("lng = ".$lng);
+        
+        if(abs($lat) > 90 || abs($lng) > 180){
+            $response = new Response();
+            $response->status = Response::STATUS_ERROR;
+            $response->message = "经纬度有误";
+            echo Response::getResponseJson($response);
+            return;
+        }
+        
+        $response = $this->user_model->get_my_collect($lat, $lng);
+        echo Response::getResponseJson($response);
+
+    }
 }

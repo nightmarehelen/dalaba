@@ -33,13 +33,15 @@ public class DalabaClient
 		//get_user_infor();
 		//thumb_up_for_adv();
 		//undo_thumb_up_for_adv();
-		user_focus();
+		//user_focus();
 		//user_unfocus();
 		//collect();
 		//uncollect();
 		//get_advertisement_infor();
 		//delete_advertisement();
 		//get_nearby_published();
+		//get_my_focus();
+		get_my_collect();
 	 }  
 	
 	private static void register(){
@@ -211,6 +213,22 @@ public class DalabaClient
 		simcard.setCharSet("UTF-8");
 		StringPart[] pairs = new StringPart[]{simcard};
 		call("/index.php/advertisement/get_nearby_published", pairs, null);
+	}
+	
+	public static void get_my_focus(){
+		String json = getStringFromFile("data/get_my_focus.json");
+		StringPart simcard = new StringPart( "request_json" , json);
+		simcard.setCharSet("UTF-8");
+		StringPart[] pairs = new StringPart[]{simcard};
+		call("/index.php/user/get_my_focus", pairs, null);
+	}
+	
+	public static void get_my_collect(){
+		String json = getStringFromFile("data/get_my_collect.json");
+		StringPart simcard = new StringPart( "request_json" , json);
+		simcard.setCharSet("UTF-8");
+		StringPart[] pairs = new StringPart[]{simcard};
+		call("/index.php/user/get_my_collect", pairs, null);
 	}
 	//httpclient 调用，是否包含
 	private static void call(String url, StringPart[] pairs, FilePart[] files){

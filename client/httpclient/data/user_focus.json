@@ -3,6 +3,7 @@
     "REQUEST_TYPE":"UPDATE_USER_INFOR",
     "SESSION_KEY":"",
     "DATA":{
-        "uid":"101"
+        "uid":"112",
+        "test":"101,107,109,112"
     }
 }

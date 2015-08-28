@@ -453,4 +453,137 @@ class User_model extends CI_Model {
         $response->message = "取消收藏成功";
         return $response;
     }
+
+    public function get_my_focus(){
+        Logger::getRootLogger()->debug("User_model::uncollect");
+        $response = new Response();
+        
+        $db = new DB();
+        $db->connect();
+
+        $uid = Utils::getCurrentUserID();
+
+        $sql = "select user.id id, user.name name from user_focus inner join user on user.id = user_focus.uid_b where uid_a = $uid";
+        Logger::getRootLogger()->debug("sql = ".$sql); 
+        $res = $db->executeQuery($sql);
+        $user_infor = "[";
+        while ($row = mysqli_fetch_assoc($res)) {
+            $user_infor = $user_infor."{";
+            $user_infor = $user_infor.'"id" :"'.$row["id"].'",';
+            $user_infor = $user_infor.'"name" :"'.$row["name"].'",';
+
+            $sql_focused_cnt = "select count(*) focused_cnt from user_focus where uid_b = {$row['id']}";
+            Logger::getRootLogger()->debug("sql = ".$sql_focused_cnt); 
+            $res_focused_cn = $db->executeQuery($sql_focused_cnt);
+            while ($row_focus_cnt = mysqli_fetch_assoc($res_focused_cn)){
+                $user_infor = $user_infor.'"focused_cnt" :"'.$row_focus_cnt["focused_cnt"].'",';
+            }
+
+            $sql_published_cnt = "select count(*) published_cnt from advertisement where uid = {$row['id']}";
+            Logger::getRootLogger()->debug("sql = ".$sql_published_cnt); 
+            $res_published_cnt = $db->executeQuery($sql_published_cnt);
+            while ($row_published_cnt = mysqli_fetch_assoc($res_published_cnt)){
+                $user_infor = $user_infor.'"published_cnt" :"'.$row_published_cnt["published_cnt"].'",';
+            }
+
+            $sql_thumbed_up_cnt = "select count(*) thumbed_up_cnt from thumb_up_for_adv inner join advertisement on  thumb_up_for_adv.adv_id =              
+                advertisement.id inner join user on user.id = advertisement.uid 
+                where user.id = {$row['id']}";
+            Logger::getRootLogger()->debug("sql = ".$sql_published_cnt); 
+            $res_thumbed_up_cnt = $db->executeQuery($sql_thumbed_up_cnt);
+            while ($row_thumbed_up_cnt = mysqli_fetch_assoc($res_thumbed_up_cnt)){
+                $user_infor = $user_infor.'"thumbed_up_cnt" :"'.$row_thumbed_up_cnt["thumbed_up_cnt"].'",';
+            }
+
+            
+            $sql_collected_cnt = "select count(*) collected_cnt from user_collect 
+                inner join advertisement on  user_collect.adv_id = advertisement.id 
+                inner join user on user.id = advertisement.uid 
+                where user.id = {$row['id']}";
+            Logger::getRootLogger()->debug("sql = ".$sql_collected_cnt); 
+            $res_collected_cnt = $db->executeQuery($sql_collected_cnt);
+            while ($row_collected_cnt = mysqli_fetch_assoc($res_collected_cnt)){
+                $user_infor = $user_infor.'"collected_cnt" :"'.$row_collected_cnt["collected_cnt"].'"';
+            }
+
+            $user_infor = $user_infor."},";
+        }
+        
+        if($res->num_rows > 0)
+            $user_infor = substr($user_infor,0, -1);
+        $user_infor = $user_infor."]";
+
+        $response->status = Response::STATUS_OK;
+        $response->message = "获取关注用户信息成功";
+        $response->response_data = $user_infor;
+        return $response;
+    }
+
+    public function get_my_collect($lat, $lng){
+        Logger::getRootLogger()->debug("user_model::get_my_collect");
+        $response = new Response(); 
+
+        $db = new DB();
+        $db->connect();
+
+        $cuid = Utils::getCurrentUserID();
+        $sql = "select advertisement.id id,advertisement.uid,advertisement.type type,
+            publish_time,title,text_content,image,read_count,zan_num,address,user.name user_name,lat,lng,
+            user_focus.uid_b focused,thumb_up_for_adv.adv_id zaned 
+            from advertisement 
+            inner join user_collect user_collect on user_collect.adv_id = advertisement.id 
+            inner join user on user.id = user_collect.uid   
+            left join user_focus on user_focus.uid_b = advertisement.uid and user_focus.uid_a = $cuid 
+            left join thumb_up_for_adv on thumb_up_for_adv.adv_id = advertisement.id and thumb_up_for_adv.uid = $cuid
+            where user.id = $cuid";
+               
+        Logger::getRootLogger()->debug("sql = ".$sql); 
+        
+        $res = $db->executeQuery($sql);
+        
+        if($res instanceof Response)
+            return $res;
+        Logger::getRootLogger()->debug("res = ".Utils::var2str($res));
+        
+        $unsorted = array();
+        while ($row = mysqli_fetch_assoc($res)) {
+            $distance = Utils::distanceSimplify($lat, $lng, $row['lat'], $row['lng']);
+            $row['distance'] = $distance;
+            array_push($unsorted, $row);
+        }
+        /* free result set */
+        mysqli_free_result($res);
+        
+        $sorted = Utils::sort_adv_by_distance($unsorted);
+
+        $adv_infor = "[";
+        foreach($sorted as $item) {
+            $adv_infor = $adv_infor."{";
+            $adv_infor = $adv_infor.'"id":"'.$item['id'].'",';
+            $adv_infor = $adv_infor.'"uid":"'.$item['uid'].'",';
+            $adv_infor = $adv_infor.'"user_name":"'.$item['user_name'].'",';
+            $adv_infor = $adv_infor.'"type":"'.$item['type'].'",';
+            $adv_infor = $adv_infor.'"publish_time":"'.$item['publish_time'].'",';
+            $adv_infor = $adv_infor.'"title":"'.$item['title'].'",';
+            $adv_infor = $adv_infor.'"text_content":"'.$item['text_content'].'",';
+            $adv_infor = $adv_infor.'"image":"'.$item['image'].'",';
+            $adv_infor = $adv_infor.'"read_count":"'.$item['read_count'].'",';
+            $adv_infor = $adv_infor.'"zan_num":"'.$item['zan_num'].'",';
+            $adv_infor = $adv_infor.'"addr":"'.$item['address'].'",';
+            $adv_infor = $adv_infor.'"distance":"'.$item['distance'] .'",';
+            $adv_infor = $adv_infor.'"focused":"'.($item['focused'] == "" ? "false" : "true") .'",';
+            $adv_infor = $adv_infor.'"zaned":"'.($item['zaned'] == "" ? "false" : "true") .'"';
+            $adv_infor = $adv_infor."},";
+        }
+
+        $adv_infor = substr($adv_infor, 0, -1);
+        
+        $adv_infor = $adv_infor."]";
+
+        $response->status = Response::STATUS_OK;
+        $response->message = "获取我的收藏成功";
+        $response->response_data = $adv_infor;
+        return $response;
+        
+    }
 }
