@@ -32,8 +32,8 @@ public class DalabaClient
 		//get_advertisement_type();
 		//get_user_infor();
 		//thumb_up_for_adv();
-		undo_thumb_up_for_adv();
-		//user_focus();
+		//undo_thumb_up_for_adv();
+		user_focus();
 		//user_unfocus();
 		//collect();
 		//uncollect();
