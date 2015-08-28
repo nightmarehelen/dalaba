@@ -68,7 +68,7 @@ class Advertisement_model extends CI_Model {
                                          fresh_content ='".$adv_infor["fresh_content"]."',
                                          lat = '".$adv_infor["publish_position"]["lat"]."',
                                          lng = '".$adv_infor["publish_position"]["lng"]."',
-                                         address = '".$adv_infor["publish_position"]["address"]."'
+                                         address = '".$adv_infor["publish_position"]["addr"]."'
                                          where id = ".$adv_infor["id"]." and uid = ".$uid;
                                                                           
         Logger::getRootLogger()->debug("sql = ".$sql);                                                                   
@@ -295,8 +295,8 @@ class Advertisement_model extends CI_Model {
            $adv_infor = $adv_infor.'"text_content":"'.$row['text_content'].'",';
            $adv_infor = $adv_infor.'"image":"'.$row['image'].'",';
            $adv_infor = $adv_infor.'"read_count":"'.$row['read_count'].'",';
-           $adv_infor = $adv_infor.'"zan_num":"'.$row['zan_num'].'"';
-           $adv_infor = $adv_infor.'"address":"'.$row['address'].'"';
+           $adv_infor = $adv_infor.'"zan_num":"'.$row['zan_num'].'",';
+           $adv_infor = $adv_infor.'"addr":"'.$row['address'].'"';
         }else{
             $response->status = Response::STATUS_ERROR;
             $response->error_code = "0026";

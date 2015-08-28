@@ -3,11 +3,11 @@
     "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
     "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
     "DATA":{
-        "id":"90",
+        "id":"91",
         "image":"true",
         "type":"personal",
         "publish_position": {
-            "address": "上林溪",
+            "addr": "上林溪",
             "lat": "40.053405",
             "lng": "116.333267"
         },
