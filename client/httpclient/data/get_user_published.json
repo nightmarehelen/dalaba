@@ -1,0 +1,11 @@
+{
+    "version":"1.0.0",
+    "REQUEST_TYPE":" GET_USER_PUBLISHED ",
+    "SESSION_KEY":"",
+    "DATA":{
+        "lat":"39.985403",
+        "lng":"116.357112",
+        "uid":"107"
+            
+    }
+}

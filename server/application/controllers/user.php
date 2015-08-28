@@ -388,4 +388,35 @@ class User extends CI_Controller {
         echo Response::getResponseJson($response);
 
     }
+
+    public function get_user_published(){
+        Logger::getRootLogger()->debug("User::get_user_published");
+        
+        $request_json = $_POST['request_json'];
+        Logger::getRootLogger()->debug("request_json = ".$request_json);
+
+        $request_json_array = json_decode($request_json, true);
+        Logger::getRootLogger()->debug("dump adv_infor_array:".Utils::var2str($request_json_array));
+
+        $lat = floatval($request_json_array["DATA"]["lat"]);
+        $lng = floatval($request_json_array["DATA"]["lng"]);
+    
+        Logger::getRootLogger()->debug("lat = ".$lat);
+        Logger::getRootLogger()->debug("lng = ".$lng);
+        
+        if(abs($lat) > 90 || abs($lng) > 180){
+            $response = new Response();
+            $response->status = Response::STATUS_ERROR;
+            $response->message = "经纬度有误";
+            echo Response::getResponseJson($response);
+            return;
+        }
+
+        $uid = $request_json_array["DATA"]["uid"];
+        
+        $response = $this->user_model->get_user_published($uid, $lat, $lng);
+        
+        echo Response::getResponseJson($response); 
+
+    }
 }

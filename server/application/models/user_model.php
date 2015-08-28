@@ -585,6 +585,77 @@ class User_model extends CI_Model {
         $response->message = "获取我的收藏成功";
         $response->response_data = $adv_infor;
         return $response;
+    }
+    
+    public function get_user_published($uid, $lat, $lng){
+        Logger::getRootLogger()->debug("user_model::get_user_published");
+        $response = new Response(); 
+
+        $db = new DB();
+        $db->connect();
+
+        $cuid = Utils::getCurrentUserID();
+        $sql = "select advertisement.id id,advertisement.uid,advertisement.type type,
+                publish_time,title,text_content,image,read_count,zan_num,address,user.name user_name,lat,lng,
+                t1.uid_b focused , t2.adv_id zaned,t3.adv_id collected
+                from advertisement
+                inner join user on user.id = advertisement.uid
+                left join
+                (select uid_b from user_focus where uid_a = $cuid) as t1 on t1.uid_b = advertisement.uid
+                left join
+                (select adv_id  from thumb_up_for_adv where uid = $cuid) as t2 on t2.adv_id = advertisement.id
+                left join
+                (select adv_id  from user_collect where uid = $cuid) as t3 on t3.adv_id = advertisement.id
+                where advertisement.uid = $uid";
+               
+        Logger::getRootLogger()->debug("sql = ".$sql); 
         
+        $res = $db->executeQuery($sql);
+        
+        if($res instanceof Response)
+            return $res;
+        Logger::getRootLogger()->debug("res = ".Utils::var2str($res));
+        
+        $unsorted = array();
+        while ($row = mysqli_fetch_assoc($res)) {
+            $distance = Utils::distanceSimplify($lat, $lng, $row['lat'], $row['lng']);
+            $row['distance'] = $distance;
+            array_push($unsorted, $row);
+        }
+        /* free result set */
+        mysqli_free_result($res);
+        
+        $sorted = Utils::sort_adv_by_distance($unsorted);
+
+        $adv_infor = "[";
+        foreach($sorted as $item) {
+            $adv_infor = $adv_infor."{";
+            $adv_infor = $adv_infor.'"id":"'.$item['id'].'",';
+            $adv_infor = $adv_infor.'"uid":"'.$item['uid'].'",';
+            $adv_infor = $adv_infor.'"user_name":"'.$item['user_name'].'",';
+            $adv_infor = $adv_infor.'"type":"'.$item['type'].'",';
+            $adv_infor = $adv_infor.'"publish_time":"'.$item['publish_time'].'",';
+            $adv_infor = $adv_infor.'"title":"'.$item['title'].'",';
+            $adv_infor = $adv_infor.'"text_content":"'.$item['text_content'].'",';
+            $adv_infor = $adv_infor.'"image":"'.$item['image'].'",';
+            $adv_infor = $adv_infor.'"read_count":"'.$item['read_count'].'",';
+            $adv_infor = $adv_infor.'"zan_num":"'.$item['zan_num'].'",';
+            $adv_infor = $adv_infor.'"addr":"'.$item['address'].'",';
+            $adv_infor = $adv_infor.'"distance":"'.$item['distance'] .'",';
+            $adv_infor = $adv_infor.'"focused":"'.($item['focused'] == "" ? "false" : "true") .'",';
+            $adv_infor = $adv_infor.'"zaned":"'.($item['zaned'] == "" ? "false" : "true") .'",';
+            $adv_infor = $adv_infor.'"collected":"'.($item['collected'] == "" ? "false" : "true") .'"';
+            $adv_infor = $adv_infor."},";
+        }
+        
+        if(count($sorted) > 0 )
+            $adv_infor = substr($adv_infor, 0, -1);
+        
+        $adv_infor = $adv_infor."]";
+
+        $response->status = Response::STATUS_OK;
+        $response->message = "获取用户发布成功";
+        $response->response_data = $adv_infor;
+        return $response;
     }
 }
