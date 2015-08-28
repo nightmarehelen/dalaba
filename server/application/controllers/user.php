@@ -167,7 +167,7 @@ class User extends CI_Controller {
         Logger::getRootLogger()->debug("request_json = ".$request_json);
         
         $request_json = json_decode($request_json, true);
-        Logger::getRootLogger()->debug("request_json = ".$request_json);
+        Logger::getRootLogger()->debug("request_json = ".Utils::var2str($request_json));
         if(isset($request_json["DATA"]["uid"]) && $request_json["DATA"]["uid"] !== "")
 
             $response = $this->user_model->user_focus($request_json["DATA"]["uid"]);
