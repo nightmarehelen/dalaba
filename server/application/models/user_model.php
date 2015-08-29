@@ -575,8 +575,9 @@ class User_model extends CI_Model {
             $adv_infor = $adv_infor.'"zaned":"'.($item['zaned'] == "" ? "false" : "true") .'"';
             $adv_infor = $adv_infor."},";
         }
-
-        $adv_infor = substr($adv_infor, 0, -1);
+        
+        if(count($sorted) > 0 )
+            $adv_infor = substr($adv_infor, 0, -1);
         
         $adv_infor = $adv_infor."]";
 
