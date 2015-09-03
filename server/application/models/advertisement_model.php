@@ -26,13 +26,37 @@ class Advertisement_model extends CI_Model {
         $db = new DB();
         $db->connect();
         
-        $sql = "insert into advertisement(uid, type, publish_time,title,text_content,image, fresh_content,address,lat,lng) values($uid, '"
+        $fresh_content = $adv_infor["fresh_content"];
+        if($fresh_content == ""){
+            $sql  = "select count(*)  cnt from fresh_content";
+            $result = $db->executeQuery($sql);
+            $ret = $result->fetch_all(MYSQLI_ASSOC);
+            $cnt = 0;
+            foreach($ret as $item) {
+                $cnt = $item["cnt"];
+            }
+            Logger::getRootLogger()->debug("cnt = $cnt");
+            $index = rand(0, $cnt);
+            Logger::getRootLogger()->debug("index = $index");
+            
+            $sql  = "select content from fresh_content limit $index,1";
+            Logger::getRootLogger()->debug("sql = $sql");
+            $result = $db->executeQuery($sql);
+            $ret = $result->fetch_all(MYSQLI_ASSOC);
+            foreach($ret as $item) {
+                $fresh_content = $item["content"];
+            }
+            Logger::getRootLogger()->debug("fresh_content = $fresh_content");
+        }
+
+        $sql = "insert into advertisement(uid, type, publish_time,title,text_content,image, fresh_coefficient,fresh_content,address,lat,lng) values($uid, '"
                                                                            .$adv_infor['type']."', '"     
                                                                            .$publish_time."','"
                                                                            .$adv_infor["title"]."','"
                                                                            .$adv_infor["text_content"]."','"
                                                                            .$adv_infor["image"]."','"
-                                                                           .$adv_infor["fresh_content"]."','"
+                                                                           .$adv_infor["fresh_coefficient"]."','"
+                                                                           .$fresh_content."','"
                                                                            .$adv_infor["publish_position"]["addr"]."','"
                                                                            .$adv_infor["publish_position"]["lat"]."','"
                                                                            .$adv_infor["publish_position"]["lng"]."')";
@@ -60,12 +84,38 @@ class Advertisement_model extends CI_Model {
 
         $last_update_time = date('Y-m-d H:i:s');
         $db = new DB();
-        $db->connect();       
+        $db->connect();   
+        
+        $fresh_content = $adv_infor["fresh_content"];
+        if($fresh_content == ""){
+            $sql  = "select count(*)  cnt from fresh_content";
+            $result = $db->executeQuery($sql);
+            $ret = $result->fetch_all(MYSQLI_ASSOC);
+            $cnt = 0;
+            foreach($ret as $item) {
+                $cnt = $item["cnt"];
+            }
+            Logger::getRootLogger()->debug("cnt = $cnt");
+            $index = rand(0, $cnt);
+            Logger::getRootLogger()->debug("index = $index");
+            
+            $sql  = "select content from fresh_content limit $index,1";
+            Logger::getRootLogger()->debug("sql = $sql");
+            $result = $db->executeQuery($sql);
+            $ret = $result->fetch_all(MYSQLI_ASSOC);
+            foreach($ret as $item) {
+                $fresh_content = $item["content"];
+            }
+            Logger::getRootLogger()->debug("fresh_content = $fresh_content");
+        }
+
+
         $sql = "update advertisement set type = '".$adv_infor['type']."',
                                          title ='".$adv_infor["title"]."',
                                          text_content ='".$adv_infor["text_content"]."',
                                          image ='".$adv_infor["image"]."', 
-                                         fresh_content ='".$adv_infor["fresh_content"]."',
+                                         fresh_content ='".$fresh_content."',
+                                         fresh_coefficient ='".$adv_infor["fresh_coefficient"]."',  
                                          lat = '".$adv_infor["publish_position"]["lat"]."',
                                          lng = '".$adv_infor["publish_position"]["lng"]."',
                                          address = '".$adv_infor["publish_position"]["addr"]."'
@@ -147,7 +197,7 @@ class Advertisement_model extends CI_Model {
         $db->connect();
 
         $sql = "select advertisement.id id,uid,advertisement.type type,publish_time,title,text_content,image,read_count,"
-               ."zan_num,address,user.name user_name,lat,lng from advertisement inner join user on user.id = uid "
+               ."zan_num,address,fresh_content,fresh_coefficient,user.name user_name,lat,lng from advertisement inner join user on user.id = uid "
                ." where uid = ".$uid." order by last_update_time desc  limit ".$adv_infor["start"].", ".$adv_infor["count"];
                                                                                  
         Logger::getRootLogger()->debug("sql = ".$sql);                                                                   
@@ -167,6 +217,8 @@ class Advertisement_model extends CI_Model {
             $adv_infor = $adv_infor.'"publish_time":"'.$item['publish_time'].'",';
             $adv_infor = $adv_infor.'"title":"'.$item['title'].'",';
             $adv_infor = $adv_infor.'"text_content":"'.$item['text_content'].'",';
+            $adv_infor = $adv_infor.'"fresh_content":"'.$item['fresh_content'].'",';
+            $adv_infor = $adv_infor.'"fresh_coefficient":"'.$item['fresh_coefficient'].'",';
             $adv_infor = $adv_infor.'"image":"'.$item['image'].'",';
             $adv_infor = $adv_infor.'"read_count":"'.$item['read_count'].'",';
             $adv_infor = $adv_infor.'"zan_num":"'.$item['zan_num'].'",';
@@ -347,7 +399,7 @@ class Advertisement_model extends CI_Model {
 
         $cuid = Utils::getCurrentUserID();
         $sql = "select advertisement.id id,advertisement.uid,advertisement.type type,publish_time,title,text_content,image,read_count,"
-               ."zan_num,address,user.name user_name,lat,lng,user_collect.adv_id collected,user_focus.uid_b focused,thumb_up_for_adv.adv_id zaned from advertisement "
+               ."zan_num,address,fresh_content,fresh_coefficient,user.name user_name,lat,lng,user_collect.adv_id collected,user_focus.uid_b focused,thumb_up_for_adv.adv_id zaned from advertisement "
                ."inner join user on user.id = uid "
                ."left join user_collect on user_collect.uid = $cuid and advertisement.id = user_collect.adv_id  "
                ."left join user_focus on user_focus.uid_b = advertisement.uid and user_focus.uid_a = $cuid "
@@ -385,6 +437,8 @@ class Advertisement_model extends CI_Model {
             $adv_infor = $adv_infor.'"publish_time":"'.$item['publish_time'].'",';
             $adv_infor = $adv_infor.'"title":"'.$item['title'].'",';
             $adv_infor = $adv_infor.'"text_content":"'.$item['text_content'].'",';
+            $adv_infor = $adv_infor.'"fresh_content":"'.$item['fresh_content'].'",';  
+            $adv_infor = $adv_infor.'"fresh_coefficient":"'.$item['fresh_coefficient'].'",';
             $adv_infor = $adv_infor.'"image":"'.$item['image'].'",';
             $adv_infor = $adv_infor.'"read_count":"'.$item['read_count'].'",';
             $adv_infor = $adv_infor.'"zan_num":"'.$item['zan_num'].'",';
@@ -406,5 +460,30 @@ class Advertisement_model extends CI_Model {
         return $response;
         
     }
+    
+    public function add_advertisement_read_count($adv_id){
+        Logger::getRootLogger()->debug("Advertisement_model::read_advertisement");
+        $response = new Response(); 
 
+        $db = new DB();
+        $db->connect();
+        $sql = "update advertisement set read_count = read_count +1 where id = ".$adv_id;
+        Logger::getRootLogger()->debug("sql = ".$sql); 
+        
+        $res = $db->executeUpdateAndInsert($sql);
+        
+        if($res instanceof Response)
+            return $res;
+        
+        if($res == 0){
+            $response->status = Response::STATUS_ERROR;
+            $response->error_code = "0035";
+            $response->message = "更新广告阅读次数失败";
+            return $response;
+        }
+        
+        $response->status = Response::STATUS_OK;
+        $response->message = "更新广告阅读次数成功";
+        return $response;
+    }
 }

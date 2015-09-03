@@ -24,7 +24,7 @@ public class DalabaClient
 	public static String phpSessionID = "";
 	public static void main(String[] args) throws IOException {  
 		//register();
-		login(); 
+		//login(); 
 		//updateUserInfor();
 		//createAdvertisement();
 		//updateAdvertisement();
@@ -42,7 +42,12 @@ public class DalabaClient
 		//get_nearby_published();
 		//get_my_focus();
 		//get_my_collect();
-		get_user_published();
+		//get_user_published();
+		//add_to_user_position_list();
+		//delete_from_user_position_list();
+		//get_short_message_verification_code();
+		//validate_short_message_verification_code();
+		add_advertisement_read_count();
 	 }  
 	
 	private static void register(){
@@ -239,7 +244,63 @@ public class DalabaClient
 		StringPart[] pairs = new StringPart[]{simcard};
 		call("/index.php/user/get_user_published", pairs, null);
 	}
-
+	
+	public static void add_to_user_position_list(){
+		String json = getStringFromFile("data/add_to_user_position_list.json");
+		StringPart simcard = new StringPart( "request_json" , json);
+		simcard.setCharSet("UTF-8");
+		StringPart[] pairs = new StringPart[]{simcard};
+		call("/index.php/user/add_to_user_position_list", pairs, null);
+	}
+	
+	
+	
+	public static void delete_from_user_position_list(){
+		String json = getStringFromFile("data/delete_from_user_position_list.json");
+		StringPart simcard = new StringPart( "request_json" , json);
+		simcard.setCharSet("UTF-8");
+		StringPart[] pairs = new StringPart[]{simcard};
+		call("/index.php/user/delete_from_user_position_list", pairs, null);
+	}
+	
+	
+	public static void get_short_message_verification_code(){
+		String json = getStringFromFile("data/get_short_message_verification_code.json");
+		StringPart simcard = new StringPart( "request_json" , json);
+		simcard.setCharSet("UTF-8");
+		StringPart[] pairs = new StringPart[]{simcard};
+		call("/index.php/authentication/get_short_message_verification_code", pairs, null);
+	}
+	
+	
+	public static void validate_short_message_verification_code(){
+		String json = getStringFromFile("data/validate_short_message_verification_code.json");
+		
+		BufferedReader strin=new BufferedReader(new InputStreamReader(System.in));  
+        System.out.print("请输入验证码：");  
+        String code = "";
+        try {
+			 code = strin.readLine();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+        
+        json = json.replaceAll("XXXXXX", code);
+        
+		StringPart simcard = new StringPart( "request_json" , json);
+		simcard.setCharSet("UTF-8");
+		StringPart[] pairs = new StringPart[]{simcard};
+		call("/index.php/authentication/validate_short_message_verification_code", pairs, null);		
+	}
+	
+	public static void add_advertisement_read_count(){
+		String json = getStringFromFile("data/add_advertisement_read_count.json");
+		StringPart simcard = new StringPart( "request_json" , json);
+		simcard.setCharSet("UTF-8");
+		StringPart[] pairs = new StringPart[]{simcard};
+		call("/index.php/advertisement/add_advertisement_read_count", pairs, null);
+	}
 	//httpclient 调用，是否包含
 	private static void call(String url, StringPart[] pairs, FilePart[] files){
 		System.out.println("call url"+url+"**********************************************");

@@ -419,4 +419,83 @@ class User extends CI_Controller {
         echo Response::getResponseJson($response); 
 
     }
+
+    public function add_to_user_position_list(){
+        Logger::getRootLogger()->debug("User::add_to_user_position_list");
+        
+        if(!Utils::isCurrentUserLogin()){ 
+            $response = new Response(); 
+            $response->status = Response::STATUS_ERROR;
+            $response->error_code = "0019";
+            $response->message = "当前用户未登录，没有操作权限";
+            echo Response::getResponseJson($response);
+            return;
+        }
+
+        $response = Utils::validate_request();
+        if(Utils::validate_request() !== null){
+            echo Response::getResponseJson($response);
+            return;
+        }
+
+        $request_json = $_POST['request_json'];
+        Logger::getRootLogger()->debug("request_json = ".$request_json);
+        
+        $request_json = json_decode($request_json, true);
+        
+        $addr = $request_json["DATA"]["addr"];
+        $lat = floatval($request_json["DATA"]["lat"]);
+        $lng = floatval($request_json["DATA"]["lng"]);
+    
+        Logger::getRootLogger()->debug("lat = ".$lat);
+        Logger::getRootLogger()->debug("lng = ".$lng);
+        
+        if(abs($lat) > 90 || abs($lng) > 180){
+            $response = new Response();
+            $response->status = Response::STATUS_ERROR;
+            $response->message = "经纬度有误";
+            echo Response::getResponseJson($response);
+            return;
+        }
+
+        $response = $this->user_model->add_to_user_position_list($addr,$lat, $lng);
+        echo Response::getResponseJson($response);
+    }
+
+    public function delete_from_user_position_list(){
+        Logger::getRootLogger()->debug("User::add_to_user_position_list");
+        
+        if(!Utils::isCurrentUserLogin()){ 
+            $response = new Response(); 
+            $response->status = Response::STATUS_ERROR;
+            $response->error_code = "0019";
+            $response->message = "当前用户未登录，没有操作权限";
+            echo Response::getResponseJson($response);
+            return;
+        }
+
+        $response = Utils::validate_request();
+        if(Utils::validate_request() !== null){
+            echo Response::getResponseJson($response);
+            return;
+        }
+
+        $request_json = $_POST['request_json'];
+        Logger::getRootLogger()->debug("request_json = ".$request_json);
+        
+        $request_json = json_decode($request_json, true);
+
+        $position_id = $request_json["DATA"]['position_id'];
+        if($position_id == ""){
+            $response = new Response(); 
+            $response->status = Response::STATUS_ERROR;
+            $response->error_code = "0032";
+            $response->message = "地址ID有误";
+            echo Response::getResponseJson($response);
+            return;
+        }
+
+        $response = $this->user_model->delete_from_user_position_list($position_id);
+        echo Response::getResponseJson($response);
+    }
 }

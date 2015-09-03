@@ -528,7 +528,7 @@ class User_model extends CI_Model {
 
         $cuid = Utils::getCurrentUserID();
         $sql = "select advertisement.id id,advertisement.uid,advertisement.type type,
-            publish_time,title,text_content,image,read_count,zan_num,address,user.name user_name,lat,lng,
+            publish_time,title,text_content,fresh_coefficient,fresh_content,image,read_count,zan_num,address,user.name user_name,lat,lng,
             user_focus.uid_b focused,thumb_up_for_adv.adv_id zaned 
             from advertisement 
             inner join user_collect user_collect on user_collect.adv_id = advertisement.id 
@@ -566,6 +566,8 @@ class User_model extends CI_Model {
             $adv_infor = $adv_infor.'"publish_time":"'.$item['publish_time'].'",';
             $adv_infor = $adv_infor.'"title":"'.$item['title'].'",';
             $adv_infor = $adv_infor.'"text_content":"'.$item['text_content'].'",';
+            $adv_infor = $adv_infor.'"fresh_coefficient":"'.$item['fresh_coefficient'].'",';
+            $adv_infor = $adv_infor.'"fresh_content":"'.$item['fresh_content'].'",';
             $adv_infor = $adv_infor.'"image":"'.$item['image'].'",';
             $adv_infor = $adv_infor.'"read_count":"'.$item['read_count'].'",';
             $adv_infor = $adv_infor.'"zan_num":"'.$item['zan_num'].'",';
@@ -596,7 +598,7 @@ class User_model extends CI_Model {
 
         $cuid = Utils::getCurrentUserID();
         $sql = "select advertisement.id id,advertisement.uid,advertisement.type type,
-                publish_time,title,text_content,image,read_count,zan_num,address,user.name user_name,lat,lng,
+                publish_time,title,text_content,fresh_coefficient,fresh_content,image,read_count,zan_num,address,user.name user_name,lat,lng,
                 t1.uid_b focused , t2.adv_id zaned,t3.adv_id collected
                 from advertisement
                 inner join user on user.id = advertisement.uid
@@ -637,6 +639,8 @@ class User_model extends CI_Model {
             $adv_infor = $adv_infor.'"publish_time":"'.$item['publish_time'].'",';
             $adv_infor = $adv_infor.'"title":"'.$item['title'].'",';
             $adv_infor = $adv_infor.'"text_content":"'.$item['text_content'].'",';
+            $adv_infor = $adv_infor.'"fresh_coefficient":"'.$item['fresh_coefficient'].'",';
+            $adv_infor = $adv_infor.'"fresh_content":"'.$item['fresh_content'].'",';
             $adv_infor = $adv_infor.'"image":"'.$item['image'].'",';
             $adv_infor = $adv_infor.'"read_count":"'.$item['read_count'].'",';
             $adv_infor = $adv_infor.'"zan_num":"'.$item['zan_num'].'",';
@@ -656,6 +660,69 @@ class User_model extends CI_Model {
         $response->status = Response::STATUS_OK;
         $response->message = "获取用户发布成功";
         $response->response_data = $adv_infor;
+        return $response;
+    }
+
+    public function add_to_user_position_list($addr, $lat, $lng){
+        $db = new DB();
+        $db->connect();
+        
+        $cuid = Utils::getCurrentUserID();
+
+        $sql = "select count(*) cnt from user_postion_list where uid = $cuid";
+        Logger::getRootLogger()->debug("sql = ".$sql); 
+        
+        $res = $db->executeQuery($sql);
+        while ($row = mysqli_fetch_assoc($res)) {
+            if($row['cnt'] >= 5){
+                $response = new Response();
+                $response->status = Response::STATUS_ERROR;
+                $response->error_code = "0030";
+                $response->message = "地址收藏数量达到上限";
+                return $response;
+            }
+        }
+        $sql = "insert into user_postion_list(addr, lat,uid, lng) values('".$addr."', '"
+                                                                           .$lat."', '"
+                                                                           .$cuid."', '"
+                                                                           .$lng."')";
+        Logger::getRootLogger()->debug("sql = ".$sql);                                                                   
+        $response = $db->executeUpdateAndInsert($sql);
+        if(!is_numeric($response)){
+            return $response;
+        }
+        
+        $response = new Response();
+        $response->status = Response::STATUS_OK;
+        $response->message = "恭喜您更新地址收藏列表成功";
+        return $response;
+
+    }
+
+    public function delete_from_user_position_list($position_id){
+        $db = new DB();
+        $db->connect();
+        
+        $cuid = Utils::getCurrentUserID();
+
+        $sql = "delete from user_postion_list where uid = $cuid and id =$position_id";
+        Logger::getRootLogger()->debug("sql = ".$sql); 
+        $response = $db->executeUpdateAndInsert($sql);
+        if(!is_numeric($response)){
+            return $response;
+        }
+
+        if($response != 1){
+            $response = new Response();
+            $response->status = Response::STATUS_ERROR;
+            $response->error_code = "0031";
+            $response->message = "地址收藏删除失败";
+            return $response;
+        }
+
+        $response = new Response();
+        $response->status = Response::STATUS_OK;
+        $response->message = "恭喜您删除地址收藏成功";
         return $response;
     }
 }

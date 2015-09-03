@@ -292,6 +292,7 @@ require_once dirname(__FILE__).'/application/helpers/apache-log4php-2.3.0/src/ma
 require_once dirname(__FILE__).'/application/libraries/Response.php';
 require_once dirname(__FILE__).'/application/libraries/Utils.php';
 require_once dirname(__FILE__).'/application/libraries/DB.php';
+require_once dirname(__FILE__).'/application/libraries/Sms.php';
 Logger::configure(dirname(__FILE__).'/application/config/log4php.xml');
 
 /*

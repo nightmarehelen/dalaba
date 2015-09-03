@@ -350,6 +350,7 @@ class Advertisement extends CI_Controller {
         if(abs($lat) > 90 || abs($lng) > 180){
             $response = new Response();
             $response->status = Response::STATUS_ERROR;
+            $response->error_code = "0027";
             $response->message = "经纬度有误";
             echo Response::getResponseJson($response);
             return;
@@ -364,5 +365,24 @@ class Advertisement extends CI_Controller {
         Logger::getRootLogger()->debug("Utils::var2str(_POST) = ".Utils::var2str($_POST));
         echo Utils::var2str($_POST);
         echo "What a fucking day!";
+    }
+
+    public function add_advertisement_read_count(){
+        Logger::getRootLogger()->debug("Advertisement::add_advertisement_read_count");
+
+        $response = Utils::validate_request();
+        if(Utils::validate_request() !== null){
+            echo Response::getResponseJson($response);
+            return;
+        }        
+        
+        $request_json = $_POST['request_json'];
+        Logger::getRootLogger()->debug("request_json = ".$request_json);
+        
+        $request_json = json_decode($request_json, true);
+
+        $adv_id = $request_json["DATA"]["adv_id"];
+        $response = $this->advertisement_model->add_advertisement_read_count($adv_id);
+        echo Response::getResponseJson($response);
     }
 }

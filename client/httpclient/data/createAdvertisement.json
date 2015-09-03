@@ -37,6 +37,7 @@
         },
         "title": "你妹呀!",
         "text_content": "你逗我玩呢!",
-        "fresh_content": ""
+        "fresh_content": "",
+        "fresh_coefficient":"7"
     }
 }

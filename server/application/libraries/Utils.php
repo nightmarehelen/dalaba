@@ -237,4 +237,28 @@ class Utils{
         }
         return $arr;
     }
+
+    public static function set_sms_code($cellphone, $code){
+        if(!isset($_SESSION['sms']))
+            $_SESSION['sms'] = array();
+
+        $_SESSION['sms']["$cellphone"] = $code;
+        Logger::getRootLogger()->debug("dump _SESSION:".Utils::var2str($_SESSION));
+    }
+
+    public static function validate_sms_code($cellphone, $code){
+        Logger::getRootLogger()->debug("Utils::validate_sms_code");
+        Logger::getRootLogger()->debug("cellphone:".$cellphone);
+         Logger::getRootLogger()->debug("code:".$code);
+        if(!isset($_SESSION['sms']))
+            $_SESSION['sms'] = array();
+        
+        Logger::getRootLogger()->debug("dump _SESSION:".Utils::var2str($_SESSION));
+        $code2 = $_SESSION['sms']["$cellphone"];
+
+        if($code == $code2)
+            return true;
+        else
+            return false; 
+    }
 }

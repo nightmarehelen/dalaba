@@ -1,177 +1,15 @@
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:28 User::login
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:29 get_http_raw:POST /index.php/user/login HTTP/1.1
-USER-AGENT: Jakarta Commons-HttpClient/3.1-rc1
-HOST: 127.0.0.1
-
-
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:30 _SERVER:array(39) {
-  ["MIBDIRS"]=>
-  string(36) "D:/programming/XAMMP/php/extras/mibs"
-  ["MYSQL_HOME"]=>
-  string(16) "\xampp\mysql\bin"
-  ["OPENSSL_CONF"]=>
-  string(43) "D:/programming/XAMMP/apache/bin/openssl.cnf"
-  ["PHP_PEAR_SYSCONF_DIR"]=>
-  string(10) "\xampp\php"
-  ["PHPRC"]=>
-  string(10) "\xampp\php"
-  ["TMP"]=>
-  string(10) "\xampp\tmp"
-  ["HTTP_USER_AGENT"]=>
-  string(34) "Jakarta Commons-HttpClient/3.1-rc1"
-  ["HTTP_HOST"]=>
-  string(9) "127.0.0.1"
-  ["CONTENT_LENGTH"]=>
-  string(3) "480"
-  ["CONTENT_TYPE"]=>
-  string(67) "multipart/form-data; boundary=U_tA1Kn-1ta3_sqwIFaCc7Dv0NFJBFVrRkwIC"
-  ["PATH"]=>
-  string(1082) "D:\programming\instantclient-basic-nt-12.1.0.2.0\instantclient_12_1;D:\programming\instantclient_11_2;D:\programming\oracle\product\11.2.0\dbhome_1\bin;D:\programming\instantclient-basic-nt-12.1.0.2.0\instantclient_12_1;D:\programming\XAMMP\php;D:\programming\Git\bin;D:\programming\sbt\sbt\bin;D:\programming\scala\bin;D:\programming\python\;C:\ProgramData\Oracle\Java\javapath;D:\programming\jdk\1.7\bin;D:\programming\jdk\1.7\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;D:\programming\tools;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\programming\scala\bin;D:\programming\instantclient_11_2;E:\workbench\xiaolaba\webserver\yii-1.1.16.bca042\framework;E:\workbench\xiaolaba\webserver\redis-2.4.5;E:\workbench\xiaolaba\yii-1.1.16.bca042\framework;D:\programming\Tesseract-OCR;D:\programming\Tesseract-OCR"
-  ["SystemRoot"]=>
-  string(10) "C:\Windows"
-  ["COMSPEC"]=>
-  string(27) "C:\Windows\system32\cmd.exe"
-  ["PATHEXT"]=>
-  string(53) ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"
-  ["WINDIR"]=>
-  string(10) "C:\Windows"
-  ["SERVER_SIGNATURE"]=>
-  string(94) "<address>Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8 Server at 127.0.0.1 Port 80</address>
-"
-  ["SERVER_SOFTWARE"]=>
-  string(46) "Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8"
-  ["SERVER_NAME"]=>
-  string(9) "127.0.0.1"
-  ["SERVER_ADDR"]=>
-  string(9) "127.0.0.1"
-  ["SERVER_PORT"]=>
-  string(2) "80"
-  ["REMOTE_ADDR"]=>
-  string(9) "127.0.0.1"
-  ["DOCUMENT_ROOT"]=>
-  string(49) "E:/workbench/xiaolaba/webserver/web/dalaba/server"
-  ["REQUEST_SCHEME"]=>
-  string(4) "http"
-  ["CONTEXT_PREFIX"]=>
-  string(0) ""
-  ["CONTEXT_DOCUMENT_ROOT"]=>
-  string(49) "E:/workbench/xiaolaba/webserver/web/dalaba/server"
-  ["SERVER_ADMIN"]=>
-  string(20) "postmaster@localhost"
-  ["SCRIPT_FILENAME"]=>
-  string(59) "E:/workbench/xiaolaba/webserver/web/dalaba/server/index.php"
-  ["REMOTE_PORT"]=>
-  string(5) "22451"
-  ["GATEWAY_INTERFACE"]=>
-  string(7) "CGI/1.1"
-  ["SERVER_PROTOCOL"]=>
-  string(8) "HTTP/1.1"
-  ["REQUEST_METHOD"]=>
-  string(4) "POST"
-  ["QUERY_STRING"]=>
-  string(0) ""
-  ["REQUEST_URI"]=>
-  string(21) "/index.php/user/login"
-  ["SCRIPT_NAME"]=>
-  string(10) "/index.php"
-  ["PATH_INFO"]=>
-  string(11) "/user/login"
-  ["PATH_TRANSLATED"]=>
-  string(60) "E:\workbench\xiaolaba\webserver\web\dalaba\server\user\login"
-  ["PHP_SELF"]=>
-  string(21) "/index.php/user/login"
-  ["REQUEST_TIME_FLOAT"]=>
-  float(1440758328.686)
-  ["REQUEST_TIME"]=>
-  int(1440758328)
-}
-
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 user_login_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"LOGIN",
-    "SESSION_KEY":"",
-    "DATA":{
-        "name":"chenxiaoer",
-        "password":"12345",
-        "test":"你妹呀！",
-        "names":"chenyang,chenxiaoer,chenxiaoer3,weichushun,weichushunlalla"    
-    }
-}
-
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:41 dump user_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(5) "LOGIN"
-  ["SESSION_KEY"]=>
-  string(0) ""
-  ["DATA"]=>
-  array(4) {
-    ["name"]=>
-    string(10) "chenxiaoer"
-    ["password"]=>
-    string(5) "12345"
-    ["test"]=>
-    string(12) "你妹呀！"
-    ["names"]=>
-    string(58) "chenyang,chenxiaoer,chenxiaoer3,weichushun,weichushunlalla"
-  }
-}
-
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(11)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(1)
-  ["lengths"]=>
-  array(1) {
-    [0]=>
-    int(3)
-  }
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:75 Advertisement::update
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:84 adv_infor = {
+2015-09-03T18:58:18+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:63 Authentication::get_short_message_verification_code
+2015-09-03T18:58:18+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:66 adv_infor = {
     "VERSION":"1.0.0",
     "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
     "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
     "DATA":{
-        "id":"91",
-        "image":"true",
-        "type":"personal",
-        "publish_position": {
-            "addr": "上林溪",
-            "lat": "40.053405",
-            "lng": "116.333267"
-        },
-        "title" : "What a fucking day!",
-        "text_content":"11111111",
-        "fresh_content":""
+        "cellphone":"13426370450",
+        "code":"124786"
     }
 }
 
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:87 dump adv_infor_array:array(4) {
+2015-09-03T18:58:18+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:69 dump adv_infor_array:array(4) {
   ["VERSION"]=>
   string(5) "1.0.0"
   ["REQUEST_TYPE"]=>
@@ -179,329 +17,36 @@ HOST: 127.0.0.1
   ["SESSION_KEY"]=>
   string(32) "94e9e1bd4007c83d7ab96ecb8f2b2536"
   ["DATA"]=>
-  array(7) {
-    ["id"]=>
-    string(2) "91"
-    ["image"]=>
-    string(4) "true"
-    ["type"]=>
-    string(8) "personal"
-    ["publish_position"]=>
-    array(3) {
-      ["addr"]=>
-      string(9) "上林溪"
-      ["lat"]=>
-      string(9) "40.053405"
-      ["lng"]=>
-      string(10) "116.333267"
-    }
-    ["title"]=>
-    string(19) "What a fucking day!"
-    ["text_content"]=>
-    string(8) "11111111"
-    ["fresh_content"]=>
-    string(0) ""
+  array(2) {
+    ["cellphone"]=>
+    string(11) "13426370450"
+    ["code"]=>
+    string(6) "124786"
   }
 }
 
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:93 _FILES:array(1) {
-  ["adv_img1"]=>
-  array(5) {
-    ["name"]=>
-    string(8) "kobe.jpg"
-    ["type"]=>
-    string(24) "application/octet-stream"
-    ["tmp_name"]=>
-    string(36) "D:\programming\XAMMP\tmp\php4AA2.tmp"
-    ["error"]=>
-    int(0)
-    ["size"]=>
-    int(13064)
+2015-09-03T18:58:18+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:253 dump _SESSION:array(1) {
+  ["sms"]=>
+  array(0) {
   }
 }
 
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:124 adv_infor_array[DATA][image]:array(1) {
-  ["adv_img1"]=>
-  array(5) {
-    ["name"]=>
-    string(8) "kobe.jpg"
-    ["type"]=>
-    string(24) "application/octet-stream"
-    ["tmp_name"]=>
-    string(36) "D:\programming\XAMMP\tmp\php4AA2.tmp"
-    ["error"]=>
-    int(0)
-    ["size"]=>
-    int(13064)
-  }
-}
-
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:125 count(FILES) = 1
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:133 adv_infor_array[DATA][image]:array(1) {
-  ["adv_img1"]=>
-  array(5) {
-    ["name"]=>
-    string(8) "kobe.jpg"
-    ["type"]=>
-    string(24) "application/octet-stream"
-    ["tmp_name"]=>
-    string(36) "D:\programming\XAMMP\tmp\php4AA2.tmp"
-    ["error"]=>
-    int(0)
-    ["size"]=>
-    int(13064)
-  }
-}
-
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:143 this->img_file_prefix = adv
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:144 this->temp_img_dir = E:/workbench/xiaolaba/webserver/web/dalaba/server/data/img
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:147 filename = E:\workbench\xiaolaba\webserver\web\dalaba\server\data\img\adv4B2F.tmp
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:159 dump file_path:array(4) {
-  ["dirname"]=>
-  string(1) "."
-  ["basename"]=>
-  string(8) "kobe.jpg"
-  ["extension"]=>
-  string(3) "jpg"
-  ["filename"]=>
-  string(4) "kobe"
-}
-
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:161 dump file_path2:array(4) {
-  ["dirname"]=>
-  string(58) "E:\workbench\xiaolaba\webserver\web\dalaba\server\data\img"
-  ["basename"]=>
-  string(11) "adv4B2F.tmp"
-  ["extension"]=>
-  string(3) "tmp"
-  ["filename"]=>
-  string(7) "adv4B2F"
-}
-
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:169 dump new_name:E:/workbench/xiaolaba/webserver/web/dalaba/server/data/img/adv4B2F.jpg
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:108 adv_infor_array[DATA][image]:string(20) "data/img/adv4B2F.jpg"
-
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:51 Advertisement_model::update
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:94 Advertisement_model::update_adv_validate
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:74 sql = update advertisement set type = 'personal',
-                                         title ='What a fucking day!',
-                                         text_content ='11111111',
-                                         image ='data/img/adv4B2F.jpg', 
-                                         fresh_content ='',
-                                         lat = '40.053405',
-                                         lng = '116.333267',
-                                         address = '上林溪'
-                                         where id = 91 and uid = 101
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:351 User::get_my_collect
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:369 request_json = {
-    "version":"1.0.0",
-    "REQUEST_TYPE":" DELETE_ADVERTISEMENT ",
-    "SESSION_KEY":"",
-    "DATA":{
-        "lat":"39.985403",
-        "lng":"116.357112"           
-    }
-}
-
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:376 lat = 39.985403
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:377 lng = 116.357112
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:523 user_model::get_my_collect
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:540 sql = select advertisement.id id,advertisement.uid,advertisement.type type,
-            publish_time,title,text_content,image,read_count,zan_num,address,user.name user_name,lat,lng,
-            user_focus.uid_b focused,thumb_up_for_adv.adv_id zaned 
-            from advertisement 
-            inner join user_collect user_collect on user_collect.adv_id = advertisement.id 
-            inner join user on user.id = user_collect.uid   
-            left join user_focus on user_focus.uid_b = advertisement.uid and user_focus.uid_a = 101 
-            left join thumb_up_for_adv on thumb_up_for_adv.adv_id = advertisement.id and thumb_up_for_adv.uid = 101
-            where user.id = 101
-2015-08-28T18:38:49+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:546 res = object(mysqli_result)#44 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(15)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(4)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:28 User::login
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:29 get_http_raw:POST /index.php/user/login HTTP/1.1
+2015-09-03T18:58:54+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:11 Authentication::get_short_message_verification_code
+2015-09-03T18:58:54+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:13 POST /index.php/authentication/get_short_message_verification_code HTTP/1.1
 USER-AGENT: Jakarta Commons-HttpClient/3.1-rc1
 HOST: 127.0.0.1
 
 
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:30 _SERVER:array(39) {
-  ["MIBDIRS"]=>
-  string(36) "D:/programming/XAMMP/php/extras/mibs"
-  ["MYSQL_HOME"]=>
-  string(16) "\xampp\mysql\bin"
-  ["OPENSSL_CONF"]=>
-  string(43) "D:/programming/XAMMP/apache/bin/openssl.cnf"
-  ["PHP_PEAR_SYSCONF_DIR"]=>
-  string(10) "\xampp\php"
-  ["PHPRC"]=>
-  string(10) "\xampp\php"
-  ["TMP"]=>
-  string(10) "\xampp\tmp"
-  ["HTTP_USER_AGENT"]=>
-  string(34) "Jakarta Commons-HttpClient/3.1-rc1"
-  ["HTTP_HOST"]=>
-  string(9) "127.0.0.1"
-  ["CONTENT_LENGTH"]=>
-  string(3) "478"
-  ["CONTENT_TYPE"]=>
-  string(66) "multipart/form-data; boundary=MMdwcJGsiDPNri4Z-kY1fNYvXkKkibM6hgT4"
-  ["PATH"]=>
-  string(1082) "D:\programming\instantclient-basic-nt-12.1.0.2.0\instantclient_12_1;D:\programming\instantclient_11_2;D:\programming\oracle\product\11.2.0\dbhome_1\bin;D:\programming\instantclient-basic-nt-12.1.0.2.0\instantclient_12_1;D:\programming\XAMMP\php;D:\programming\Git\bin;D:\programming\sbt\sbt\bin;D:\programming\scala\bin;D:\programming\python\;C:\ProgramData\Oracle\Java\javapath;D:\programming\jdk\1.7\bin;D:\programming\jdk\1.7\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;D:\programming\tools;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\programming\scala\bin;D:\programming\instantclient_11_2;E:\workbench\xiaolaba\webserver\yii-1.1.16.bca042\framework;E:\workbench\xiaolaba\webserver\redis-2.4.5;E:\workbench\xiaolaba\yii-1.1.16.bca042\framework;D:\programming\Tesseract-OCR;D:\programming\Tesseract-OCR"
-  ["SystemRoot"]=>
-  string(10) "C:\Windows"
-  ["COMSPEC"]=>
-  string(27) "C:\Windows\system32\cmd.exe"
-  ["PATHEXT"]=>
-  string(53) ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"
-  ["WINDIR"]=>
-  string(10) "C:\Windows"
-  ["SERVER_SIGNATURE"]=>
-  string(94) "<address>Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8 Server at 127.0.0.1 Port 80</address>
-"
-  ["SERVER_SOFTWARE"]=>
-  string(46) "Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8"
-  ["SERVER_NAME"]=>
-  string(9) "127.0.0.1"
-  ["SERVER_ADDR"]=>
-  string(9) "127.0.0.1"
-  ["SERVER_PORT"]=>
-  string(2) "80"
-  ["REMOTE_ADDR"]=>
-  string(9) "127.0.0.1"
-  ["DOCUMENT_ROOT"]=>
-  string(49) "E:/workbench/xiaolaba/webserver/web/dalaba/server"
-  ["REQUEST_SCHEME"]=>
-  string(4) "http"
-  ["CONTEXT_PREFIX"]=>
-  string(0) ""
-  ["CONTEXT_DOCUMENT_ROOT"]=>
-  string(49) "E:/workbench/xiaolaba/webserver/web/dalaba/server"
-  ["SERVER_ADMIN"]=>
-  string(20) "postmaster@localhost"
-  ["SCRIPT_FILENAME"]=>
-  string(59) "E:/workbench/xiaolaba/webserver/web/dalaba/server/index.php"
-  ["REMOTE_PORT"]=>
-  string(5) "22462"
-  ["GATEWAY_INTERFACE"]=>
-  string(7) "CGI/1.1"
-  ["SERVER_PROTOCOL"]=>
-  string(8) "HTTP/1.1"
-  ["REQUEST_METHOD"]=>
-  string(4) "POST"
-  ["QUERY_STRING"]=>
-  string(0) ""
-  ["REQUEST_URI"]=>
-  string(21) "/index.php/user/login"
-  ["SCRIPT_NAME"]=>
-  string(10) "/index.php"
-  ["PATH_INFO"]=>
-  string(11) "/user/login"
-  ["PATH_TRANSLATED"]=>
-  string(60) "E:\workbench\xiaolaba\webserver\web\dalaba\server\user\login"
-  ["PHP_SELF"]=>
-  string(21) "/index.php/user/login"
-  ["REQUEST_TIME_FLOAT"]=>
-  float(1440758370.47)
-  ["REQUEST_TIME"]=>
-  int(1440758370)
-}
-
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 user_login_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"LOGIN",
-    "SESSION_KEY":"",
-    "DATA":{
-        "name":"chenxiaoer",
-        "password":"12345",
-        "test":"你妹呀！",
-        "names":"chenyang,chenxiaoer,chenxiaoer3,weichushun,weichushunlalla"    
-    }
-}
-
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:41 dump user_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(5) "LOGIN"
-  ["SESSION_KEY"]=>
-  string(0) ""
-  ["DATA"]=>
-  array(4) {
-    ["name"]=>
-    string(10) "chenxiaoer"
-    ["password"]=>
-    string(5) "12345"
-    ["test"]=>
-    string(12) "你妹呀！"
-    ["names"]=>
-    string(58) "chenyang,chenxiaoer,chenxiaoer3,weichushun,weichushunlalla"
-  }
-}
-
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(11)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(1)
-  ["lengths"]=>
-  array(1) {
-    [0]=>
-    int(3)
-  }
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:75 Advertisement::update
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:84 adv_infor = {
+2015-09-03T18:58:54+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:21 adv_infor = {
     "VERSION":"1.0.0",
     "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
     "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
     "DATA":{
-        "id":"91",
-        "image":"true",
-        "type":"personal",
-        "publish_position": {
-            "addr": "上林溪",
-            "lat": "40.053405",
-            "lng": "116.333267"
-        },
-        "title" : "What a fucking day!",
-        "text_content":"11111111",
-        "fresh_content":""
+        "cellphone":"13426370450"
     }
 }
 
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:87 dump adv_infor_array:array(4) {
+2015-09-03T18:58:54+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:24 dump adv_infor_array:array(4) {
   ["VERSION"]=>
   string(5) "1.0.0"
   ["REQUEST_TYPE"]=>
@@ -509,354 +54,33 @@ HOST: 127.0.0.1
   ["SESSION_KEY"]=>
   string(32) "94e9e1bd4007c83d7ab96ecb8f2b2536"
   ["DATA"]=>
-  array(7) {
-    ["id"]=>
-    string(2) "91"
-    ["image"]=>
-    string(4) "true"
-    ["type"]=>
-    string(8) "personal"
-    ["publish_position"]=>
-    array(3) {
-      ["addr"]=>
-      string(9) "上林溪"
-      ["lat"]=>
-      string(9) "40.053405"
-      ["lng"]=>
-      string(10) "116.333267"
-    }
-    ["title"]=>
-    string(19) "What a fucking day!"
-    ["text_content"]=>
-    string(8) "11111111"
-    ["fresh_content"]=>
-    string(0) ""
-  }
-}
-
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:93 _FILES:array(1) {
-  ["adv_img1"]=>
-  array(5) {
-    ["name"]=>
-    string(8) "kobe.jpg"
-    ["type"]=>
-    string(24) "application/octet-stream"
-    ["tmp_name"]=>
-    string(36) "D:\programming\XAMMP\tmp\phpEB36.tmp"
-    ["error"]=>
-    int(0)
-    ["size"]=>
-    int(13064)
-  }
-}
-
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:124 adv_infor_array[DATA][image]:array(1) {
-  ["adv_img1"]=>
-  array(5) {
-    ["name"]=>
-    string(8) "kobe.jpg"
-    ["type"]=>
-    string(24) "application/octet-stream"
-    ["tmp_name"]=>
-    string(36) "D:\programming\XAMMP\tmp\phpEB36.tmp"
-    ["error"]=>
-    int(0)
-    ["size"]=>
-    int(13064)
-  }
-}
-
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:125 count(FILES) = 1
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:133 adv_infor_array[DATA][image]:array(1) {
-  ["adv_img1"]=>
-  array(5) {
-    ["name"]=>
-    string(8) "kobe.jpg"
-    ["type"]=>
-    string(24) "application/octet-stream"
-    ["tmp_name"]=>
-    string(36) "D:\programming\XAMMP\tmp\phpEB36.tmp"
-    ["error"]=>
-    int(0)
-    ["size"]=>
-    int(13064)
-  }
-}
-
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:143 this->img_file_prefix = adv
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:144 this->temp_img_dir = E:/workbench/xiaolaba/webserver/web/dalaba/server/data/img
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:147 filename = E:\workbench\xiaolaba\webserver\web\dalaba\server\data\img\advEB95.tmp
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:159 dump file_path:array(4) {
-  ["dirname"]=>
-  string(1) "."
-  ["basename"]=>
-  string(8) "kobe.jpg"
-  ["extension"]=>
-  string(3) "jpg"
-  ["filename"]=>
-  string(4) "kobe"
-}
-
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:161 dump file_path2:array(4) {
-  ["dirname"]=>
-  string(58) "E:\workbench\xiaolaba\webserver\web\dalaba\server\data\img"
-  ["basename"]=>
-  string(11) "advEB95.tmp"
-  ["extension"]=>
-  string(3) "tmp"
-  ["filename"]=>
-  string(7) "advEB95"
-}
-
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:169 dump new_name:E:/workbench/xiaolaba/webserver/web/dalaba/server/data/img/advEB95.jpg
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:108 adv_infor_array[DATA][image]:string(20) "data/img/advEB95.jpg"
-
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:51 Advertisement_model::update
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:94 Advertisement_model::update_adv_validate
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:74 sql = update advertisement set type = 'personal',
-                                         title ='What a fucking day!',
-                                         text_content ='11111111',
-                                         image ='data/img/advEB95.jpg', 
-                                         fresh_content ='',
-                                         lat = '40.053405',
-                                         lng = '116.333267',
-                                         address = '上林溪'
-                                         where id = 91 and uid = 101
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:259 Advertisement::get_advertisement_infor
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:268 request_json = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"GET_ADVERTISEMENT_INFOR",
-    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
-    "DATA":{
-        "adv_id" : "93"
-    }
-}
-
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:273 Advertisement_model::get_advertisement_infor
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:280 sql = select id,uid,type,publish_time,title,text_content,image,read_count,zan_num,address from advertisement where id = 93
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:286 res = object(mysqli_result)#47 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(10)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:351 User::get_my_collect
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:369 request_json = {
-    "version":"1.0.0",
-    "REQUEST_TYPE":" DELETE_ADVERTISEMENT ",
-    "SESSION_KEY":"",
-    "DATA":{
-        "lat":"39.985403",
-        "lng":"116.357112"           
-    }
-}
-
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:376 lat = 39.985403
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:377 lng = 116.357112
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:523 user_model::get_my_collect
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:540 sql = select advertisement.id id,advertisement.uid,advertisement.type type,
-            publish_time,title,text_content,image,read_count,zan_num,address,user.name user_name,lat,lng,
-            user_focus.uid_b focused,thumb_up_for_adv.adv_id zaned 
-            from advertisement 
-            inner join user_collect user_collect on user_collect.adv_id = advertisement.id 
-            inner join user on user.id = user_collect.uid   
-            left join user_focus on user_focus.uid_b = advertisement.uid and user_focus.uid_a = 101 
-            left join thumb_up_for_adv on thumb_up_for_adv.adv_id = advertisement.id and thumb_up_for_adv.uid = 101
-            where user.id = 101
-2015-08-28T18:39:30+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:546 res = object(mysqli_result)#44 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(15)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(4)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:28 User::login
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:29 get_http_raw:POST /index.php/user/login HTTP/1.1
-USER-AGENT: Jakarta Commons-HttpClient/3.1-rc1
-HOST: 127.0.0.1
-
-
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:30 _SERVER:array(39) {
-  ["MIBDIRS"]=>
-  string(36) "D:/programming/XAMMP/php/extras/mibs"
-  ["MYSQL_HOME"]=>
-  string(16) "\xampp\mysql\bin"
-  ["OPENSSL_CONF"]=>
-  string(43) "D:/programming/XAMMP/apache/bin/openssl.cnf"
-  ["PHP_PEAR_SYSCONF_DIR"]=>
-  string(10) "\xampp\php"
-  ["PHPRC"]=>
-  string(10) "\xampp\php"
-  ["TMP"]=>
-  string(10) "\xampp\tmp"
-  ["HTTP_USER_AGENT"]=>
-  string(34) "Jakarta Commons-HttpClient/3.1-rc1"
-  ["HTTP_HOST"]=>
-  string(9) "127.0.0.1"
-  ["CONTENT_LENGTH"]=>
-  string(3) "466"
-  ["CONTENT_TYPE"]=>
-  string(60) "multipart/form-data; boundary=JiDfYYBCc0lZgRS8sRlYDX3I4Jj5KS"
-  ["PATH"]=>
-  string(1082) "D:\programming\instantclient-basic-nt-12.1.0.2.0\instantclient_12_1;D:\programming\instantclient_11_2;D:\programming\oracle\product\11.2.0\dbhome_1\bin;D:\programming\instantclient-basic-nt-12.1.0.2.0\instantclient_12_1;D:\programming\XAMMP\php;D:\programming\Git\bin;D:\programming\sbt\sbt\bin;D:\programming\scala\bin;D:\programming\python\;C:\ProgramData\Oracle\Java\javapath;D:\programming\jdk\1.7\bin;D:\programming\jdk\1.7\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;D:\programming\tools;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\programming\scala\bin;D:\programming\instantclient_11_2;E:\workbench\xiaolaba\webserver\yii-1.1.16.bca042\framework;E:\workbench\xiaolaba\webserver\redis-2.4.5;E:\workbench\xiaolaba\yii-1.1.16.bca042\framework;D:\programming\Tesseract-OCR;D:\programming\Tesseract-OCR"
-  ["SystemRoot"]=>
-  string(10) "C:\Windows"
-  ["COMSPEC"]=>
-  string(27) "C:\Windows\system32\cmd.exe"
-  ["PATHEXT"]=>
-  string(53) ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"
-  ["WINDIR"]=>
-  string(10) "C:\Windows"
-  ["SERVER_SIGNATURE"]=>
-  string(94) "<address>Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8 Server at 127.0.0.1 Port 80</address>
-"
-  ["SERVER_SOFTWARE"]=>
-  string(46) "Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8"
-  ["SERVER_NAME"]=>
-  string(9) "127.0.0.1"
-  ["SERVER_ADDR"]=>
-  string(9) "127.0.0.1"
-  ["SERVER_PORT"]=>
-  string(2) "80"
-  ["REMOTE_ADDR"]=>
-  string(9) "127.0.0.1"
-  ["DOCUMENT_ROOT"]=>
-  string(49) "E:/workbench/xiaolaba/webserver/web/dalaba/server"
-  ["REQUEST_SCHEME"]=>
-  string(4) "http"
-  ["CONTEXT_PREFIX"]=>
-  string(0) ""
-  ["CONTEXT_DOCUMENT_ROOT"]=>
-  string(49) "E:/workbench/xiaolaba/webserver/web/dalaba/server"
-  ["SERVER_ADMIN"]=>
-  string(20) "postmaster@localhost"
-  ["SCRIPT_FILENAME"]=>
-  string(59) "E:/workbench/xiaolaba/webserver/web/dalaba/server/index.php"
-  ["REMOTE_PORT"]=>
-  string(5) "22471"
-  ["GATEWAY_INTERFACE"]=>
-  string(7) "CGI/1.1"
-  ["SERVER_PROTOCOL"]=>
-  string(8) "HTTP/1.1"
-  ["REQUEST_METHOD"]=>
-  string(4) "POST"
-  ["QUERY_STRING"]=>
-  string(0) ""
-  ["REQUEST_URI"]=>
-  string(21) "/index.php/user/login"
-  ["SCRIPT_NAME"]=>
-  string(10) "/index.php"
-  ["PATH_INFO"]=>
-  string(11) "/user/login"
-  ["PATH_TRANSLATED"]=>
-  string(60) "E:\workbench\xiaolaba\webserver\web\dalaba\server\user\login"
-  ["PHP_SELF"]=>
-  string(21) "/index.php/user/login"
-  ["REQUEST_TIME_FLOAT"]=>
-  float(1440758387.053)
-  ["REQUEST_TIME"]=>
-  int(1440758387)
-}
-
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 user_login_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"LOGIN",
-    "SESSION_KEY":"",
-    "DATA":{
-        "name":"chenxiaoer",
-        "password":"12345",
-        "test":"你妹呀！",
-        "names":"chenyang,chenxiaoer,chenxiaoer3,weichushun,weichushunlalla"    
-    }
-}
-
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:41 dump user_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(5) "LOGIN"
-  ["SESSION_KEY"]=>
-  string(0) ""
-  ["DATA"]=>
-  array(4) {
-    ["name"]=>
-    string(10) "chenxiaoer"
-    ["password"]=>
-    string(5) "12345"
-    ["test"]=>
-    string(12) "你妹呀！"
-    ["names"]=>
-    string(58) "chenyang,chenxiaoer,chenxiaoer3,weichushun,weichushunlalla"
-  }
-}
-
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(11)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(1)
-  ["lengths"]=>
   array(1) {
-    [0]=>
-    int(3)
+    ["cellphone"]=>
+    string(11) "13426370450"
   }
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
 }
 
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:75 Advertisement::update
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:84 adv_infor = {
+2015-09-03T18:58:54+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:246 dump _SESSION:array(1) {
+  ["sms"]=>
+  array(1) {
+    [""13426370450""]=>
+    string(6) "712829"
+  }
+}
+
+2015-09-03T18:58:54+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Sms.php:73 Sms:发送成功
+2015-09-03T18:59:09+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:63 Authentication::get_short_message_verification_code
+2015-09-03T18:59:09+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:66 adv_infor = {
     "VERSION":"1.0.0",
     "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
     "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
     "DATA":{
-        "id":"91",
-        "image":"true",
-        "type":"personal",
-        "publish_position": {
-            "addr": "上林溪",
-            "lat": "40.053405",
-            "lng": "116.333267"
-        },
-        "title" : "What a fucking day!",
-        "text_content":"11111111",
-        "fresh_content":""
+        "cellphone":"13426370450",
+        "code":"124786"
     }
 }
 
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:87 dump adv_infor_array:array(4) {
+2015-09-03T18:59:09+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:69 dump adv_infor_array:array(4) {
   ["VERSION"]=>
   string(5) "1.0.0"
   ["REQUEST_TYPE"]=>
@@ -864,318 +88,36 @@ HOST: 127.0.0.1
   ["SESSION_KEY"]=>
   string(32) "94e9e1bd4007c83d7ab96ecb8f2b2536"
   ["DATA"]=>
-  array(7) {
-    ["id"]=>
-    string(2) "91"
-    ["image"]=>
-    string(4) "true"
-    ["type"]=>
-    string(8) "personal"
-    ["publish_position"]=>
-    array(3) {
-      ["addr"]=>
-      string(9) "上林溪"
-      ["lat"]=>
-      string(9) "40.053405"
-      ["lng"]=>
-      string(10) "116.333267"
-    }
-    ["title"]=>
-    string(19) "What a fucking day!"
-    ["text_content"]=>
-    string(8) "11111111"
-    ["fresh_content"]=>
-    string(0) ""
+  array(2) {
+    ["cellphone"]=>
+    string(11) "13426370450"
+    ["code"]=>
+    string(6) "124786"
   }
 }
 
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:93 _FILES:array(1) {
-  ["adv_img1"]=>
-  array(5) {
-    ["name"]=>
-    string(8) "kobe.jpg"
-    ["type"]=>
-    string(24) "application/octet-stream"
-    ["tmp_name"]=>
-    string(36) "D:\programming\XAMMP\tmp\php2C5D.tmp"
-    ["error"]=>
-    int(0)
-    ["size"]=>
-    int(13064)
+2015-09-03T18:59:09+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:253 dump _SESSION:array(1) {
+  ["sms"]=>
+  array(0) {
   }
 }
 
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:124 adv_infor_array[DATA][image]:array(1) {
-  ["adv_img1"]=>
-  array(5) {
-    ["name"]=>
-    string(8) "kobe.jpg"
-    ["type"]=>
-    string(24) "application/octet-stream"
-    ["tmp_name"]=>
-    string(36) "D:\programming\XAMMP\tmp\php2C5D.tmp"
-    ["error"]=>
-    int(0)
-    ["size"]=>
-    int(13064)
-  }
-}
-
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:125 count(FILES) = 1
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:133 adv_infor_array[DATA][image]:array(1) {
-  ["adv_img1"]=>
-  array(5) {
-    ["name"]=>
-    string(8) "kobe.jpg"
-    ["type"]=>
-    string(24) "application/octet-stream"
-    ["tmp_name"]=>
-    string(36) "D:\programming\XAMMP\tmp\php2C5D.tmp"
-    ["error"]=>
-    int(0)
-    ["size"]=>
-    int(13064)
-  }
-}
-
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:143 this->img_file_prefix = adv
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:144 this->temp_img_dir = E:/workbench/xiaolaba/webserver/web/dalaba/server/data/img
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:147 filename = E:\workbench\xiaolaba\webserver\web\dalaba\server\data\img\adv2CBB.tmp
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:159 dump file_path:array(4) {
-  ["dirname"]=>
-  string(1) "."
-  ["basename"]=>
-  string(8) "kobe.jpg"
-  ["extension"]=>
-  string(3) "jpg"
-  ["filename"]=>
-  string(4) "kobe"
-}
-
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:161 dump file_path2:array(4) {
-  ["dirname"]=>
-  string(58) "E:\workbench\xiaolaba\webserver\web\dalaba\server\data\img"
-  ["basename"]=>
-  string(11) "adv2CBB.tmp"
-  ["extension"]=>
-  string(3) "tmp"
-  ["filename"]=>
-  string(7) "adv2CBB"
-}
-
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:169 dump new_name:E:/workbench/xiaolaba/webserver/web/dalaba/server/data/img/adv2CBB.jpg
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:108 adv_infor_array[DATA][image]:string(20) "data/img/adv2CBB.jpg"
-
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:51 Advertisement_model::update
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:94 Advertisement_model::update_adv_validate
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:74 sql = update advertisement set type = 'personal',
-                                         title ='What a fucking day!',
-                                         text_content ='11111111',
-                                         image ='data/img/adv2CBB.jpg', 
-                                         fresh_content ='',
-                                         lat = '40.053405',
-                                         lng = '116.333267',
-                                         address = '上林溪'
-                                         where id = 91 and uid = 101
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:259 Advertisement::get_advertisement_infor
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:268 request_json = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"GET_ADVERTISEMENT_INFOR",
-    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
-    "DATA":{
-        "adv_id" : "93"
-    }
-}
-
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:273 Advertisement_model::get_advertisement_infor
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:280 sql = select id,uid,type,publish_time,title,text_content,image,read_count,zan_num,address from advertisement where id = 93
-2015-08-28T18:39:47+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:286 res = object(mysqli_result)#47 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(10)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-28T18:40:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:28 User::login
-2015-08-28T18:40:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:29 get_http_raw:POST /index.php/user/login HTTP/1.1
+2015-09-03T19:05:29+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:11 Authentication::get_short_message_verification_code
+2015-09-03T19:05:29+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:13 POST /index.php/authentication/get_short_message_verification_code HTTP/1.1
 USER-AGENT: Jakarta Commons-HttpClient/3.1-rc1
 HOST: 127.0.0.1
 
 
-2015-08-28T18:40:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:30 _SERVER:array(39) {
-  ["MIBDIRS"]=>
-  string(36) "D:/programming/XAMMP/php/extras/mibs"
-  ["MYSQL_HOME"]=>
-  string(16) "\xampp\mysql\bin"
-  ["OPENSSL_CONF"]=>
-  string(43) "D:/programming/XAMMP/apache/bin/openssl.cnf"
-  ["PHP_PEAR_SYSCONF_DIR"]=>
-  string(10) "\xampp\php"
-  ["PHPRC"]=>
-  string(10) "\xampp\php"
-  ["TMP"]=>
-  string(10) "\xampp\tmp"
-  ["HTTP_USER_AGENT"]=>
-  string(34) "Jakarta Commons-HttpClient/3.1-rc1"
-  ["HTTP_HOST"]=>
-  string(9) "127.0.0.1"
-  ["CONTENT_LENGTH"]=>
-  string(3) "486"
-  ["CONTENT_TYPE"]=>
-  string(70) "multipart/form-data; boundary=kC1EL5WaTuUp6NzKwKnulK7_M4qU09w87TfKMU2h"
-  ["PATH"]=>
-  string(1082) "D:\programming\instantclient-basic-nt-12.1.0.2.0\instantclient_12_1;D:\programming\instantclient_11_2;D:\programming\oracle\product\11.2.0\dbhome_1\bin;D:\programming\instantclient-basic-nt-12.1.0.2.0\instantclient_12_1;D:\programming\XAMMP\php;D:\programming\Git\bin;D:\programming\sbt\sbt\bin;D:\programming\scala\bin;D:\programming\python\;C:\ProgramData\Oracle\Java\javapath;D:\programming\jdk\1.7\bin;D:\programming\jdk\1.7\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;D:\programming\tools;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\programming\scala\bin;D:\programming\instantclient_11_2;E:\workbench\xiaolaba\webserver\yii-1.1.16.bca042\framework;E:\workbench\xiaolaba\webserver\redis-2.4.5;E:\workbench\xiaolaba\yii-1.1.16.bca042\framework;D:\programming\Tesseract-OCR;D:\programming\Tesseract-OCR"
-  ["SystemRoot"]=>
-  string(10) "C:\Windows"
-  ["COMSPEC"]=>
-  string(27) "C:\Windows\system32\cmd.exe"
-  ["PATHEXT"]=>
-  string(53) ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"
-  ["WINDIR"]=>
-  string(10) "C:\Windows"
-  ["SERVER_SIGNATURE"]=>
-  string(94) "<address>Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8 Server at 127.0.0.1 Port 80</address>
-"
-  ["SERVER_SOFTWARE"]=>
-  string(46) "Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8"
-  ["SERVER_NAME"]=>
-  string(9) "127.0.0.1"
-  ["SERVER_ADDR"]=>
-  string(9) "127.0.0.1"
-  ["SERVER_PORT"]=>
-  string(2) "80"
-  ["REMOTE_ADDR"]=>
-  string(9) "127.0.0.1"
-  ["DOCUMENT_ROOT"]=>
-  string(49) "E:/workbench/xiaolaba/webserver/web/dalaba/server"
-  ["REQUEST_SCHEME"]=>
-  string(4) "http"
-  ["CONTEXT_PREFIX"]=>
-  string(0) ""
-  ["CONTEXT_DOCUMENT_ROOT"]=>
-  string(49) "E:/workbench/xiaolaba/webserver/web/dalaba/server"
-  ["SERVER_ADMIN"]=>
-  string(20) "postmaster@localhost"
-  ["SCRIPT_FILENAME"]=>
-  string(59) "E:/workbench/xiaolaba/webserver/web/dalaba/server/index.php"
-  ["REMOTE_PORT"]=>
-  string(5) "22483"
-  ["GATEWAY_INTERFACE"]=>
-  string(7) "CGI/1.1"
-  ["SERVER_PROTOCOL"]=>
-  string(8) "HTTP/1.1"
-  ["REQUEST_METHOD"]=>
-  string(4) "POST"
-  ["QUERY_STRING"]=>
-  string(0) ""
-  ["REQUEST_URI"]=>
-  string(21) "/index.php/user/login"
-  ["SCRIPT_NAME"]=>
-  string(10) "/index.php"
-  ["PATH_INFO"]=>
-  string(11) "/user/login"
-  ["PATH_TRANSLATED"]=>
-  string(60) "E:\workbench\xiaolaba\webserver\web\dalaba\server\user\login"
-  ["PHP_SELF"]=>
-  string(21) "/index.php/user/login"
-  ["REQUEST_TIME_FLOAT"]=>
-  float(1440758425.68)
-  ["REQUEST_TIME"]=>
-  int(1440758425)
-}
-
-2015-08-28T18:40:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 user_login_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"LOGIN",
-    "SESSION_KEY":"",
-    "DATA":{
-        "name":"chenxiaoer",
-        "password":"12345",
-        "test":"你妹呀！",
-        "names":"chenyang,chenxiaoer,chenxiaoer3,weichushun,weichushunlalla"    
-    }
-}
-
-2015-08-28T18:40:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:41 dump user_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(5) "LOGIN"
-  ["SESSION_KEY"]=>
-  string(0) ""
-  ["DATA"]=>
-  array(4) {
-    ["name"]=>
-    string(10) "chenxiaoer"
-    ["password"]=>
-    string(5) "12345"
-    ["test"]=>
-    string(12) "你妹呀！"
-    ["names"]=>
-    string(58) "chenyang,chenxiaoer,chenxiaoer3,weichushun,weichushunlalla"
-  }
-}
-
-2015-08-28T18:40:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-28T18:40:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
-2015-08-28T18:40:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(11)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-28T18:40:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-28T18:40:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
-2015-08-28T18:40:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(1)
-  ["lengths"]=>
-  array(1) {
-    [0]=>
-    int(3)
-  }
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-28T18:40:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:75 Advertisement::update
-2015-08-28T18:40:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:84 adv_infor = {
+2015-09-03T19:05:29+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:21 adv_infor = {
     "VERSION":"1.0.0",
     "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
     "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
     "DATA":{
-        "id":"91",
-        "image":"true",
-        "type":"personal",
-        "publish_position": {
-            "addr": "上林溪",
-            "lat": "40.053405",
-            "lng": "116.333267"
-        },
-        "title" : "What a fucking day!",
-        "text_content":"11111111",
-        "fresh_content":""
+        "cellphone":"13426370450"
     }
 }
 
-2015-08-28T18:40:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:87 dump adv_infor_array:array(4) {
+2015-09-03T19:05:29+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:24 dump adv_infor_array:array(4) {
   ["VERSION"]=>
   string(5) "1.0.0"
   ["REQUEST_TYPE"]=>
@@ -1183,318 +125,33 @@ HOST: 127.0.0.1
   ["SESSION_KEY"]=>
   string(32) "94e9e1bd4007c83d7ab96ecb8f2b2536"
   ["DATA"]=>
-  array(7) {
-    ["id"]=>
-    string(2) "91"
-    ["image"]=>
-    string(4) "true"
-    ["type"]=>
-    string(8) "personal"
-    ["publish_position"]=>
-    array(3) {
-      ["addr"]=>
-      string(9) "上林溪"
-      ["lat"]=>
-      string(9) "40.053405"
-      ["lng"]=>
-      string(10) "116.333267"
-    }
-    ["title"]=>
-    string(19) "What a fucking day!"
-    ["text_content"]=>
-    string(8) "11111111"
-    ["fresh_content"]=>
-    string(0) ""
-  }
-}
-
-2015-08-28T18:40:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:93 _FILES:array(1) {
-  ["adv_img1"]=>
-  array(5) {
-    ["name"]=>
-    string(8) "kobe.jpg"
-    ["type"]=>
-    string(24) "application/octet-stream"
-    ["tmp_name"]=>
-    string(36) "D:\programming\XAMMP\tmp\phpC38F.tmp"
-    ["error"]=>
-    int(0)
-    ["size"]=>
-    int(13064)
-  }
-}
-
-2015-08-28T18:40:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:124 adv_infor_array[DATA][image]:array(1) {
-  ["adv_img1"]=>
-  array(5) {
-    ["name"]=>
-    string(8) "kobe.jpg"
-    ["type"]=>
-    string(24) "application/octet-stream"
-    ["tmp_name"]=>
-    string(36) "D:\programming\XAMMP\tmp\phpC38F.tmp"
-    ["error"]=>
-    int(0)
-    ["size"]=>
-    int(13064)
-  }
-}
-
-2015-08-28T18:40:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:125 count(FILES) = 1
-2015-08-28T18:40:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:133 adv_infor_array[DATA][image]:array(1) {
-  ["adv_img1"]=>
-  array(5) {
-    ["name"]=>
-    string(8) "kobe.jpg"
-    ["type"]=>
-    string(24) "application/octet-stream"
-    ["tmp_name"]=>
-    string(36) "D:\programming\XAMMP\tmp\phpC38F.tmp"
-    ["error"]=>
-    int(0)
-    ["size"]=>
-    int(13064)
-  }
-}
-
-2015-08-28T18:40:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:143 this->img_file_prefix = adv
-2015-08-28T18:40:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:144 this->temp_img_dir = E:/workbench/xiaolaba/webserver/web/dalaba/server/data/img
-2015-08-28T18:40:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:147 filename = E:\workbench\xiaolaba\webserver\web\dalaba\server\data\img\advC3FD.tmp
-2015-08-28T18:40:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:159 dump file_path:array(4) {
-  ["dirname"]=>
-  string(1) "."
-  ["basename"]=>
-  string(8) "kobe.jpg"
-  ["extension"]=>
-  string(3) "jpg"
-  ["filename"]=>
-  string(4) "kobe"
-}
-
-2015-08-28T18:40:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:161 dump file_path2:array(4) {
-  ["dirname"]=>
-  string(58) "E:\workbench\xiaolaba\webserver\web\dalaba\server\data\img"
-  ["basename"]=>
-  string(11) "advC3FD.tmp"
-  ["extension"]=>
-  string(3) "tmp"
-  ["filename"]=>
-  string(7) "advC3FD"
-}
-
-2015-08-28T18:40:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:169 dump new_name:E:/workbench/xiaolaba/webserver/web/dalaba/server/data/img/advC3FD.jpg
-2015-08-28T18:40:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:108 adv_infor_array[DATA][image]:string(20) "data/img/advC3FD.jpg"
-
-2015-08-28T18:40:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:51 Advertisement_model::update
-2015-08-28T18:40:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:94 Advertisement_model::update_adv_validate
-2015-08-28T18:40:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:74 sql = update advertisement set type = 'personal',
-                                         title ='What a fucking day!',
-                                         text_content ='11111111',
-                                         image ='data/img/advC3FD.jpg', 
-                                         fresh_content ='',
-                                         lat = '40.053405',
-                                         lng = '116.333267',
-                                         address = '上林溪'
-                                         where id = 91 and uid = 101
-2015-08-28T18:40:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:259 Advertisement::get_advertisement_infor
-2015-08-28T18:40:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:268 request_json = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"GET_ADVERTISEMENT_INFOR",
-    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
-    "DATA":{
-        "adv_id" : "93"
-    }
-}
-
-2015-08-28T18:40:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:273 Advertisement_model::get_advertisement_infor
-2015-08-28T18:40:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:280 sql = select id,uid,type,publish_time,title,text_content,image,read_count,zan_num,address from advertisement where id = 93
-2015-08-28T18:40:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:286 res = object(mysqli_result)#47 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(10)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-28T18:40:33+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:28 User::login
-2015-08-28T18:40:33+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:29 get_http_raw:POST /index.php/user/login HTTP/1.1
-USER-AGENT: Jakarta Commons-HttpClient/3.1-rc1
-HOST: 127.0.0.1
-
-
-2015-08-28T18:40:33+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:30 _SERVER:array(39) {
-  ["MIBDIRS"]=>
-  string(36) "D:/programming/XAMMP/php/extras/mibs"
-  ["MYSQL_HOME"]=>
-  string(16) "\xampp\mysql\bin"
-  ["OPENSSL_CONF"]=>
-  string(43) "D:/programming/XAMMP/apache/bin/openssl.cnf"
-  ["PHP_PEAR_SYSCONF_DIR"]=>
-  string(10) "\xampp\php"
-  ["PHPRC"]=>
-  string(10) "\xampp\php"
-  ["TMP"]=>
-  string(10) "\xampp\tmp"
-  ["HTTP_USER_AGENT"]=>
-  string(34) "Jakarta Commons-HttpClient/3.1-rc1"
-  ["HTTP_HOST"]=>
-  string(9) "127.0.0.1"
-  ["CONTENT_LENGTH"]=>
-  string(3) "484"
-  ["CONTENT_TYPE"]=>
-  string(69) "multipart/form-data; boundary=teXuf0Cs6YamHqQbmzmFXyeHRRQ35QxCGktauGl"
-  ["PATH"]=>
-  string(1082) "D:\programming\instantclient-basic-nt-12.1.0.2.0\instantclient_12_1;D:\programming\instantclient_11_2;D:\programming\oracle\product\11.2.0\dbhome_1\bin;D:\programming\instantclient-basic-nt-12.1.0.2.0\instantclient_12_1;D:\programming\XAMMP\php;D:\programming\Git\bin;D:\programming\sbt\sbt\bin;D:\programming\scala\bin;D:\programming\python\;C:\ProgramData\Oracle\Java\javapath;D:\programming\jdk\1.7\bin;D:\programming\jdk\1.7\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;D:\programming\tools;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\programming\scala\bin;D:\programming\instantclient_11_2;E:\workbench\xiaolaba\webserver\yii-1.1.16.bca042\framework;E:\workbench\xiaolaba\webserver\redis-2.4.5;E:\workbench\xiaolaba\yii-1.1.16.bca042\framework;D:\programming\Tesseract-OCR;D:\programming\Tesseract-OCR"
-  ["SystemRoot"]=>
-  string(10) "C:\Windows"
-  ["COMSPEC"]=>
-  string(27) "C:\Windows\system32\cmd.exe"
-  ["PATHEXT"]=>
-  string(53) ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"
-  ["WINDIR"]=>
-  string(10) "C:\Windows"
-  ["SERVER_SIGNATURE"]=>
-  string(94) "<address>Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8 Server at 127.0.0.1 Port 80</address>
-"
-  ["SERVER_SOFTWARE"]=>
-  string(46) "Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8"
-  ["SERVER_NAME"]=>
-  string(9) "127.0.0.1"
-  ["SERVER_ADDR"]=>
-  string(9) "127.0.0.1"
-  ["SERVER_PORT"]=>
-  string(2) "80"
-  ["REMOTE_ADDR"]=>
-  string(9) "127.0.0.1"
-  ["DOCUMENT_ROOT"]=>
-  string(49) "E:/workbench/xiaolaba/webserver/web/dalaba/server"
-  ["REQUEST_SCHEME"]=>
-  string(4) "http"
-  ["CONTEXT_PREFIX"]=>
-  string(0) ""
-  ["CONTEXT_DOCUMENT_ROOT"]=>
-  string(49) "E:/workbench/xiaolaba/webserver/web/dalaba/server"
-  ["SERVER_ADMIN"]=>
-  string(20) "postmaster@localhost"
-  ["SCRIPT_FILENAME"]=>
-  string(59) "E:/workbench/xiaolaba/webserver/web/dalaba/server/index.php"
-  ["REMOTE_PORT"]=>
-  string(5) "22489"
-  ["GATEWAY_INTERFACE"]=>
-  string(7) "CGI/1.1"
-  ["SERVER_PROTOCOL"]=>
-  string(8) "HTTP/1.1"
-  ["REQUEST_METHOD"]=>
-  string(4) "POST"
-  ["QUERY_STRING"]=>
-  string(0) ""
-  ["REQUEST_URI"]=>
-  string(21) "/index.php/user/login"
-  ["SCRIPT_NAME"]=>
-  string(10) "/index.php"
-  ["PATH_INFO"]=>
-  string(11) "/user/login"
-  ["PATH_TRANSLATED"]=>
-  string(60) "E:\workbench\xiaolaba\webserver\web\dalaba\server\user\login"
-  ["PHP_SELF"]=>
-  string(21) "/index.php/user/login"
-  ["REQUEST_TIME_FLOAT"]=>
-  float(1440758433.742)
-  ["REQUEST_TIME"]=>
-  int(1440758433)
-}
-
-2015-08-28T18:40:33+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 user_login_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"LOGIN",
-    "SESSION_KEY":"",
-    "DATA":{
-        "name":"chenxiaoer",
-        "password":"12345",
-        "test":"你妹呀！",
-        "names":"chenyang,chenxiaoer,chenxiaoer3,weichushun,weichushunlalla"    
-    }
-}
-
-2015-08-28T18:40:33+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:41 dump user_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(5) "LOGIN"
-  ["SESSION_KEY"]=>
-  string(0) ""
-  ["DATA"]=>
-  array(4) {
-    ["name"]=>
-    string(10) "chenxiaoer"
-    ["password"]=>
-    string(5) "12345"
-    ["test"]=>
-    string(12) "你妹呀！"
-    ["names"]=>
-    string(58) "chenyang,chenxiaoer,chenxiaoer3,weichushun,weichushunlalla"
-  }
-}
-
-2015-08-28T18:40:33+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-28T18:40:33+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
-2015-08-28T18:40:33+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(11)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-28T18:40:33+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-28T18:40:33+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
-2015-08-28T18:40:33+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(1)
-  ["lengths"]=>
   array(1) {
-    [0]=>
-    int(3)
+    ["cellphone"]=>
+    string(11) "13426370450"
   }
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
 }
 
-2015-08-28T18:40:33+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:75 Advertisement::update
-2015-08-28T18:40:33+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:84 adv_infor = {
+2015-09-03T19:05:29+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:246 dump _SESSION:array(1) {
+  ["sms"]=>
+  array(1) {
+    [""13426370450""]=>
+    string(6) "856414"
+  }
+}
+
+2015-09-03T19:05:29+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Sms.php:73 Sms:发送成功
+2015-09-03T19:06:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:63 Authentication::validate_short_message_verification_code
+2015-09-03T19:06:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:66 adv_infor = {
     "VERSION":"1.0.0",
     "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
     "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
     "DATA":{
-        "id":"91",
-        "image":"true",
-        "type":"personal",
-        "publish_position": {
-            "addr": "上林溪",
-            "lat": "40.053405",
-            "lng": "116.333267"
-        },
-        "title" : "What a fucking day!",
-        "text_content":"11111111",
-        "fresh_content":""
+        "cellphone":"13426370450",
+        "code":"856414"
     }
 }
 
-2015-08-28T18:40:33+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:87 dump adv_infor_array:array(4) {
+2015-09-03T19:06:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:69 dump adv_infor_array:array(4) {
   ["VERSION"]=>
   string(5) "1.0.0"
   ["REQUEST_TYPE"]=>
@@ -1502,151 +159,331 @@ HOST: 127.0.0.1
   ["SESSION_KEY"]=>
   string(32) "94e9e1bd4007c83d7ab96ecb8f2b2536"
   ["DATA"]=>
-  array(7) {
-    ["id"]=>
-    string(2) "91"
-    ["image"]=>
-    string(4) "true"
-    ["type"]=>
-    string(8) "personal"
-    ["publish_position"]=>
-    array(3) {
-      ["addr"]=>
-      string(9) "上林溪"
-      ["lat"]=>
-      string(9) "40.053405"
-      ["lng"]=>
-      string(10) "116.333267"
-    }
-    ["title"]=>
-    string(19) "What a fucking day!"
-    ["text_content"]=>
-    string(8) "11111111"
-    ["fresh_content"]=>
-    string(0) ""
+  array(2) {
+    ["cellphone"]=>
+    string(11) "13426370450"
+    ["code"]=>
+    string(6) "856414"
   }
 }
 
-2015-08-28T18:40:33+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:93 _FILES:array(1) {
-  ["adv_img1"]=>
-  array(5) {
-    ["name"]=>
-    string(8) "kobe.jpg"
-    ["type"]=>
-    string(24) "application/octet-stream"
-    ["tmp_name"]=>
-    string(36) "D:\programming\XAMMP\tmp\phpE276.tmp"
-    ["error"]=>
-    int(0)
-    ["size"]=>
-    int(13064)
+2015-09-03T19:06:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:253 dump _SESSION:array(1) {
+  ["sms"]=>
+  array(1) {
+    [""13426370450""]=>
+    string(6) "856414"
   }
 }
 
-2015-08-28T18:40:33+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:124 adv_infor_array[DATA][image]:array(1) {
-  ["adv_img1"]=>
-  array(5) {
-    ["name"]=>
-    string(8) "kobe.jpg"
-    ["type"]=>
-    string(24) "application/octet-stream"
-    ["tmp_name"]=>
-    string(36) "D:\programming\XAMMP\tmp\phpE276.tmp"
-    ["error"]=>
-    int(0)
-    ["size"]=>
-    int(13064)
-  }
-}
-
-2015-08-28T18:40:33+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:125 count(FILES) = 1
-2015-08-28T18:40:33+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:133 adv_infor_array[DATA][image]:array(1) {
-  ["adv_img1"]=>
-  array(5) {
-    ["name"]=>
-    string(8) "kobe.jpg"
-    ["type"]=>
-    string(24) "application/octet-stream"
-    ["tmp_name"]=>
-    string(36) "D:\programming\XAMMP\tmp\phpE276.tmp"
-    ["error"]=>
-    int(0)
-    ["size"]=>
-    int(13064)
-  }
-}
-
-2015-08-28T18:40:33+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:143 this->img_file_prefix = adv
-2015-08-28T18:40:33+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:144 this->temp_img_dir = E:/workbench/xiaolaba/webserver/web/dalaba/server/data/img
-2015-08-28T18:40:33+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:147 filename = E:\workbench\xiaolaba\webserver\web\dalaba\server\data\img\advE2D4.tmp
-2015-08-28T18:40:33+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:159 dump file_path:array(4) {
-  ["dirname"]=>
-  string(1) "."
-  ["basename"]=>
-  string(8) "kobe.jpg"
-  ["extension"]=>
-  string(3) "jpg"
-  ["filename"]=>
-  string(4) "kobe"
-}
-
-2015-08-28T18:40:33+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:161 dump file_path2:array(4) {
-  ["dirname"]=>
-  string(58) "E:\workbench\xiaolaba\webserver\web\dalaba\server\data\img"
-  ["basename"]=>
-  string(11) "advE2D4.tmp"
-  ["extension"]=>
-  string(3) "tmp"
-  ["filename"]=>
-  string(7) "advE2D4"
-}
-
-2015-08-28T18:40:33+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:169 dump new_name:E:/workbench/xiaolaba/webserver/web/dalaba/server/data/img/advE2D4.jpg
-2015-08-28T18:40:33+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:108 adv_infor_array[DATA][image]:string(20) "data/img/advE2D4.jpg"
-
-2015-08-28T18:40:33+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:51 Advertisement_model::update
-2015-08-28T18:40:33+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:94 Advertisement_model::update_adv_validate
-2015-08-28T18:40:33+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:74 sql = update advertisement set type = 'personal',
-                                         title ='What a fucking day!',
-                                         text_content ='11111111',
-                                         image ='data/img/advE2D4.jpg', 
-                                         fresh_content ='',
-                                         lat = '40.053405',
-                                         lng = '116.333267',
-                                         address = '上林溪'
-                                         where id = 91 and uid = 101
-2015-08-28T18:40:34+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:259 Advertisement::get_advertisement_infor
-2015-08-28T18:40:34+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:268 request_json = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"GET_ADVERTISEMENT_INFOR",
-    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
-    "DATA":{
-        "adv_id" : "93"
-    }
-}
-
-2015-08-28T18:40:34+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:273 Advertisement_model::get_advertisement_infor
-2015-08-28T18:40:34+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:280 sql = select id,uid,type,publish_time,title,text_content,image,read_count,zan_num,address from advertisement where id = 93
-2015-08-28T18:40:34+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:286 res = object(mysqli_result)#47 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(10)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:28 User::login
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:29 get_http_raw:POST /index.php/user/login HTTP/1.1
+2015-09-03T19:07:21+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:11 Authentication::get_short_message_verification_code
+2015-09-03T19:07:21+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:13 POST /index.php/authentication/get_short_message_verification_code HTTP/1.1
 USER-AGENT: Jakarta Commons-HttpClient/3.1-rc1
 HOST: 127.0.0.1
 
 
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:30 _SERVER:array(39) {
+2015-09-03T19:07:21+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:21 adv_infor = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
+    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
+    "DATA":{
+        "cellphone":"13426370450"
+    }
+}
+
+2015-09-03T19:07:21+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:24 dump adv_infor_array:array(4) {
+  ["VERSION"]=>
+  string(5) "1.0.0"
+  ["REQUEST_TYPE"]=>
+  string(20) "CREATE_ADVERTISEMENT"
+  ["SESSION_KEY"]=>
+  string(32) "94e9e1bd4007c83d7ab96ecb8f2b2536"
+  ["DATA"]=>
+  array(1) {
+    ["cellphone"]=>
+    string(11) "13426370450"
+  }
+}
+
+2015-09-03T19:07:21+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:246 dump _SESSION:array(1) {
+  ["sms"]=>
+  array(1) {
+    ["13426370450"]=>
+    string(6) "616577"
+  }
+}
+
+2015-09-03T19:07:21+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Sms.php:73 Sms:发送成功
+2015-09-03T19:07:34+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:63 Authentication::validate_short_message_verification_code
+2015-09-03T19:07:34+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:66 adv_infor = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
+    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
+    "DATA":{
+        "cellphone":"13426370450",
+        "code":"616577"
+    }
+}
+
+2015-09-03T19:07:34+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:69 dump adv_infor_array:array(4) {
+  ["VERSION"]=>
+  string(5) "1.0.0"
+  ["REQUEST_TYPE"]=>
+  string(20) "CREATE_ADVERTISEMENT"
+  ["SESSION_KEY"]=>
+  string(32) "94e9e1bd4007c83d7ab96ecb8f2b2536"
+  ["DATA"]=>
+  array(2) {
+    ["cellphone"]=>
+    string(11) "13426370450"
+    ["code"]=>
+    string(6) "616577"
+  }
+}
+
+2015-09-03T19:07:34+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:253 dump _SESSION:array(1) {
+  ["sms"]=>
+  array(1) {
+    ["13426370450"]=>
+    string(6) "616577"
+  }
+}
+
+2015-09-03T19:08:57+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:11 Authentication::get_short_message_verification_code
+2015-09-03T19:08:57+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:13 POST /index.php/authentication/get_short_message_verification_code HTTP/1.1
+USER-AGENT: Jakarta Commons-HttpClient/3.1-rc1
+HOST: 127.0.0.1
+
+
+2015-09-03T19:08:57+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:21 adv_infor = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
+    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
+    "DATA":{
+        "cellphone":"13426370450"
+    }
+}
+
+2015-09-03T19:08:57+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:24 dump adv_infor_array:array(4) {
+  ["VERSION"]=>
+  string(5) "1.0.0"
+  ["REQUEST_TYPE"]=>
+  string(20) "CREATE_ADVERTISEMENT"
+  ["SESSION_KEY"]=>
+  string(32) "94e9e1bd4007c83d7ab96ecb8f2b2536"
+  ["DATA"]=>
+  array(1) {
+    ["cellphone"]=>
+    string(11) "13426370450"
+  }
+}
+
+2015-09-03T19:08:57+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:246 dump _SESSION:array(1) {
+  ["sms"]=>
+  array(1) {
+    ["13426370450"]=>
+    string(6) "396148"
+  }
+}
+
+2015-09-03T19:08:57+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Sms.php:73 Sms:发送成功
+2015-09-03T19:09:13+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:63 Authentication::validate_short_message_verification_code
+2015-09-03T19:09:13+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:66 adv_infor = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
+    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
+    "DATA":{
+        "cellphone":"13426370450",
+        "code":"396148"
+    }
+}
+
+2015-09-03T19:09:13+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:69 dump adv_infor_array:array(4) {
+  ["VERSION"]=>
+  string(5) "1.0.0"
+  ["REQUEST_TYPE"]=>
+  string(20) "CREATE_ADVERTISEMENT"
+  ["SESSION_KEY"]=>
+  string(32) "94e9e1bd4007c83d7ab96ecb8f2b2536"
+  ["DATA"]=>
+  array(2) {
+    ["cellphone"]=>
+    string(11) "13426370450"
+    ["code"]=>
+    string(6) "396148"
+  }
+}
+
+2015-09-03T19:09:13+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:250 Utils::validate_sms_code
+2015-09-03T19:09:13+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:251 cellphone:13426370450
+2015-09-03T19:09:13+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:252 code:396148
+2015-09-03T19:09:13+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:256 dump _SESSION:array(1) {
+  ["sms"]=>
+  array(1) {
+    ["13426370450"]=>
+    string(6) "396148"
+  }
+}
+
+2015-09-03T19:10:09+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:11 Authentication::get_short_message_verification_code
+2015-09-03T19:10:09+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:13 POST /index.php/authentication/get_short_message_verification_code HTTP/1.1
+USER-AGENT: Jakarta Commons-HttpClient/3.1-rc1
+HOST: 127.0.0.1
+
+
+2015-09-03T19:10:09+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:21 adv_infor = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
+    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
+    "DATA":{
+        "cellphone":"13426370450"
+    }
+}
+
+2015-09-03T19:10:09+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:24 dump adv_infor_array:array(4) {
+  ["VERSION"]=>
+  string(5) "1.0.0"
+  ["REQUEST_TYPE"]=>
+  string(20) "CREATE_ADVERTISEMENT"
+  ["SESSION_KEY"]=>
+  string(32) "94e9e1bd4007c83d7ab96ecb8f2b2536"
+  ["DATA"]=>
+  array(1) {
+    ["cellphone"]=>
+    string(11) "13426370450"
+  }
+}
+
+2015-09-03T19:10:09+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:246 dump _SESSION:array(1) {
+  ["sms"]=>
+  array(1) {
+    ["13426370450"]=>
+    string(6) "853820"
+  }
+}
+
+2015-09-03T19:10:10+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Sms.php:73 Sms:发送成功
+2015-09-03T19:10:15+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:63 Authentication::validate_short_message_verification_code
+2015-09-03T19:10:15+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:66 adv_infor = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
+    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
+    "DATA":{
+        "cellphone":"13426370450",
+        "code":"123456"
+    }
+}
+
+2015-09-03T19:10:15+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:69 dump adv_infor_array:array(4) {
+  ["VERSION"]=>
+  string(5) "1.0.0"
+  ["REQUEST_TYPE"]=>
+  string(20) "CREATE_ADVERTISEMENT"
+  ["SESSION_KEY"]=>
+  string(32) "94e9e1bd4007c83d7ab96ecb8f2b2536"
+  ["DATA"]=>
+  array(2) {
+    ["cellphone"]=>
+    string(11) "13426370450"
+    ["code"]=>
+    string(6) "123456"
+  }
+}
+
+2015-09-03T19:10:15+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:250 Utils::validate_sms_code
+2015-09-03T19:10:15+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:251 cellphone:13426370450
+2015-09-03T19:10:15+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:252 code:123456
+2015-09-03T19:10:15+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:256 dump _SESSION:array(1) {
+  ["sms"]=>
+  array(1) {
+    ["13426370450"]=>
+    string(6) "853820"
+  }
+}
+
+2015-09-03T19:10:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:11 Authentication::get_short_message_verification_code
+2015-09-03T19:10:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:13 POST /index.php/authentication/get_short_message_verification_code HTTP/1.1
+USER-AGENT: Jakarta Commons-HttpClient/3.1-rc1
+HOST: 127.0.0.1
+
+
+2015-09-03T19:10:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:21 adv_infor = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
+    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
+    "DATA":{
+        "cellphone":"13426370450"
+    }
+}
+
+2015-09-03T19:10:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:24 dump adv_infor_array:array(4) {
+  ["VERSION"]=>
+  string(5) "1.0.0"
+  ["REQUEST_TYPE"]=>
+  string(20) "CREATE_ADVERTISEMENT"
+  ["SESSION_KEY"]=>
+  string(32) "94e9e1bd4007c83d7ab96ecb8f2b2536"
+  ["DATA"]=>
+  array(1) {
+    ["cellphone"]=>
+    string(11) "13426370450"
+  }
+}
+
+2015-09-03T19:10:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:246 dump _SESSION:array(1) {
+  ["sms"]=>
+  array(1) {
+    ["13426370450"]=>
+    string(6) "536956"
+  }
+}
+
+2015-09-03T19:10:26+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Sms.php:73 Sms:发送成功
+2015-09-03T19:10:40+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:63 Authentication::validate_short_message_verification_code
+2015-09-03T19:10:40+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:66 adv_infor = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
+    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
+    "DATA":{
+        "cellphone":"13426370450",
+        "code":"536956"
+    }
+}
+
+2015-09-03T19:10:40+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:69 dump adv_infor_array:array(4) {
+  ["VERSION"]=>
+  string(5) "1.0.0"
+  ["REQUEST_TYPE"]=>
+  string(20) "CREATE_ADVERTISEMENT"
+  ["SESSION_KEY"]=>
+  string(32) "94e9e1bd4007c83d7ab96ecb8f2b2536"
+  ["DATA"]=>
+  array(2) {
+    ["cellphone"]=>
+    string(11) "13426370450"
+    ["code"]=>
+    string(6) "536956"
+  }
+}
+
+2015-09-03T19:10:40+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:250 Utils::validate_sms_code
+2015-09-03T19:10:40+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:251 cellphone:13426370450
+2015-09-03T19:10:40+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:252 code:536956
+2015-09-03T19:10:40+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:256 dump _SESSION:array(1) {
+  ["sms"]=>
+  array(1) {
+    ["13426370450"]=>
+    string(6) "536956"
+  }
+}
+
+2015-09-03T19:15:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:424 User::add_to_user_position_list
+2015-09-03T19:16:02+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:28 User::login
+2015-09-03T19:16:02+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:29 get_http_raw:POST /index.php/user/login HTTP/1.1
+USER-AGENT: Jakarta Commons-HttpClient/3.1-rc1
+HOST: 127.0.0.1
+
+
+2015-09-03T19:16:02+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:30 _SERVER:array(39) {
   ["MIBDIRS"]=>
   string(36) "D:/programming/XAMMP/php/extras/mibs"
   ["MYSQL_HOME"]=>
@@ -1666,7 +503,7 @@ HOST: 127.0.0.1
   ["CONTENT_LENGTH"]=>
   string(3) "470"
   ["CONTENT_TYPE"]=>
-  string(62) "multipart/form-data; boundary=ZOz7RKG79RpFHm4vR4JpehNBWKxP6ag3"
+  string(62) "multipart/form-data; boundary=BeGTUoOO6trJ6t4M_0qYfAN90tww3SY0"
   ["PATH"]=>
   string(1082) "D:\programming\instantclient-basic-nt-12.1.0.2.0\instantclient_12_1;D:\programming\instantclient_11_2;D:\programming\oracle\product\11.2.0\dbhome_1\bin;D:\programming\instantclient-basic-nt-12.1.0.2.0\instantclient_12_1;D:\programming\XAMMP\php;D:\programming\Git\bin;D:\programming\sbt\sbt\bin;D:\programming\scala\bin;D:\programming\python\;C:\ProgramData\Oracle\Java\javapath;D:\programming\jdk\1.7\bin;D:\programming\jdk\1.7\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;D:\programming\tools;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\programming\scala\bin;D:\programming\instantclient_11_2;E:\workbench\xiaolaba\webserver\yii-1.1.16.bca042\framework;E:\workbench\xiaolaba\webserver\redis-2.4.5;E:\workbench\xiaolaba\yii-1.1.16.bca042\framework;D:\programming\Tesseract-OCR;D:\programming\Tesseract-OCR"
   ["SystemRoot"]=>
@@ -1703,7 +540,7 @@ HOST: 127.0.0.1
   ["SCRIPT_FILENAME"]=>
   string(59) "E:/workbench/xiaolaba/webserver/web/dalaba/server/index.php"
   ["REMOTE_PORT"]=>
-  string(5) "22497"
+  string(5) "17919"
   ["GATEWAY_INTERFACE"]=>
   string(7) "CGI/1.1"
   ["SERVER_PROTOCOL"]=>
@@ -1723,12 +560,12 @@ HOST: 127.0.0.1
   ["PHP_SELF"]=>
   string(21) "/index.php/user/login"
   ["REQUEST_TIME_FLOAT"]=>
-  float(1440758464.422)
+  float(1441278962.571)
   ["REQUEST_TIME"]=>
-  int(1440758464)
+  int(1441278962)
 }
 
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 user_login_infor = {
+2015-09-03T19:16:02+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 user_login_infor = {
     "VERSION":"1.0.0",
     "REQUEST_TYPE":"LOGIN",
     "SESSION_KEY":"",
@@ -1740,7 +577,7 @@ HOST: 127.0.0.1
     }
 }
 
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:41 dump user_infor_array:array(4) {
+2015-09-03T19:16:02+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:41 dump user_infor_array:array(4) {
   ["VERSION"]=>
   string(5) "1.0.0"
   ["REQUEST_TYPE"]=>
@@ -1760,9 +597,9 @@ HOST: 127.0.0.1
   }
 }
 
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
+2015-09-03T19:16:02+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
+2015-09-03T19:16:02+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
+2015-09-03T19:16:02+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
   ["current_field"]=>
   int(0)
   ["field_count"]=>
@@ -1775,9 +612,9 @@ HOST: 127.0.0.1
   int(0)
 }
 
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
+2015-09-03T19:16:02+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
+2015-09-03T19:16:02+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
+2015-09-03T19:16:02+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
   ["current_field"]=>
   int(0)
   ["field_count"]=>
@@ -1793,1226 +630,28 @@ HOST: 127.0.0.1
   int(0)
 }
 
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:75 Advertisement::update
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:84 adv_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
-    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
-    "DATA":{
-        "id":"91",
-        "image":"true",
-        "type":"personal",
-        "publish_position": {
-            "addr": "上林溪",
-            "lat": "40.053405",
-            "lng": "116.333267"
-        },
-        "title" : "What a fucking day!",
-        "text_content":"11111111",
-        "fresh_content":""
+2015-09-03T19:16:02+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:424 User::add_to_user_position_list
+2015-09-03T19:16:02+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:442 request_json = {
+    "VERSION": "1.0.0",
+    "REQUEST_TYPE": "CREATE_ADVERTISEMENT",
+    "SESSION_KEY": "94e9e1bd4007c83d7ab96ecb8f2b2536",
+    "DATA": {
+            "addr": "北航大运村1号楼6666666666",
+            "lat": "39.983699",
+            "lng": "116.351785"
     }
 }
 
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:87 dump adv_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(20) "CREATE_ADVERTISEMENT"
-  ["SESSION_KEY"]=>
-  string(32) "94e9e1bd4007c83d7ab96ecb8f2b2536"
-  ["DATA"]=>
-  array(7) {
-    ["id"]=>
-    string(2) "91"
-    ["image"]=>
-    string(4) "true"
-    ["type"]=>
-    string(8) "personal"
-    ["publish_position"]=>
-    array(3) {
-      ["addr"]=>
-      string(9) "上林溪"
-      ["lat"]=>
-      string(9) "40.053405"
-      ["lng"]=>
-      string(10) "116.333267"
-    }
-    ["title"]=>
-    string(19) "What a fucking day!"
-    ["text_content"]=>
-    string(8) "11111111"
-    ["fresh_content"]=>
-    string(0) ""
-  }
-}
-
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:93 _FILES:array(1) {
-  ["adv_img1"]=>
-  array(5) {
-    ["name"]=>
-    string(8) "kobe.jpg"
-    ["type"]=>
-    string(24) "application/octet-stream"
-    ["tmp_name"]=>
-    string(36) "D:\programming\XAMMP\tmp\php5A55.tmp"
-    ["error"]=>
-    int(0)
-    ["size"]=>
-    int(13064)
-  }
-}
-
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:124 adv_infor_array[DATA][image]:array(1) {
-  ["adv_img1"]=>
-  array(5) {
-    ["name"]=>
-    string(8) "kobe.jpg"
-    ["type"]=>
-    string(24) "application/octet-stream"
-    ["tmp_name"]=>
-    string(36) "D:\programming\XAMMP\tmp\php5A55.tmp"
-    ["error"]=>
-    int(0)
-    ["size"]=>
-    int(13064)
-  }
-}
-
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:125 count(FILES) = 1
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:133 adv_infor_array[DATA][image]:array(1) {
-  ["adv_img1"]=>
-  array(5) {
-    ["name"]=>
-    string(8) "kobe.jpg"
-    ["type"]=>
-    string(24) "application/octet-stream"
-    ["tmp_name"]=>
-    string(36) "D:\programming\XAMMP\tmp\php5A55.tmp"
-    ["error"]=>
-    int(0)
-    ["size"]=>
-    int(13064)
-  }
-}
-
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:143 this->img_file_prefix = adv
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:144 this->temp_img_dir = E:/workbench/xiaolaba/webserver/web/dalaba/server/data/img
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:147 filename = E:\workbench\xiaolaba\webserver\web\dalaba\server\data\img\adv5AA4.tmp
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:159 dump file_path:array(4) {
-  ["dirname"]=>
-  string(1) "."
-  ["basename"]=>
-  string(8) "kobe.jpg"
-  ["extension"]=>
-  string(3) "jpg"
-  ["filename"]=>
-  string(4) "kobe"
-}
-
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:161 dump file_path2:array(4) {
-  ["dirname"]=>
-  string(58) "E:\workbench\xiaolaba\webserver\web\dalaba\server\data\img"
-  ["basename"]=>
-  string(11) "adv5AA4.tmp"
-  ["extension"]=>
-  string(3) "tmp"
-  ["filename"]=>
-  string(7) "adv5AA4"
-}
-
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:169 dump new_name:E:/workbench/xiaolaba/webserver/web/dalaba/server/data/img/adv5AA4.jpg
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:108 adv_infor_array[DATA][image]:string(20) "data/img/adv5AA4.jpg"
-
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:51 Advertisement_model::update
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:94 Advertisement_model::update_adv_validate
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:74 sql = update advertisement set type = 'personal',
-                                         title ='What a fucking day!',
-                                         text_content ='11111111',
-                                         image ='data/img/adv5AA4.jpg', 
-                                         fresh_content ='',
-                                         lat = '40.053405',
-                                         lng = '116.333267',
-                                         address = '上林溪'
-                                         where id = 91 and uid = 101
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:259 Advertisement::get_advertisement_infor
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:268 request_json = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"GET_ADVERTISEMENT_INFOR",
-    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
-    "DATA":{
-        "adv_id" : "93"
-    }
-}
-
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:273 Advertisement_model::get_advertisement_infor
-2015-08-28T18:41:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:280 sql = select id,uid,type,publish_time,title,text_content,image,read_count,zan_num,addr from advertisement where id = 93
-2015-08-28T18:41:24+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:28 User::login
-2015-08-28T18:41:24+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:29 get_http_raw:POST /index.php/user/login HTTP/1.1
+2015-09-03T19:16:02+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:450 lat = 39.983699
+2015-09-03T19:16:02+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:451 lng = 116.351785
+2015-09-03T19:16:02+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:673 sql = select count(*) cnt from user_postion_list where uid = 101
+2015-09-03T19:20:00+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:28 User::login
+2015-09-03T19:20:00+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:29 get_http_raw:POST /index.php/user/login HTTP/1.1
 USER-AGENT: Jakarta Commons-HttpClient/3.1-rc1
 HOST: 127.0.0.1
 
 
-2015-08-28T18:41:24+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:30 _SERVER:array(39) {
-  ["MIBDIRS"]=>
-  string(36) "D:/programming/XAMMP/php/extras/mibs"
-  ["MYSQL_HOME"]=>
-  string(16) "\xampp\mysql\bin"
-  ["OPENSSL_CONF"]=>
-  string(43) "D:/programming/XAMMP/apache/bin/openssl.cnf"
-  ["PHP_PEAR_SYSCONF_DIR"]=>
-  string(10) "\xampp\php"
-  ["PHPRC"]=>
-  string(10) "\xampp\php"
-  ["TMP"]=>
-  string(10) "\xampp\tmp"
-  ["HTTP_USER_AGENT"]=>
-  string(34) "Jakarta Commons-HttpClient/3.1-rc1"
-  ["HTTP_HOST"]=>
-  string(9) "127.0.0.1"
-  ["CONTENT_LENGTH"]=>
-  string(3) "486"
-  ["CONTENT_TYPE"]=>
-  string(70) "multipart/form-data; boundary=loU_yjkNcLLjdSlMCj5o5uJsDzeRC-SiFqC0g7DU"
-  ["PATH"]=>
-  string(1082) "D:\programming\instantclient-basic-nt-12.1.0.2.0\instantclient_12_1;D:\programming\instantclient_11_2;D:\programming\oracle\product\11.2.0\dbhome_1\bin;D:\programming\instantclient-basic-nt-12.1.0.2.0\instantclient_12_1;D:\programming\XAMMP\php;D:\programming\Git\bin;D:\programming\sbt\sbt\bin;D:\programming\scala\bin;D:\programming\python\;C:\ProgramData\Oracle\Java\javapath;D:\programming\jdk\1.7\bin;D:\programming\jdk\1.7\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;D:\programming\tools;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\programming\scala\bin;D:\programming\instantclient_11_2;E:\workbench\xiaolaba\webserver\yii-1.1.16.bca042\framework;E:\workbench\xiaolaba\webserver\redis-2.4.5;E:\workbench\xiaolaba\yii-1.1.16.bca042\framework;D:\programming\Tesseract-OCR;D:\programming\Tesseract-OCR"
-  ["SystemRoot"]=>
-  string(10) "C:\Windows"
-  ["COMSPEC"]=>
-  string(27) "C:\Windows\system32\cmd.exe"
-  ["PATHEXT"]=>
-  string(53) ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"
-  ["WINDIR"]=>
-  string(10) "C:\Windows"
-  ["SERVER_SIGNATURE"]=>
-  string(94) "<address>Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8 Server at 127.0.0.1 Port 80</address>
-"
-  ["SERVER_SOFTWARE"]=>
-  string(46) "Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8"
-  ["SERVER_NAME"]=>
-  string(9) "127.0.0.1"
-  ["SERVER_ADDR"]=>
-  string(9) "127.0.0.1"
-  ["SERVER_PORT"]=>
-  string(2) "80"
-  ["REMOTE_ADDR"]=>
-  string(9) "127.0.0.1"
-  ["DOCUMENT_ROOT"]=>
-  string(49) "E:/workbench/xiaolaba/webserver/web/dalaba/server"
-  ["REQUEST_SCHEME"]=>
-  string(4) "http"
-  ["CONTEXT_PREFIX"]=>
-  string(0) ""
-  ["CONTEXT_DOCUMENT_ROOT"]=>
-  string(49) "E:/workbench/xiaolaba/webserver/web/dalaba/server"
-  ["SERVER_ADMIN"]=>
-  string(20) "postmaster@localhost"
-  ["SCRIPT_FILENAME"]=>
-  string(59) "E:/workbench/xiaolaba/webserver/web/dalaba/server/index.php"
-  ["REMOTE_PORT"]=>
-  string(5) "22506"
-  ["GATEWAY_INTERFACE"]=>
-  string(7) "CGI/1.1"
-  ["SERVER_PROTOCOL"]=>
-  string(8) "HTTP/1.1"
-  ["REQUEST_METHOD"]=>
-  string(4) "POST"
-  ["QUERY_STRING"]=>
-  string(0) ""
-  ["REQUEST_URI"]=>
-  string(21) "/index.php/user/login"
-  ["SCRIPT_NAME"]=>
-  string(10) "/index.php"
-  ["PATH_INFO"]=>
-  string(11) "/user/login"
-  ["PATH_TRANSLATED"]=>
-  string(60) "E:\workbench\xiaolaba\webserver\web\dalaba\server\user\login"
-  ["PHP_SELF"]=>
-  string(21) "/index.php/user/login"
-  ["REQUEST_TIME_FLOAT"]=>
-  float(1440758484.893)
-  ["REQUEST_TIME"]=>
-  int(1440758484)
-}
-
-2015-08-28T18:41:24+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 user_login_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"LOGIN",
-    "SESSION_KEY":"",
-    "DATA":{
-        "name":"chenxiaoer",
-        "password":"12345",
-        "test":"你妹呀！",
-        "names":"chenyang,chenxiaoer,chenxiaoer3,weichushun,weichushunlalla"    
-    }
-}
-
-2015-08-28T18:41:24+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:41 dump user_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(5) "LOGIN"
-  ["SESSION_KEY"]=>
-  string(0) ""
-  ["DATA"]=>
-  array(4) {
-    ["name"]=>
-    string(10) "chenxiaoer"
-    ["password"]=>
-    string(5) "12345"
-    ["test"]=>
-    string(12) "你妹呀！"
-    ["names"]=>
-    string(58) "chenyang,chenxiaoer,chenxiaoer3,weichushun,weichushunlalla"
-  }
-}
-
-2015-08-28T18:41:24+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-28T18:41:24+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
-2015-08-28T18:41:24+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(11)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-28T18:41:24+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-28T18:41:24+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
-2015-08-28T18:41:24+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(1)
-  ["lengths"]=>
-  array(1) {
-    [0]=>
-    int(3)
-  }
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-28T18:41:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:75 Advertisement::update
-2015-08-28T18:41:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:84 adv_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
-    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
-    "DATA":{
-        "id":"91",
-        "image":"true",
-        "type":"personal",
-        "publish_position": {
-            "addr": "上林溪",
-            "lat": "40.053405",
-            "lng": "116.333267"
-        },
-        "title" : "What a fucking day!",
-        "text_content":"11111111",
-        "fresh_content":""
-    }
-}
-
-2015-08-28T18:41:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:87 dump adv_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(20) "CREATE_ADVERTISEMENT"
-  ["SESSION_KEY"]=>
-  string(32) "94e9e1bd4007c83d7ab96ecb8f2b2536"
-  ["DATA"]=>
-  array(7) {
-    ["id"]=>
-    string(2) "91"
-    ["image"]=>
-    string(4) "true"
-    ["type"]=>
-    string(8) "personal"
-    ["publish_position"]=>
-    array(3) {
-      ["addr"]=>
-      string(9) "上林溪"
-      ["lat"]=>
-      string(9) "40.053405"
-      ["lng"]=>
-      string(10) "116.333267"
-    }
-    ["title"]=>
-    string(19) "What a fucking day!"
-    ["text_content"]=>
-    string(8) "11111111"
-    ["fresh_content"]=>
-    string(0) ""
-  }
-}
-
-2015-08-28T18:41:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:93 _FILES:array(1) {
-  ["adv_img1"]=>
-  array(5) {
-    ["name"]=>
-    string(8) "kobe.jpg"
-    ["type"]=>
-    string(24) "application/octet-stream"
-    ["tmp_name"]=>
-    string(36) "D:\programming\XAMMP\tmp\phpAA89.tmp"
-    ["error"]=>
-    int(0)
-    ["size"]=>
-    int(13064)
-  }
-}
-
-2015-08-28T18:41:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:124 adv_infor_array[DATA][image]:array(1) {
-  ["adv_img1"]=>
-  array(5) {
-    ["name"]=>
-    string(8) "kobe.jpg"
-    ["type"]=>
-    string(24) "application/octet-stream"
-    ["tmp_name"]=>
-    string(36) "D:\programming\XAMMP\tmp\phpAA89.tmp"
-    ["error"]=>
-    int(0)
-    ["size"]=>
-    int(13064)
-  }
-}
-
-2015-08-28T18:41:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:125 count(FILES) = 1
-2015-08-28T18:41:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:133 adv_infor_array[DATA][image]:array(1) {
-  ["adv_img1"]=>
-  array(5) {
-    ["name"]=>
-    string(8) "kobe.jpg"
-    ["type"]=>
-    string(24) "application/octet-stream"
-    ["tmp_name"]=>
-    string(36) "D:\programming\XAMMP\tmp\phpAA89.tmp"
-    ["error"]=>
-    int(0)
-    ["size"]=>
-    int(13064)
-  }
-}
-
-2015-08-28T18:41:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:143 this->img_file_prefix = adv
-2015-08-28T18:41:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:144 this->temp_img_dir = E:/workbench/xiaolaba/webserver/web/dalaba/server/data/img
-2015-08-28T18:41:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:147 filename = E:\workbench\xiaolaba\webserver\web\dalaba\server\data\img\advAAF7.tmp
-2015-08-28T18:41:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:159 dump file_path:array(4) {
-  ["dirname"]=>
-  string(1) "."
-  ["basename"]=>
-  string(8) "kobe.jpg"
-  ["extension"]=>
-  string(3) "jpg"
-  ["filename"]=>
-  string(4) "kobe"
-}
-
-2015-08-28T18:41:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:161 dump file_path2:array(4) {
-  ["dirname"]=>
-  string(58) "E:\workbench\xiaolaba\webserver\web\dalaba\server\data\img"
-  ["basename"]=>
-  string(11) "advAAF7.tmp"
-  ["extension"]=>
-  string(3) "tmp"
-  ["filename"]=>
-  string(7) "advAAF7"
-}
-
-2015-08-28T18:41:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:169 dump new_name:E:/workbench/xiaolaba/webserver/web/dalaba/server/data/img/advAAF7.jpg
-2015-08-28T18:41:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:108 adv_infor_array[DATA][image]:string(20) "data/img/advAAF7.jpg"
-
-2015-08-28T18:41:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:51 Advertisement_model::update
-2015-08-28T18:41:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:94 Advertisement_model::update_adv_validate
-2015-08-28T18:41:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:74 sql = update advertisement set type = 'personal',
-                                         title ='What a fucking day!',
-                                         text_content ='11111111',
-                                         image ='data/img/advAAF7.jpg', 
-                                         fresh_content ='',
-                                         lat = '40.053405',
-                                         lng = '116.333267',
-                                         address = '上林溪'
-                                         where id = 91 and uid = 101
-2015-08-28T18:41:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:259 Advertisement::get_advertisement_infor
-2015-08-28T18:41:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:268 request_json = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"GET_ADVERTISEMENT_INFOR",
-    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
-    "DATA":{
-        "adv_id" : "93"
-    }
-}
-
-2015-08-28T18:41:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:273 Advertisement_model::get_advertisement_infor
-2015-08-28T18:41:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:280 sql = select id,uid,type,publish_time,title,text_content,image,read_count,zan_num,address from advertisement where id = 93
-2015-08-28T18:41:25+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:286 res = object(mysqli_result)#47 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(10)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-28T18:43:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:28 User::login
-2015-08-28T18:43:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:29 get_http_raw:POST /index.php/user/login HTTP/1.1
-USER-AGENT: Jakarta Commons-HttpClient/3.1-rc1
-HOST: 127.0.0.1
-
-
-2015-08-28T18:43:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:30 _SERVER:array(39) {
-  ["MIBDIRS"]=>
-  string(36) "D:/programming/XAMMP/php/extras/mibs"
-  ["MYSQL_HOME"]=>
-  string(16) "\xampp\mysql\bin"
-  ["OPENSSL_CONF"]=>
-  string(43) "D:/programming/XAMMP/apache/bin/openssl.cnf"
-  ["PHP_PEAR_SYSCONF_DIR"]=>
-  string(10) "\xampp\php"
-  ["PHPRC"]=>
-  string(10) "\xampp\php"
-  ["TMP"]=>
-  string(10) "\xampp\tmp"
-  ["HTTP_USER_AGENT"]=>
-  string(34) "Jakarta Commons-HttpClient/3.1-rc1"
-  ["HTTP_HOST"]=>
-  string(9) "127.0.0.1"
-  ["CONTENT_LENGTH"]=>
-  string(3) "480"
-  ["CONTENT_TYPE"]=>
-  string(67) "multipart/form-data; boundary=K7zxtUQAeX_LjRcmVi-Z4dbJx1hkXrnIFGSsy"
-  ["PATH"]=>
-  string(1082) "D:\programming\instantclient-basic-nt-12.1.0.2.0\instantclient_12_1;D:\programming\instantclient_11_2;D:\programming\oracle\product\11.2.0\dbhome_1\bin;D:\programming\instantclient-basic-nt-12.1.0.2.0\instantclient_12_1;D:\programming\XAMMP\php;D:\programming\Git\bin;D:\programming\sbt\sbt\bin;D:\programming\scala\bin;D:\programming\python\;C:\ProgramData\Oracle\Java\javapath;D:\programming\jdk\1.7\bin;D:\programming\jdk\1.7\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;D:\programming\tools;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\programming\scala\bin;D:\programming\instantclient_11_2;E:\workbench\xiaolaba\webserver\yii-1.1.16.bca042\framework;E:\workbench\xiaolaba\webserver\redis-2.4.5;E:\workbench\xiaolaba\yii-1.1.16.bca042\framework;D:\programming\Tesseract-OCR;D:\programming\Tesseract-OCR"
-  ["SystemRoot"]=>
-  string(10) "C:\Windows"
-  ["COMSPEC"]=>
-  string(27) "C:\Windows\system32\cmd.exe"
-  ["PATHEXT"]=>
-  string(53) ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"
-  ["WINDIR"]=>
-  string(10) "C:\Windows"
-  ["SERVER_SIGNATURE"]=>
-  string(94) "<address>Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8 Server at 127.0.0.1 Port 80</address>
-"
-  ["SERVER_SOFTWARE"]=>
-  string(46) "Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8"
-  ["SERVER_NAME"]=>
-  string(9) "127.0.0.1"
-  ["SERVER_ADDR"]=>
-  string(9) "127.0.0.1"
-  ["SERVER_PORT"]=>
-  string(2) "80"
-  ["REMOTE_ADDR"]=>
-  string(9) "127.0.0.1"
-  ["DOCUMENT_ROOT"]=>
-  string(49) "E:/workbench/xiaolaba/webserver/web/dalaba/server"
-  ["REQUEST_SCHEME"]=>
-  string(4) "http"
-  ["CONTEXT_PREFIX"]=>
-  string(0) ""
-  ["CONTEXT_DOCUMENT_ROOT"]=>
-  string(49) "E:/workbench/xiaolaba/webserver/web/dalaba/server"
-  ["SERVER_ADMIN"]=>
-  string(20) "postmaster@localhost"
-  ["SCRIPT_FILENAME"]=>
-  string(59) "E:/workbench/xiaolaba/webserver/web/dalaba/server/index.php"
-  ["REMOTE_PORT"]=>
-  string(5) "22557"
-  ["GATEWAY_INTERFACE"]=>
-  string(7) "CGI/1.1"
-  ["SERVER_PROTOCOL"]=>
-  string(8) "HTTP/1.1"
-  ["REQUEST_METHOD"]=>
-  string(4) "POST"
-  ["QUERY_STRING"]=>
-  string(0) ""
-  ["REQUEST_URI"]=>
-  string(21) "/index.php/user/login"
-  ["SCRIPT_NAME"]=>
-  string(10) "/index.php"
-  ["PATH_INFO"]=>
-  string(11) "/user/login"
-  ["PATH_TRANSLATED"]=>
-  string(60) "E:\workbench\xiaolaba\webserver\web\dalaba\server\user\login"
-  ["PHP_SELF"]=>
-  string(21) "/index.php/user/login"
-  ["REQUEST_TIME_FLOAT"]=>
-  float(1440758600.279)
-  ["REQUEST_TIME"]=>
-  int(1440758600)
-}
-
-2015-08-28T18:43:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 user_login_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"LOGIN",
-    "SESSION_KEY":"",
-    "DATA":{
-        "name":"chenxiaoer",
-        "password":"12345",
-        "test":"你妹呀！",
-        "names":"chenyang,chenxiaoer,chenxiaoer3,weichushun,weichushunlalla"    
-    }
-}
-
-2015-08-28T18:43:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:41 dump user_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(5) "LOGIN"
-  ["SESSION_KEY"]=>
-  string(0) ""
-  ["DATA"]=>
-  array(4) {
-    ["name"]=>
-    string(10) "chenxiaoer"
-    ["password"]=>
-    string(5) "12345"
-    ["test"]=>
-    string(12) "你妹呀！"
-    ["names"]=>
-    string(58) "chenyang,chenxiaoer,chenxiaoer3,weichushun,weichushunlalla"
-  }
-}
-
-2015-08-28T18:43:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-28T18:43:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
-2015-08-28T18:43:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(11)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-28T18:43:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-28T18:43:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
-2015-08-28T18:43:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(1)
-  ["lengths"]=>
-  array(1) {
-    [0]=>
-    int(3)
-  }
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-28T18:43:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:75 Advertisement::update
-2015-08-28T18:43:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:84 adv_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
-    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
-    "DATA":{
-        "id":"91",
-        "image":"true",
-        "type":"personal",
-        "publish_position": {
-            "addr": "上林溪",
-            "lat": "40.053405",
-            "lng": "116.333267"
-        },
-        "title" : "What a fucking day!",
-        "text_content":"11111111",
-        "fresh_content":""
-    }
-}
-
-2015-08-28T18:43:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:87 dump adv_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(20) "CREATE_ADVERTISEMENT"
-  ["SESSION_KEY"]=>
-  string(32) "94e9e1bd4007c83d7ab96ecb8f2b2536"
-  ["DATA"]=>
-  array(7) {
-    ["id"]=>
-    string(2) "91"
-    ["image"]=>
-    string(4) "true"
-    ["type"]=>
-    string(8) "personal"
-    ["publish_position"]=>
-    array(3) {
-      ["addr"]=>
-      string(9) "上林溪"
-      ["lat"]=>
-      string(9) "40.053405"
-      ["lng"]=>
-      string(10) "116.333267"
-    }
-    ["title"]=>
-    string(19) "What a fucking day!"
-    ["text_content"]=>
-    string(8) "11111111"
-    ["fresh_content"]=>
-    string(0) ""
-  }
-}
-
-2015-08-28T18:43:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:93 _FILES:array(1) {
-  ["adv_img1"]=>
-  array(5) {
-    ["name"]=>
-    string(8) "kobe.jpg"
-    ["type"]=>
-    string(24) "application/octet-stream"
-    ["tmp_name"]=>
-    string(36) "D:\programming\XAMMP\tmp\php6D3D.tmp"
-    ["error"]=>
-    int(0)
-    ["size"]=>
-    int(13064)
-  }
-}
-
-2015-08-28T18:43:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:124 adv_infor_array[DATA][image]:array(1) {
-  ["adv_img1"]=>
-  array(5) {
-    ["name"]=>
-    string(8) "kobe.jpg"
-    ["type"]=>
-    string(24) "application/octet-stream"
-    ["tmp_name"]=>
-    string(36) "D:\programming\XAMMP\tmp\php6D3D.tmp"
-    ["error"]=>
-    int(0)
-    ["size"]=>
-    int(13064)
-  }
-}
-
-2015-08-28T18:43:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:125 count(FILES) = 1
-2015-08-28T18:43:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:133 adv_infor_array[DATA][image]:array(1) {
-  ["adv_img1"]=>
-  array(5) {
-    ["name"]=>
-    string(8) "kobe.jpg"
-    ["type"]=>
-    string(24) "application/octet-stream"
-    ["tmp_name"]=>
-    string(36) "D:\programming\XAMMP\tmp\php6D3D.tmp"
-    ["error"]=>
-    int(0)
-    ["size"]=>
-    int(13064)
-  }
-}
-
-2015-08-28T18:43:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:143 this->img_file_prefix = adv
-2015-08-28T18:43:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:144 this->temp_img_dir = E:/workbench/xiaolaba/webserver/web/dalaba/server/data/img
-2015-08-28T18:43:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:147 filename = E:\workbench\xiaolaba\webserver\web\dalaba\server\data\img\adv6DAB.tmp
-2015-08-28T18:43:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:159 dump file_path:array(4) {
-  ["dirname"]=>
-  string(1) "."
-  ["basename"]=>
-  string(8) "kobe.jpg"
-  ["extension"]=>
-  string(3) "jpg"
-  ["filename"]=>
-  string(4) "kobe"
-}
-
-2015-08-28T18:43:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:161 dump file_path2:array(4) {
-  ["dirname"]=>
-  string(58) "E:\workbench\xiaolaba\webserver\web\dalaba\server\data\img"
-  ["basename"]=>
-  string(11) "adv6DAB.tmp"
-  ["extension"]=>
-  string(3) "tmp"
-  ["filename"]=>
-  string(7) "adv6DAB"
-}
-
-2015-08-28T18:43:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:169 dump new_name:E:/workbench/xiaolaba/webserver/web/dalaba/server/data/img/adv6DAB.jpg
-2015-08-28T18:43:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:108 adv_infor_array[DATA][image]:string(20) "data/img/adv6DAB.jpg"
-
-2015-08-28T18:43:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:51 Advertisement_model::update
-2015-08-28T18:43:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:94 Advertisement_model::update_adv_validate
-2015-08-28T18:43:20+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:74 sql = update advertisement set type = 'personal',
-                                         title ='What a fucking day!',
-                                         text_content ='11111111',
-                                         image ='data/img/adv6DAB.jpg', 
-                                         fresh_content ='',
-                                         lat = '40.053405',
-                                         lng = '116.333267',
-                                         address = '上林溪'
-                                         where id = 91 and uid = 101
-2015-08-28T18:45:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:28 User::login
-2015-08-28T18:45:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:29 get_http_raw:POST /index.php/user/login HTTP/1.1
-USER-AGENT: Jakarta Commons-HttpClient/3.1-rc1
-HOST: 127.0.0.1
-
-
-2015-08-28T18:45:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:30 _SERVER:array(39) {
-  ["MIBDIRS"]=>
-  string(36) "D:/programming/XAMMP/php/extras/mibs"
-  ["MYSQL_HOME"]=>
-  string(16) "\xampp\mysql\bin"
-  ["OPENSSL_CONF"]=>
-  string(43) "D:/programming/XAMMP/apache/bin/openssl.cnf"
-  ["PHP_PEAR_SYSCONF_DIR"]=>
-  string(10) "\xampp\php"
-  ["PHPRC"]=>
-  string(10) "\xampp\php"
-  ["TMP"]=>
-  string(10) "\xampp\tmp"
-  ["HTTP_USER_AGENT"]=>
-  string(34) "Jakarta Commons-HttpClient/3.1-rc1"
-  ["HTTP_HOST"]=>
-  string(9) "127.0.0.1"
-  ["CONTENT_LENGTH"]=>
-  string(3) "478"
-  ["CONTENT_TYPE"]=>
-  string(66) "multipart/form-data; boundary=cLmsXBVlaBnhD07DHEM7AjJW0A8wDrpRrz3x"
-  ["PATH"]=>
-  string(1082) "D:\programming\instantclient-basic-nt-12.1.0.2.0\instantclient_12_1;D:\programming\instantclient_11_2;D:\programming\oracle\product\11.2.0\dbhome_1\bin;D:\programming\instantclient-basic-nt-12.1.0.2.0\instantclient_12_1;D:\programming\XAMMP\php;D:\programming\Git\bin;D:\programming\sbt\sbt\bin;D:\programming\scala\bin;D:\programming\python\;C:\ProgramData\Oracle\Java\javapath;D:\programming\jdk\1.7\bin;D:\programming\jdk\1.7\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;D:\programming\tools;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\programming\scala\bin;D:\programming\instantclient_11_2;E:\workbench\xiaolaba\webserver\yii-1.1.16.bca042\framework;E:\workbench\xiaolaba\webserver\redis-2.4.5;E:\workbench\xiaolaba\yii-1.1.16.bca042\framework;D:\programming\Tesseract-OCR;D:\programming\Tesseract-OCR"
-  ["SystemRoot"]=>
-  string(10) "C:\Windows"
-  ["COMSPEC"]=>
-  string(27) "C:\Windows\system32\cmd.exe"
-  ["PATHEXT"]=>
-  string(53) ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"
-  ["WINDIR"]=>
-  string(10) "C:\Windows"
-  ["SERVER_SIGNATURE"]=>
-  string(94) "<address>Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8 Server at 127.0.0.1 Port 80</address>
-"
-  ["SERVER_SOFTWARE"]=>
-  string(46) "Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8"
-  ["SERVER_NAME"]=>
-  string(9) "127.0.0.1"
-  ["SERVER_ADDR"]=>
-  string(9) "127.0.0.1"
-  ["SERVER_PORT"]=>
-  string(2) "80"
-  ["REMOTE_ADDR"]=>
-  string(9) "127.0.0.1"
-  ["DOCUMENT_ROOT"]=>
-  string(49) "E:/workbench/xiaolaba/webserver/web/dalaba/server"
-  ["REQUEST_SCHEME"]=>
-  string(4) "http"
-  ["CONTEXT_PREFIX"]=>
-  string(0) ""
-  ["CONTEXT_DOCUMENT_ROOT"]=>
-  string(49) "E:/workbench/xiaolaba/webserver/web/dalaba/server"
-  ["SERVER_ADMIN"]=>
-  string(20) "postmaster@localhost"
-  ["SCRIPT_FILENAME"]=>
-  string(59) "E:/workbench/xiaolaba/webserver/web/dalaba/server/index.php"
-  ["REMOTE_PORT"]=>
-  string(5) "22590"
-  ["GATEWAY_INTERFACE"]=>
-  string(7) "CGI/1.1"
-  ["SERVER_PROTOCOL"]=>
-  string(8) "HTTP/1.1"
-  ["REQUEST_METHOD"]=>
-  string(4) "POST"
-  ["QUERY_STRING"]=>
-  string(0) ""
-  ["REQUEST_URI"]=>
-  string(21) "/index.php/user/login"
-  ["SCRIPT_NAME"]=>
-  string(10) "/index.php"
-  ["PATH_INFO"]=>
-  string(11) "/user/login"
-  ["PATH_TRANSLATED"]=>
-  string(60) "E:\workbench\xiaolaba\webserver\web\dalaba\server\user\login"
-  ["PHP_SELF"]=>
-  string(21) "/index.php/user/login"
-  ["REQUEST_TIME_FLOAT"]=>
-  float(1440758714.711)
-  ["REQUEST_TIME"]=>
-  int(1440758714)
-}
-
-2015-08-28T18:45:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 user_login_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"LOGIN",
-    "SESSION_KEY":"",
-    "DATA":{
-        "name":"chenxiaoer",
-        "password":"12345",
-        "test":"你妹呀！",
-        "names":"chenyang,chenxiaoer,chenxiaoer3,weichushun,weichushunlalla"    
-    }
-}
-
-2015-08-28T18:45:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:41 dump user_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(5) "LOGIN"
-  ["SESSION_KEY"]=>
-  string(0) ""
-  ["DATA"]=>
-  array(4) {
-    ["name"]=>
-    string(10) "chenxiaoer"
-    ["password"]=>
-    string(5) "12345"
-    ["test"]=>
-    string(12) "你妹呀！"
-    ["names"]=>
-    string(58) "chenyang,chenxiaoer,chenxiaoer3,weichushun,weichushunlalla"
-  }
-}
-
-2015-08-28T18:45:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-28T18:45:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
-2015-08-28T18:45:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(11)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-28T18:45:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-28T18:45:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
-2015-08-28T18:45:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(1)
-  ["lengths"]=>
-  array(1) {
-    [0]=>
-    int(3)
-  }
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-28T18:45:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:75 Advertisement::update
-2015-08-28T18:45:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:84 adv_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
-    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
-    "DATA":{
-        "id":"91",
-        "image":"true",
-        "type":"personal",
-        "publish_position": {
-            "addr": "上林溪",
-            "lat": "40.053405",
-            "lng": "116.333267"
-        },
-        "title" : "What a fucking day!",
-        "text_content":"11111111",
-        "fresh_content":""
-    }
-}
-
-2015-08-28T18:45:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:87 dump adv_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(20) "CREATE_ADVERTISEMENT"
-  ["SESSION_KEY"]=>
-  string(32) "94e9e1bd4007c83d7ab96ecb8f2b2536"
-  ["DATA"]=>
-  array(7) {
-    ["id"]=>
-    string(2) "91"
-    ["image"]=>
-    string(4) "true"
-    ["type"]=>
-    string(8) "personal"
-    ["publish_position"]=>
-    array(3) {
-      ["addr"]=>
-      string(9) "上林溪"
-      ["lat"]=>
-      string(9) "40.053405"
-      ["lng"]=>
-      string(10) "116.333267"
-    }
-    ["title"]=>
-    string(19) "What a fucking day!"
-    ["text_content"]=>
-    string(8) "11111111"
-    ["fresh_content"]=>
-    string(0) ""
-  }
-}
-
-2015-08-28T18:45:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:93 _FILES:array(1) {
-  ["adv_img1"]=>
-  array(5) {
-    ["name"]=>
-    string(8) "kobe.jpg"
-    ["type"]=>
-    string(24) "application/octet-stream"
-    ["tmp_name"]=>
-    string(36) "D:\programming\XAMMP\tmp\php2BFC.tmp"
-    ["error"]=>
-    int(0)
-    ["size"]=>
-    int(13064)
-  }
-}
-
-2015-08-28T18:45:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:124 adv_infor_array[DATA][image]:array(1) {
-  ["adv_img1"]=>
-  array(5) {
-    ["name"]=>
-    string(8) "kobe.jpg"
-    ["type"]=>
-    string(24) "application/octet-stream"
-    ["tmp_name"]=>
-    string(36) "D:\programming\XAMMP\tmp\php2BFC.tmp"
-    ["error"]=>
-    int(0)
-    ["size"]=>
-    int(13064)
-  }
-}
-
-2015-08-28T18:45:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:125 count(FILES) = 1
-2015-08-28T18:45:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:133 adv_infor_array[DATA][image]:array(1) {
-  ["adv_img1"]=>
-  array(5) {
-    ["name"]=>
-    string(8) "kobe.jpg"
-    ["type"]=>
-    string(24) "application/octet-stream"
-    ["tmp_name"]=>
-    string(36) "D:\programming\XAMMP\tmp\php2BFC.tmp"
-    ["error"]=>
-    int(0)
-    ["size"]=>
-    int(13064)
-  }
-}
-
-2015-08-28T18:45:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:143 this->img_file_prefix = adv
-2015-08-28T18:45:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:144 this->temp_img_dir = E:/workbench/xiaolaba/webserver/web/dalaba/server/data/img
-2015-08-28T18:45:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:147 filename = E:\workbench\xiaolaba\webserver\web\dalaba\server\data\img\adv2C5A.tmp
-2015-08-28T18:45:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:159 dump file_path:array(4) {
-  ["dirname"]=>
-  string(1) "."
-  ["basename"]=>
-  string(8) "kobe.jpg"
-  ["extension"]=>
-  string(3) "jpg"
-  ["filename"]=>
-  string(4) "kobe"
-}
-
-2015-08-28T18:45:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:161 dump file_path2:array(4) {
-  ["dirname"]=>
-  string(58) "E:\workbench\xiaolaba\webserver\web\dalaba\server\data\img"
-  ["basename"]=>
-  string(11) "adv2C5A.tmp"
-  ["extension"]=>
-  string(3) "tmp"
-  ["filename"]=>
-  string(7) "adv2C5A"
-}
-
-2015-08-28T18:45:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:169 dump new_name:E:/workbench/xiaolaba/webserver/web/dalaba/server/data/img/adv2C5A.jpg
-2015-08-28T18:45:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:108 adv_infor_array[DATA][image]:string(20) "data/img/adv2C5A.jpg"
-
-2015-08-28T18:45:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:51 Advertisement_model::update
-2015-08-28T18:45:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:94 Advertisement_model::update_adv_validate
-2015-08-28T18:45:14+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:74 sql = update advertisement set type = 'personal',
-                                         title ='What a fucking day!',
-                                         text_content ='11111111',
-                                         image ='data/img/adv2C5A.jpg', 
-                                         fresh_content ='',
-                                         lat = '40.053405',
-                                         lng = '116.333267',
-                                         address = '上林溪'
-                                         where id = 91 and uid = 101
-2015-08-28T22:35:32+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:28 User::login
-2015-08-28T22:35:32+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:29 get_http_raw:POST /index.php/user/login HTTP/1.1
-USER-AGENT: Jakarta Commons-HttpClient/3.1-rc1
-HOST: 127.0.0.1
-
-
-2015-08-28T22:35:32+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:30 _SERVER:array(39) {
-  ["MIBDIRS"]=>
-  string(36) "D:/programming/XAMMP/php/extras/mibs"
-  ["MYSQL_HOME"]=>
-  string(16) "\xampp\mysql\bin"
-  ["OPENSSL_CONF"]=>
-  string(43) "D:/programming/XAMMP/apache/bin/openssl.cnf"
-  ["PHP_PEAR_SYSCONF_DIR"]=>
-  string(10) "\xampp\php"
-  ["PHPRC"]=>
-  string(10) "\xampp\php"
-  ["TMP"]=>
-  string(10) "\xampp\tmp"
-  ["HTTP_USER_AGENT"]=>
-  string(34) "Jakarta Commons-HttpClient/3.1-rc1"
-  ["HTTP_HOST"]=>
-  string(9) "127.0.0.1"
-  ["CONTENT_LENGTH"]=>
-  string(3) "478"
-  ["CONTENT_TYPE"]=>
-  string(66) "multipart/form-data; boundary=ExQOGXGru7gvCvaD_k6z6BXKahTUH5jHEFfh"
-  ["PATH"]=>
-  string(1082) "D:\programming\instantclient-basic-nt-12.1.0.2.0\instantclient_12_1;D:\programming\instantclient_11_2;D:\programming\oracle\product\11.2.0\dbhome_1\bin;D:\programming\instantclient-basic-nt-12.1.0.2.0\instantclient_12_1;D:\programming\XAMMP\php;D:\programming\Git\bin;D:\programming\sbt\sbt\bin;D:\programming\scala\bin;D:\programming\python\;C:\ProgramData\Oracle\Java\javapath;D:\programming\jdk\1.7\bin;D:\programming\jdk\1.7\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;D:\programming\tools;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\programming\scala\bin;D:\programming\instantclient_11_2;E:\workbench\xiaolaba\webserver\yii-1.1.16.bca042\framework;E:\workbench\xiaolaba\webserver\redis-2.4.5;E:\workbench\xiaolaba\yii-1.1.16.bca042\framework;D:\programming\Tesseract-OCR;D:\programming\Tesseract-OCR"
-  ["SystemRoot"]=>
-  string(10) "C:\Windows"
-  ["COMSPEC"]=>
-  string(27) "C:\Windows\system32\cmd.exe"
-  ["PATHEXT"]=>
-  string(53) ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"
-  ["WINDIR"]=>
-  string(10) "C:\Windows"
-  ["SERVER_SIGNATURE"]=>
-  string(94) "<address>Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8 Server at 127.0.0.1 Port 80</address>
-"
-  ["SERVER_SOFTWARE"]=>
-  string(46) "Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8"
-  ["SERVER_NAME"]=>
-  string(9) "127.0.0.1"
-  ["SERVER_ADDR"]=>
-  string(9) "127.0.0.1"
-  ["SERVER_PORT"]=>
-  string(2) "80"
-  ["REMOTE_ADDR"]=>
-  string(9) "127.0.0.1"
-  ["DOCUMENT_ROOT"]=>
-  string(49) "E:/workbench/xiaolaba/webserver/web/dalaba/server"
-  ["REQUEST_SCHEME"]=>
-  string(4) "http"
-  ["CONTEXT_PREFIX"]=>
-  string(0) ""
-  ["CONTEXT_DOCUMENT_ROOT"]=>
-  string(49) "E:/workbench/xiaolaba/webserver/web/dalaba/server"
-  ["SERVER_ADMIN"]=>
-  string(20) "postmaster@localhost"
-  ["SCRIPT_FILENAME"]=>
-  string(59) "E:/workbench/xiaolaba/webserver/web/dalaba/server/index.php"
-  ["REMOTE_PORT"]=>
-  string(5) "31904"
-  ["GATEWAY_INTERFACE"]=>
-  string(7) "CGI/1.1"
-  ["SERVER_PROTOCOL"]=>
-  string(8) "HTTP/1.1"
-  ["REQUEST_METHOD"]=>
-  string(4) "POST"
-  ["QUERY_STRING"]=>
-  string(0) ""
-  ["REQUEST_URI"]=>
-  string(21) "/index.php/user/login"
-  ["SCRIPT_NAME"]=>
-  string(10) "/index.php"
-  ["PATH_INFO"]=>
-  string(11) "/user/login"
-  ["PATH_TRANSLATED"]=>
-  string(60) "E:\workbench\xiaolaba\webserver\web\dalaba\server\user\login"
-  ["PHP_SELF"]=>
-  string(21) "/index.php/user/login"
-  ["REQUEST_TIME_FLOAT"]=>
-  float(1440772531.45)
-  ["REQUEST_TIME"]=>
-  int(1440772531)
-}
-
-2015-08-28T22:35:32+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 user_login_infor = {
-    "VERSION":"1.0.0",
-    "REQUEST_TYPE":"LOGIN",
-    "SESSION_KEY":"",
-    "DATA":{
-        "name":"chenxiaoer",
-        "password":"12345",
-        "test":"你妹呀！",
-        "names":"chenyang,chenxiaoer,chenxiaoer3,weichushun,weichushunlalla"    
-    }
-}
-
-2015-08-28T22:35:32+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:41 dump user_infor_array:array(4) {
-  ["VERSION"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(5) "LOGIN"
-  ["SESSION_KEY"]=>
-  string(0) ""
-  ["DATA"]=>
-  array(4) {
-    ["name"]=>
-    string(10) "chenxiaoer"
-    ["password"]=>
-    string(5) "12345"
-    ["test"]=>
-    string(12) "你妹呀！"
-    ["names"]=>
-    string(58) "chenyang,chenxiaoer,chenxiaoer3,weichushun,weichushunlalla"
-  }
-}
-
-2015-08-28T22:35:32+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-28T22:35:32+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
-2015-08-28T22:35:32+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(11)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-28T22:35:32+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-28T22:35:32+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
-2015-08-28T22:35:32+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(1)
-  ["lengths"]=>
-  array(1) {
-    [0]=>
-    int(3)
-  }
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-28T22:35:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:28 User::login
-2015-08-28T22:35:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:29 get_http_raw:POST /index.php/user/login HTTP/1.1
-USER-AGENT: Jakarta Commons-HttpClient/3.1-rc1
-HOST: 127.0.0.1
-
-
-2015-08-28T22:35:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:30 _SERVER:array(39) {
+2015-09-03T19:20:00+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:30 _SERVER:array(39) {
   ["MIBDIRS"]=>
   string(36) "D:/programming/XAMMP/php/extras/mibs"
   ["MYSQL_HOME"]=>
@@ -3032,7 +671,7 @@ HOST: 127.0.0.1
   ["CONTENT_LENGTH"]=>
   string(3) "466"
   ["CONTENT_TYPE"]=>
-  string(60) "multipart/form-data; boundary=-azRcdUkNTJ-fv_I_32HmgBcTF3sM0"
+  string(60) "multipart/form-data; boundary=7DrbgwtsMcqIKzR8Zk7TqKKFSmnBPQ"
   ["PATH"]=>
   string(1082) "D:\programming\instantclient-basic-nt-12.1.0.2.0\instantclient_12_1;D:\programming\instantclient_11_2;D:\programming\oracle\product\11.2.0\dbhome_1\bin;D:\programming\instantclient-basic-nt-12.1.0.2.0\instantclient_12_1;D:\programming\XAMMP\php;D:\programming\Git\bin;D:\programming\sbt\sbt\bin;D:\programming\scala\bin;D:\programming\python\;C:\ProgramData\Oracle\Java\javapath;D:\programming\jdk\1.7\bin;D:\programming\jdk\1.7\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;D:\programming\tools;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\programming\scala\bin;D:\programming\instantclient_11_2;E:\workbench\xiaolaba\webserver\yii-1.1.16.bca042\framework;E:\workbench\xiaolaba\webserver\redis-2.4.5;E:\workbench\xiaolaba\yii-1.1.16.bca042\framework;D:\programming\Tesseract-OCR;D:\programming\Tesseract-OCR"
   ["SystemRoot"]=>
@@ -3069,7 +708,7 @@ HOST: 127.0.0.1
   ["SCRIPT_FILENAME"]=>
   string(59) "E:/workbench/xiaolaba/webserver/web/dalaba/server/index.php"
   ["REMOTE_PORT"]=>
-  string(5) "31916"
+  string(5) "18017"
   ["GATEWAY_INTERFACE"]=>
   string(7) "CGI/1.1"
   ["SERVER_PROTOCOL"]=>
@@ -3089,12 +728,12 @@ HOST: 127.0.0.1
   ["PHP_SELF"]=>
   string(21) "/index.php/user/login"
   ["REQUEST_TIME_FLOAT"]=>
-  float(1440772546.683)
+  float(1441279200.685)
   ["REQUEST_TIME"]=>
-  int(1440772546)
+  int(1441279200)
 }
 
-2015-08-28T22:35:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 user_login_infor = {
+2015-09-03T19:20:00+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 user_login_infor = {
     "VERSION":"1.0.0",
     "REQUEST_TYPE":"LOGIN",
     "SESSION_KEY":"",
@@ -3106,7 +745,7 @@ HOST: 127.0.0.1
     }
 }
 
-2015-08-28T22:35:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:41 dump user_infor_array:array(4) {
+2015-09-03T19:20:00+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:41 dump user_infor_array:array(4) {
   ["VERSION"]=>
   string(5) "1.0.0"
   ["REQUEST_TYPE"]=>
@@ -3126,9 +765,9 @@ HOST: 127.0.0.1
   }
 }
 
-2015-08-28T22:35:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-28T22:35:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
-2015-08-28T22:35:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
+2015-09-03T19:20:00+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
+2015-09-03T19:20:00+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
+2015-09-03T19:20:00+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
   ["current_field"]=>
   int(0)
   ["field_count"]=>
@@ -3141,9 +780,9 @@ HOST: 127.0.0.1
   int(0)
 }
 
-2015-08-28T22:35:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-28T22:35:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
-2015-08-28T22:35:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
+2015-09-03T19:20:00+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
+2015-09-03T19:20:00+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
+2015-09-03T19:20:00+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
   ["current_field"]=>
   int(0)
   ["field_count"]=>
@@ -3159,72 +798,24 @@ HOST: 127.0.0.1
   int(0)
 }
 
-2015-08-28T22:35:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:393 User::get_user_published
-2015-08-28T22:35:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:396 adv_infor = {
-    "version":"1.0.0",
-    "REQUEST_TYPE":" DELETE_ADVERTISEMENT ",
-    "SESSION_KEY":"",
+2015-09-03T19:20:00+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:466 User::add_to_user_position_list
+2015-09-03T19:20:00+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:484 request_json = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"GET_ADVERTISEMENT_INFOR",
+    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
     "DATA":{
-        "lat":"39.985403",
-        "lng":"116.357112",
-        "uid":"107"
-            
+        "position_id" : "7"
     }
 }
 
-2015-08-28T22:35:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:399 dump adv_infor_array:array(4) {
-  ["version"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(22) " DELETE_ADVERTISEMENT "
-  ["SESSION_KEY"]=>
-  string(0) ""
-  ["DATA"]=>
-  array(3) {
-    ["lat"]=>
-    string(9) "39.985403"
-    ["lng"]=>
-    string(10) "116.357112"
-    ["uid"]=>
-    string(3) "107"
-  }
-}
-
-2015-08-28T22:35:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:404 lat = 0
-2015-08-28T22:35:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:405 lng = 0
-2015-08-28T22:35:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:591 user_model::get_user_published
-2015-08-28T22:35:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:611 sql = select advertisement.id id,advertisement.uid,advertisement.type type,
-                publish_time,title,text_content,image,read_count,zan_num,address,user.name user_name,lat,lng,
-                t1.uid_b focused , t2.adv_id zaned,t3.adv_id collected
-                from advertisement
-                inner join user on user.id = advertisement.uid
-                left join
-                (select uid_b from user_focus where uid_a = 101) as t1 on t1.uid_b = advertisement.uid
-                left join
-                (select adv_id  from thumb_up_for_adv where uid = 101) as t2 on t2.adv_id = advertisement.id
-                left join
-                (select adv_id  from user_collect where uid = 101) as t3 on t3.adv_id = advertisement.id
-                where advertisement.uid = 107
-2015-08-28T22:35:46+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:617 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(16)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(3)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-28T22:36:52+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:28 User::login
-2015-08-28T22:36:52+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:29 get_http_raw:POST /index.php/user/login HTTP/1.1
+2015-09-03T19:20:00+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:709 sql = delete from user_postion_list where uid = 101 and id =7
+2015-09-03T19:22:06+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:28 User::login
+2015-09-03T19:22:06+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:29 get_http_raw:POST /index.php/user/login HTTP/1.1
 USER-AGENT: Jakarta Commons-HttpClient/3.1-rc1
 HOST: 127.0.0.1
 
 
-2015-08-28T22:36:52+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:30 _SERVER:array(39) {
+2015-09-03T19:22:06+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:30 _SERVER:array(39) {
   ["MIBDIRS"]=>
   string(36) "D:/programming/XAMMP/php/extras/mibs"
   ["MYSQL_HOME"]=>
@@ -3242,9 +833,9 @@ HOST: 127.0.0.1
   ["HTTP_HOST"]=>
   string(9) "127.0.0.1"
   ["CONTENT_LENGTH"]=>
-  string(3) "472"
+  string(3) "484"
   ["CONTENT_TYPE"]=>
-  string(63) "multipart/form-data; boundary=5YwJs2VIXEhVEWQT4pkrRIO3ET5x1e2vI"
+  string(69) "multipart/form-data; boundary=47a11NO_-FSx38MUA-22sHnLSwt5UlHJn9v6YJM"
   ["PATH"]=>
   string(1082) "D:\programming\instantclient-basic-nt-12.1.0.2.0\instantclient_12_1;D:\programming\instantclient_11_2;D:\programming\oracle\product\11.2.0\dbhome_1\bin;D:\programming\instantclient-basic-nt-12.1.0.2.0\instantclient_12_1;D:\programming\XAMMP\php;D:\programming\Git\bin;D:\programming\sbt\sbt\bin;D:\programming\scala\bin;D:\programming\python\;C:\ProgramData\Oracle\Java\javapath;D:\programming\jdk\1.7\bin;D:\programming\jdk\1.7\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;D:\programming\tools;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\programming\scala\bin;D:\programming\instantclient_11_2;E:\workbench\xiaolaba\webserver\yii-1.1.16.bca042\framework;E:\workbench\xiaolaba\webserver\redis-2.4.5;E:\workbench\xiaolaba\yii-1.1.16.bca042\framework;D:\programming\Tesseract-OCR;D:\programming\Tesseract-OCR"
   ["SystemRoot"]=>
@@ -3281,7 +872,7 @@ HOST: 127.0.0.1
   ["SCRIPT_FILENAME"]=>
   string(59) "E:/workbench/xiaolaba/webserver/web/dalaba/server/index.php"
   ["REMOTE_PORT"]=>
-  string(5) "31939"
+  string(5) "18048"
   ["GATEWAY_INTERFACE"]=>
   string(7) "CGI/1.1"
   ["SERVER_PROTOCOL"]=>
@@ -3301,12 +892,12 @@ HOST: 127.0.0.1
   ["PHP_SELF"]=>
   string(21) "/index.php/user/login"
   ["REQUEST_TIME_FLOAT"]=>
-  float(1440772612.132)
+  float(1441279326.014)
   ["REQUEST_TIME"]=>
-  int(1440772612)
+  int(1441279326)
 }
 
-2015-08-28T22:36:52+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 user_login_infor = {
+2015-09-03T19:22:06+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 user_login_infor = {
     "VERSION":"1.0.0",
     "REQUEST_TYPE":"LOGIN",
     "SESSION_KEY":"",
@@ -3318,7 +909,7 @@ HOST: 127.0.0.1
     }
 }
 
-2015-08-28T22:36:52+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:41 dump user_infor_array:array(4) {
+2015-09-03T19:22:06+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:41 dump user_infor_array:array(4) {
   ["VERSION"]=>
   string(5) "1.0.0"
   ["REQUEST_TYPE"]=>
@@ -3338,9 +929,9 @@ HOST: 127.0.0.1
   }
 }
 
-2015-08-28T22:36:52+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-28T22:36:52+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
-2015-08-28T22:36:52+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
+2015-09-03T19:22:06+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
+2015-09-03T19:22:06+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
+2015-09-03T19:22:06+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
   ["current_field"]=>
   int(0)
   ["field_count"]=>
@@ -3353,9 +944,9 @@ HOST: 127.0.0.1
   int(0)
 }
 
-2015-08-28T22:36:52+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-28T22:36:52+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
-2015-08-28T22:36:52+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
+2015-09-03T19:22:06+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
+2015-09-03T19:22:06+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
+2015-09-03T19:22:06+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
   ["current_field"]=>
   int(0)
   ["field_count"]=>
@@ -3371,486 +962,219 @@ HOST: 127.0.0.1
   int(0)
 }
 
-2015-08-28T22:36:52+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:393 User::get_user_published
-2015-08-28T22:36:52+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:396 request_json = {
-    "version":"1.0.0",
-    "REQUEST_TYPE":" DELETE_ADVERTISEMENT ",
-    "SESSION_KEY":"",
+2015-09-03T19:22:06+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:11 Authentication::get_short_message_verification_code
+2015-09-03T19:22:06+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:13 POST /index.php/authentication/get_short_message_verification_code HTTP/1.1
+PHPSESSID: t5ntrlio7ht63s46seslgv7726; path
+USER-AGENT: Jakarta Commons-HttpClient/3.1-rc1
+HOST: 127.0.0.1
+COOKIE: $Version=0; PHPSESSID=t5ntrlio7ht63s46seslgv7726; $Path=/
+
+
+2015-09-03T19:22:06+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:21 adv_infor = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
+    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
     "DATA":{
-        "lat":"39.985403",
-        "lng":"116.357112",
-        "uid":"107"
-            
+        "cellphone":"13426370450"
     }
 }
 
-2015-08-28T22:36:52+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:399 dump adv_infor_array:array(4) {
-  ["version"]=>
+2015-09-03T19:22:06+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:24 dump adv_infor_array:array(4) {
+  ["VERSION"]=>
   string(5) "1.0.0"
   ["REQUEST_TYPE"]=>
-  string(22) " DELETE_ADVERTISEMENT "
+  string(20) "CREATE_ADVERTISEMENT"
   ["SESSION_KEY"]=>
-  string(0) ""
+  string(32) "94e9e1bd4007c83d7ab96ecb8f2b2536"
   ["DATA"]=>
-  array(3) {
-    ["lat"]=>
-    string(9) "39.985403"
-    ["lng"]=>
-    string(10) "116.357112"
-    ["uid"]=>
-    string(3) "107"
+  array(1) {
+    ["cellphone"]=>
+    string(11) "13426370450"
   }
 }
 
-2015-08-28T22:36:52+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:404 lat = 39.985403
-2015-08-28T22:36:52+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:405 lng = 116.357112
-2015-08-28T22:36:52+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:591 user_model::get_user_published
-2015-08-28T22:36:52+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:611 sql = select advertisement.id id,advertisement.uid,advertisement.type type,
-                publish_time,title,text_content,image,read_count,zan_num,address,user.name user_name,lat,lng,
-                t1.uid_b focused , t2.adv_id zaned,t3.adv_id collected
-                from advertisement
-                inner join user on user.id = advertisement.uid
-                left join
-                (select uid_b from user_focus where uid_a = 101) as t1 on t1.uid_b = advertisement.uid
-                left join
-                (select adv_id  from thumb_up_for_adv where uid = 101) as t2 on t2.adv_id = advertisement.id
-                left join
-                (select adv_id  from user_collect where uid = 101) as t3 on t3.adv_id = advertisement.id
-                where advertisement.uid = 107
-2015-08-28T22:36:52+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:617 res = object(mysqli_result)#44 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(16)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(3)
-  ["type"]=>
-  int(0)
+2015-09-03T19:22:06+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:246 dump _SESSION:array(2) {
+  ["user_id"]=>
+  string(3) "101"
+  ["sms"]=>
+  array(1) {
+    ["13426370450"]=>
+    string(6) "858154"
+  }
 }
 
-2015-08-28T22:40:36+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:28 User::login
-2015-08-28T22:40:36+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:29 get_http_raw:POST /index.php/user/login HTTP/1.1
+2015-09-03T19:22:06+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Sms.php:73 Sms:发送成功
+2015-09-03T19:34:27+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:11 Authentication::get_short_message_verification_code
+2015-09-03T19:34:27+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:13 POST /index.php/authentication/get_short_message_verification_code HTTP/1.1
 USER-AGENT: Jakarta Commons-HttpClient/3.1-rc1
 HOST: 127.0.0.1
 
 
-2015-08-28T22:40:36+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:30 _SERVER:array(39) {
-  ["MIBDIRS"]=>
-  string(36) "D:/programming/XAMMP/php/extras/mibs"
-  ["MYSQL_HOME"]=>
-  string(16) "\xampp\mysql\bin"
-  ["OPENSSL_CONF"]=>
-  string(43) "D:/programming/XAMMP/apache/bin/openssl.cnf"
-  ["PHP_PEAR_SYSCONF_DIR"]=>
-  string(10) "\xampp\php"
-  ["PHPRC"]=>
-  string(10) "\xampp\php"
-  ["TMP"]=>
-  string(10) "\xampp\tmp"
-  ["HTTP_USER_AGENT"]=>
-  string(34) "Jakarta Commons-HttpClient/3.1-rc1"
-  ["HTTP_HOST"]=>
-  string(9) "127.0.0.1"
-  ["CONTENT_LENGTH"]=>
-  string(3) "474"
-  ["CONTENT_TYPE"]=>
-  string(64) "multipart/form-data; boundary=eVPX-63xYUv-XlGfNIUguBtvSlFqT74yNv"
-  ["PATH"]=>
-  string(1082) "D:\programming\instantclient-basic-nt-12.1.0.2.0\instantclient_12_1;D:\programming\instantclient_11_2;D:\programming\oracle\product\11.2.0\dbhome_1\bin;D:\programming\instantclient-basic-nt-12.1.0.2.0\instantclient_12_1;D:\programming\XAMMP\php;D:\programming\Git\bin;D:\programming\sbt\sbt\bin;D:\programming\scala\bin;D:\programming\python\;C:\ProgramData\Oracle\Java\javapath;D:\programming\jdk\1.7\bin;D:\programming\jdk\1.7\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;D:\programming\tools;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\programming\scala\bin;D:\programming\instantclient_11_2;E:\workbench\xiaolaba\webserver\yii-1.1.16.bca042\framework;E:\workbench\xiaolaba\webserver\redis-2.4.5;E:\workbench\xiaolaba\yii-1.1.16.bca042\framework;D:\programming\Tesseract-OCR;D:\programming\Tesseract-OCR"
-  ["SystemRoot"]=>
-  string(10) "C:\Windows"
-  ["COMSPEC"]=>
-  string(27) "C:\Windows\system32\cmd.exe"
-  ["PATHEXT"]=>
-  string(53) ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"
-  ["WINDIR"]=>
-  string(10) "C:\Windows"
-  ["SERVER_SIGNATURE"]=>
-  string(94) "<address>Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8 Server at 127.0.0.1 Port 80</address>
-"
-  ["SERVER_SOFTWARE"]=>
-  string(46) "Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8"
-  ["SERVER_NAME"]=>
-  string(9) "127.0.0.1"
-  ["SERVER_ADDR"]=>
-  string(9) "127.0.0.1"
-  ["SERVER_PORT"]=>
-  string(2) "80"
-  ["REMOTE_ADDR"]=>
-  string(9) "127.0.0.1"
-  ["DOCUMENT_ROOT"]=>
-  string(49) "E:/workbench/xiaolaba/webserver/web/dalaba/server"
-  ["REQUEST_SCHEME"]=>
-  string(4) "http"
-  ["CONTEXT_PREFIX"]=>
-  string(0) ""
-  ["CONTEXT_DOCUMENT_ROOT"]=>
-  string(49) "E:/workbench/xiaolaba/webserver/web/dalaba/server"
-  ["SERVER_ADMIN"]=>
-  string(20) "postmaster@localhost"
-  ["SCRIPT_FILENAME"]=>
-  string(59) "E:/workbench/xiaolaba/webserver/web/dalaba/server/index.php"
-  ["REMOTE_PORT"]=>
-  string(5) "31968"
-  ["GATEWAY_INTERFACE"]=>
-  string(7) "CGI/1.1"
-  ["SERVER_PROTOCOL"]=>
-  string(8) "HTTP/1.1"
-  ["REQUEST_METHOD"]=>
-  string(4) "POST"
-  ["QUERY_STRING"]=>
-  string(0) ""
-  ["REQUEST_URI"]=>
-  string(21) "/index.php/user/login"
-  ["SCRIPT_NAME"]=>
-  string(10) "/index.php"
-  ["PATH_INFO"]=>
-  string(11) "/user/login"
-  ["PATH_TRANSLATED"]=>
-  string(60) "E:\workbench\xiaolaba\webserver\web\dalaba\server\user\login"
-  ["PHP_SELF"]=>
-  string(21) "/index.php/user/login"
-  ["REQUEST_TIME_FLOAT"]=>
-  float(1440772836.324)
-  ["REQUEST_TIME"]=>
-  int(1440772836)
-}
-
-2015-08-28T22:40:36+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 user_login_infor = {
+2015-09-03T19:34:27+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:21 adv_infor = {
     "VERSION":"1.0.0",
-    "REQUEST_TYPE":"LOGIN",
-    "SESSION_KEY":"",
+    "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
+    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
     "DATA":{
-        "name":"chenxiaoer",
-        "password":"12345",
-        "test":"你妹呀！",
-        "names":"chenyang,chenxiaoer,chenxiaoer3,weichushun,weichushunlalla"    
+        "cellphone":"13426370450"
     }
 }
 
-2015-08-28T22:40:36+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:41 dump user_infor_array:array(4) {
+2015-09-03T19:34:27+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:24 dump adv_infor_array:array(4) {
   ["VERSION"]=>
   string(5) "1.0.0"
   ["REQUEST_TYPE"]=>
-  string(5) "LOGIN"
+  string(20) "CREATE_ADVERTISEMENT"
   ["SESSION_KEY"]=>
-  string(0) ""
+  string(32) "94e9e1bd4007c83d7ab96ecb8f2b2536"
   ["DATA"]=>
-  array(4) {
-    ["name"]=>
-    string(10) "chenxiaoer"
-    ["password"]=>
-    string(5) "12345"
-    ["test"]=>
-    string(12) "你妹呀！"
-    ["names"]=>
-    string(58) "chenyang,chenxiaoer,chenxiaoer3,weichushun,weichushunlalla"
-  }
-}
-
-2015-08-28T22:40:36+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-28T22:40:36+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
-2015-08-28T22:40:36+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(11)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-28T22:40:36+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-28T22:40:36+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
-2015-08-28T22:40:36+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(1)
-  ["lengths"]=>
   array(1) {
-    [0]=>
-    int(3)
-  }
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-28T22:40:36+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:393 User::get_user_published
-2015-08-28T22:40:36+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:396 request_json = {
-    "version":"1.0.0",
-    "REQUEST_TYPE":" DELETE_ADVERTISEMENT ",
-    "SESSION_KEY":"",
-    "DATA":{
-        "lat":"39.985403",
-        "lng":"116.357112",
-        "uid":"107"
-            
-    }
-}
-
-2015-08-28T22:40:36+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:399 dump adv_infor_array:array(4) {
-  ["version"]=>
-  string(5) "1.0.0"
-  ["REQUEST_TYPE"]=>
-  string(22) " DELETE_ADVERTISEMENT "
-  ["SESSION_KEY"]=>
-  string(0) ""
-  ["DATA"]=>
-  array(3) {
-    ["lat"]=>
-    string(9) "39.985403"
-    ["lng"]=>
-    string(10) "116.357112"
-    ["uid"]=>
-    string(3) "107"
+    ["cellphone"]=>
+    string(11) "13426370450"
   }
 }
 
-2015-08-28T22:40:36+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:404 lat = 39.985403
-2015-08-28T22:40:36+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:405 lng = 116.357112
-2015-08-28T22:40:36+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:591 user_model::get_user_published
-2015-08-28T22:40:36+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:611 sql = select advertisement.id id,advertisement.uid,advertisement.type type,
-                publish_time,title,text_content,image,read_count,zan_num,address,user.name user_name,lat,lng,
-                t1.uid_b focused , t2.adv_id zaned,t3.adv_id collected
-                from advertisement
-                inner join user on user.id = advertisement.uid
-                left join
-                (select uid_b from user_focus where uid_a = 101) as t1 on t1.uid_b = advertisement.uid
-                left join
-                (select adv_id  from thumb_up_for_adv where uid = 101) as t2 on t2.adv_id = advertisement.id
-                left join
-                (select adv_id  from user_collect where uid = 101) as t3 on t3.adv_id = advertisement.id
-                where advertisement.uid = 107
-2015-08-28T22:40:36+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:617 res = object(mysqli_result)#44 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(16)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(3)
-  ["type"]=>
-  int(0)
+2015-09-03T19:34:27+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:246 dump _SESSION:array(1) {
+  ["sms"]=>
+  array(1) {
+    ["13426370450"]=>
+    string(6) "540557"
+  }
 }
 
-2015-08-28T22:40:54+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:28 User::login
-2015-08-28T22:40:54+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:29 get_http_raw:POST /index.php/user/login HTTP/1.1
+2015-09-03T19:34:27+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Sms.php:80 发送失败! 状态：sms&stat=102&message=短信不足,请充值
+2015-09-03T19:35:35+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:11 Authentication::get_short_message_verification_code
+2015-09-03T19:35:35+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:13 POST /index.php/authentication/get_short_message_verification_code HTTP/1.1
 USER-AGENT: Jakarta Commons-HttpClient/3.1-rc1
 HOST: 127.0.0.1
 
 
-2015-08-28T22:40:54+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:30 _SERVER:array(39) {
-  ["MIBDIRS"]=>
-  string(36) "D:/programming/XAMMP/php/extras/mibs"
-  ["MYSQL_HOME"]=>
-  string(16) "\xampp\mysql\bin"
-  ["OPENSSL_CONF"]=>
-  string(43) "D:/programming/XAMMP/apache/bin/openssl.cnf"
-  ["PHP_PEAR_SYSCONF_DIR"]=>
-  string(10) "\xampp\php"
-  ["PHPRC"]=>
-  string(10) "\xampp\php"
-  ["TMP"]=>
-  string(10) "\xampp\tmp"
-  ["HTTP_USER_AGENT"]=>
-  string(34) "Jakarta Commons-HttpClient/3.1-rc1"
-  ["HTTP_HOST"]=>
-  string(9) "127.0.0.1"
-  ["CONTENT_LENGTH"]=>
-  string(3) "468"
-  ["CONTENT_TYPE"]=>
-  string(61) "multipart/form-data; boundary=0GomHtDlOWFH1_GrVZBvqdxbv8TZyPD"
-  ["PATH"]=>
-  string(1082) "D:\programming\instantclient-basic-nt-12.1.0.2.0\instantclient_12_1;D:\programming\instantclient_11_2;D:\programming\oracle\product\11.2.0\dbhome_1\bin;D:\programming\instantclient-basic-nt-12.1.0.2.0\instantclient_12_1;D:\programming\XAMMP\php;D:\programming\Git\bin;D:\programming\sbt\sbt\bin;D:\programming\scala\bin;D:\programming\python\;C:\ProgramData\Oracle\Java\javapath;D:\programming\jdk\1.7\bin;D:\programming\jdk\1.7\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;D:\programming\tools;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\programming\scala\bin;D:\programming\instantclient_11_2;E:\workbench\xiaolaba\webserver\yii-1.1.16.bca042\framework;E:\workbench\xiaolaba\webserver\redis-2.4.5;E:\workbench\xiaolaba\yii-1.1.16.bca042\framework;D:\programming\Tesseract-OCR;D:\programming\Tesseract-OCR"
-  ["SystemRoot"]=>
-  string(10) "C:\Windows"
-  ["COMSPEC"]=>
-  string(27) "C:\Windows\system32\cmd.exe"
-  ["PATHEXT"]=>
-  string(53) ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"
-  ["WINDIR"]=>
-  string(10) "C:\Windows"
-  ["SERVER_SIGNATURE"]=>
-  string(94) "<address>Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8 Server at 127.0.0.1 Port 80</address>
-"
-  ["SERVER_SOFTWARE"]=>
-  string(46) "Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8"
-  ["SERVER_NAME"]=>
-  string(9) "127.0.0.1"
-  ["SERVER_ADDR"]=>
-  string(9) "127.0.0.1"
-  ["SERVER_PORT"]=>
-  string(2) "80"
-  ["REMOTE_ADDR"]=>
-  string(9) "127.0.0.1"
-  ["DOCUMENT_ROOT"]=>
-  string(49) "E:/workbench/xiaolaba/webserver/web/dalaba/server"
-  ["REQUEST_SCHEME"]=>
-  string(4) "http"
-  ["CONTEXT_PREFIX"]=>
-  string(0) ""
-  ["CONTEXT_DOCUMENT_ROOT"]=>
-  string(49) "E:/workbench/xiaolaba/webserver/web/dalaba/server"
-  ["SERVER_ADMIN"]=>
-  string(20) "postmaster@localhost"
-  ["SCRIPT_FILENAME"]=>
-  string(59) "E:/workbench/xiaolaba/webserver/web/dalaba/server/index.php"
-  ["REMOTE_PORT"]=>
-  string(5) "31973"
-  ["GATEWAY_INTERFACE"]=>
-  string(7) "CGI/1.1"
-  ["SERVER_PROTOCOL"]=>
-  string(8) "HTTP/1.1"
-  ["REQUEST_METHOD"]=>
-  string(4) "POST"
-  ["QUERY_STRING"]=>
-  string(0) ""
-  ["REQUEST_URI"]=>
-  string(21) "/index.php/user/login"
-  ["SCRIPT_NAME"]=>
-  string(10) "/index.php"
-  ["PATH_INFO"]=>
-  string(11) "/user/login"
-  ["PATH_TRANSLATED"]=>
-  string(60) "E:\workbench\xiaolaba\webserver\web\dalaba\server\user\login"
-  ["PHP_SELF"]=>
-  string(21) "/index.php/user/login"
-  ["REQUEST_TIME_FLOAT"]=>
-  float(1440772854.738)
-  ["REQUEST_TIME"]=>
-  int(1440772854)
-}
-
-2015-08-28T22:40:54+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:38 user_login_infor = {
+2015-09-03T19:35:35+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:21 adv_infor = {
     "VERSION":"1.0.0",
-    "REQUEST_TYPE":"LOGIN",
-    "SESSION_KEY":"",
+    "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
+    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
     "DATA":{
-        "name":"chenxiaoer",
-        "password":"12345",
-        "test":"你妹呀！",
-        "names":"chenyang,chenxiaoer,chenxiaoer3,weichushun,weichushunlalla"    
+        "cellphone":"13426370450"
     }
 }
 
-2015-08-28T22:40:54+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:41 dump user_infor_array:array(4) {
+2015-09-03T19:35:35+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:24 dump adv_infor_array:array(4) {
   ["VERSION"]=>
   string(5) "1.0.0"
   ["REQUEST_TYPE"]=>
-  string(5) "LOGIN"
+  string(20) "CREATE_ADVERTISEMENT"
   ["SESSION_KEY"]=>
-  string(0) ""
+  string(32) "94e9e1bd4007c83d7ab96ecb8f2b2536"
   ["DATA"]=>
-  array(4) {
-    ["name"]=>
-    string(10) "chenxiaoer"
-    ["password"]=>
-    string(5) "12345"
-    ["test"]=>
-    string(12) "你妹呀！"
-    ["names"]=>
-    string(58) "chenyang,chenxiaoer,chenxiaoer3,weichushun,weichushunlalla"
-  }
-}
-
-2015-08-28T22:40:54+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:104 User_model::login
-2015-08-28T22:40:54+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:114 sql = select * from user where name ='chenxiaoer'
-2015-08-28T22:40:54+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:125 res = object(mysqli_result)#43 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(11)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
-}
-
-2015-08-28T22:40:54+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:129 sql = select id from user where name ='chenxiaoer' and password = '827ccb0eea8a706c4c34a16891f84e7b'
-2015-08-28T22:40:54+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:142 set session[user_id] = 101
-2015-08-28T22:40:54+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:150 res = object(mysqli_result)#45 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(1)
-  ["lengths"]=>
   array(1) {
-    [0]=>
-    int(3)
+    ["cellphone"]=>
+    string(11) "13426370450"
   }
-  ["num_rows"]=>
-  int(1)
-  ["type"]=>
-  int(0)
 }
 
-2015-08-28T22:40:54+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:393 User::get_user_published
-2015-08-28T22:40:54+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:396 request_json = {
-    "version":"1.0.0",
-    "REQUEST_TYPE":" GET_USER_PUBLISHED ",
-    "SESSION_KEY":"",
+2015-09-03T19:35:35+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:246 dump _SESSION:array(1) {
+  ["sms"]=>
+  array(1) {
+    ["13426370450"]=>
+    string(6) "156921"
+  }
+}
+
+2015-09-03T19:35:35+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Sms.php:80 发送失败! 状态：sms&stat=102&message=短信不足,请充值
+2015-09-03T19:36:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:11 Authentication::get_short_message_verification_code
+2015-09-03T19:36:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:13 POST /index.php/authentication/get_short_message_verification_code HTTP/1.1
+USER-AGENT: Jakarta Commons-HttpClient/3.1-rc1
+HOST: 127.0.0.1
+
+
+2015-09-03T19:36:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:21 adv_infor = {
+    "VERSION":"1.0.0",
+    "REQUEST_TYPE":"CREATE_ADVERTISEMENT",
+    "SESSION_KEY":"94e9e1bd4007c83d7ab96ecb8f2b2536",
     "DATA":{
-        "lat":"39.985403",
-        "lng":"116.357112",
-        "uid":"107"
-            
+        "cellphone":"13426370450"
     }
 }
 
-2015-08-28T22:40:54+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:399 dump adv_infor_array:array(4) {
-  ["version"]=>
+2015-09-03T19:36:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\Authentication.php:24 dump adv_infor_array:array(4) {
+  ["VERSION"]=>
   string(5) "1.0.0"
   ["REQUEST_TYPE"]=>
-  string(20) " GET_USER_PUBLISHED "
+  string(20) "CREATE_ADVERTISEMENT"
   ["SESSION_KEY"]=>
-  string(0) ""
+  string(32) "94e9e1bd4007c83d7ab96ecb8f2b2536"
   ["DATA"]=>
-  array(3) {
-    ["lat"]=>
-    string(9) "39.985403"
-    ["lng"]=>
-    string(10) "116.357112"
-    ["uid"]=>
-    string(3) "107"
+  array(1) {
+    ["cellphone"]=>
+    string(11) "13426370450"
   }
 }
 
-2015-08-28T22:40:54+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:404 lat = 39.985403
-2015-08-28T22:40:54+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:405 lng = 116.357112
-2015-08-28T22:40:54+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:591 user_model::get_user_published
-2015-08-28T22:40:54+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:611 sql = select advertisement.id id,advertisement.uid,advertisement.type type,
-                publish_time,title,text_content,image,read_count,zan_num,address,user.name user_name,lat,lng,
-                t1.uid_b focused , t2.adv_id zaned,t3.adv_id collected
-                from advertisement
-                inner join user on user.id = advertisement.uid
-                left join
-                (select uid_b from user_focus where uid_a = 101) as t1 on t1.uid_b = advertisement.uid
-                left join
-                (select adv_id  from thumb_up_for_adv where uid = 101) as t2 on t2.adv_id = advertisement.id
-                left join
-                (select adv_id  from user_collect where uid = 101) as t3 on t3.adv_id = advertisement.id
-                where advertisement.uid = 107
-2015-08-28T22:40:54+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:617 res = object(mysqli_result)#44 (5) {
-  ["current_field"]=>
-  int(0)
-  ["field_count"]=>
-  int(16)
-  ["lengths"]=>
-  NULL
-  ["num_rows"]=>
-  int(3)
-  ["type"]=>
-  int(0)
+2015-09-03T19:36:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Utils.php:246 dump _SESSION:array(1) {
+  ["sms"]=>
+  array(1) {
+    ["13426370450"]=>
+    string(6) "887420"
+  }
 }
 
+2015-09-03T19:36:04+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\libraries\Sms.php:75 Sms:发送成功
+2015-09-03T20:25:15+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:371 Advertisement::add_advertisement_read_count
+2015-09-03T20:25:15+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:380 request_json = {
+    "VERSION": "1.0.0",
+    "REQUEST_TYPE": "CREATE_ADVERTISEMENT",
+    "SESSION_KEY": "94e9e1bd4007c83d7ab96ecb8f2b2536",
+    "DATA": {
+           "adv_id":"91"
+    }
+}
+
+2015-09-03T20:25:15+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:465 Advertisement_model::read_advertisement
+2015-09-03T20:25:15+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:471 sql = update advertisement set read_count = read_count +1 where  and id = 91
+2015-09-03T20:25:45+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:371 Advertisement::add_advertisement_read_count
+2015-09-03T20:25:45+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:380 request_json = {
+    "VERSION": "1.0.0",
+    "REQUEST_TYPE": "CREATE_ADVERTISEMENT",
+    "SESSION_KEY": "94e9e1bd4007c83d7ab96ecb8f2b2536",
+    "DATA": {
+           "adv_id":"91"
+    }
+}
+
+2015-09-03T20:25:45+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:465 Advertisement_model::read_advertisement
+2015-09-03T20:25:45+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:471 sql = update advertisement set read_count = read_count +1 where id = 91
+2015-09-03T20:25:50+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:371 Advertisement::add_advertisement_read_count
+2015-09-03T20:25:50+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:380 request_json = {
+    "VERSION": "1.0.0",
+    "REQUEST_TYPE": "CREATE_ADVERTISEMENT",
+    "SESSION_KEY": "94e9e1bd4007c83d7ab96ecb8f2b2536",
+    "DATA": {
+           "adv_id":"91"
+    }
+}
+
+2015-09-03T20:25:50+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:465 Advertisement_model::read_advertisement
+2015-09-03T20:25:50+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:471 sql = update advertisement set read_count = read_count +1 where id = 91
+2015-09-03T20:25:51+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:371 Advertisement::add_advertisement_read_count
+2015-09-03T20:25:51+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:380 request_json = {
+    "VERSION": "1.0.0",
+    "REQUEST_TYPE": "CREATE_ADVERTISEMENT",
+    "SESSION_KEY": "94e9e1bd4007c83d7ab96ecb8f2b2536",
+    "DATA": {
+           "adv_id":"91"
+    }
+}
+
+2015-09-03T20:25:51+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:465 Advertisement_model::read_advertisement
+2015-09-03T20:25:51+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:471 sql = update advertisement set read_count = read_count +1 where id = 91
+2015-09-03T20:26:18+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:371 Advertisement::add_advertisement_read_count
+2015-09-03T20:26:18+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\advertisement.php:380 request_json = {
+    "VERSION": "1.0.0",
+    "REQUEST_TYPE": "CREATE_ADVERTISEMENT",
+    "SESSION_KEY": "94e9e1bd4007c83d7ab96ecb8f2b2536",
+    "DATA": {
+           "adv_id":"91"
+    }
+}
+
+2015-09-03T20:26:18+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:465 Advertisement_model::read_advertisement
+2015-09-03T20:26:18+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:471 sql = update advertisement set read_count = read_count +1 where id = 91
