@@ -37,9 +37,9 @@ public class DalabaClient
 		register();*/
 		login(); 
 		//updateUserInfor();
-		createAdvertisement();
+		//createAdvertisement();
 		//updateAdvertisement();
-		get_published();
+		//get_published();
 		//get_advertisement_type();
 		//get_user_infor();
 		//thumb_up_for_adv();
@@ -50,7 +50,7 @@ public class DalabaClient
 		//uncollect();
 		//get_advertisement_infor();
 		//delete_advertisement();
-		//get_nearby_published();
+		get_nearby_published();
 		//get_my_focus();
 		//get_my_collect();
 		//get_user_published();
