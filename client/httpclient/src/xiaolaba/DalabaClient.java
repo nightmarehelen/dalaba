@@ -23,7 +23,7 @@ public class DalabaClient
 	public static HttpClient client = new HttpClient(); 
 	public static String phpSessionID = "";
 	public static void main(String[] args) throws IOException {
-		get_short_message_verification_code();
+		/*get_short_message_verification_code();
 		
 		BufferedReader strin=new BufferedReader(new InputStreamReader(System.in));  
         System.out.print("请输入验证码：");  
@@ -34,12 +34,12 @@ public class DalabaClient
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} 
-		register();
-		//login(); 
+		register();*/
+		login(); 
 		//updateUserInfor();
-		//createAdvertisement();
+		createAdvertisement();
 		//updateAdvertisement();
-		//get_published();
+		get_published();
 		//get_advertisement_type();
 		//get_user_infor();
 		//thumb_up_for_adv();
@@ -59,6 +59,7 @@ public class DalabaClient
 		//get_short_message_verification_code();
 		//validate_short_message_verification_code();
 		//add_advertisement_read_count();
+		//get_user_position_list();
 	 }  
 	
 	private static void register(){
@@ -311,6 +312,14 @@ public class DalabaClient
 		simcard.setCharSet("UTF-8");
 		StringPart[] pairs = new StringPart[]{simcard};
 		call("/index.php/advertisement/add_advertisement_read_count", pairs, null);
+	}
+	
+	public static void get_user_position_list(){
+		String json = getStringFromFile("data/get_user_position_list.json");
+		StringPart simcard = new StringPart( "request_json" , json);
+		simcard.setCharSet("UTF-8");
+		StringPart[] pairs = new StringPart[]{simcard};
+		call("/index.php/user/get_user_position_list", pairs, null);
 	}
 	//httpclient 调用，是否包含
 	private static void call(String url, StringPart[] pairs, FilePart[] files){
