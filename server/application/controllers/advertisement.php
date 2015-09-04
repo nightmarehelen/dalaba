@@ -326,7 +326,7 @@ class Advertisement extends CI_Controller {
 
     public function get_nearby_published(){
         Logger::getRootLogger()->debug("Advertisement::get_nearby_published");
-
+        Logger::getRootLogger()->debug("_SERVER:".Utils::var2str($_SERVER));
         $response = Utils::validate_request();
         if(Utils::validate_request() !== null){
             echo Response::getResponseJson($response);
