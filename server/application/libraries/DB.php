@@ -7,7 +7,7 @@ class DB{
     private $database;
     private $mysqli;
     public function __construct(){
-        $this->hostname = "127.0.0.1";
+        $this->hostname = "180.76.154.120";
         $this->port = "3306";
         $this->username = "root";
         $this->password = "123";

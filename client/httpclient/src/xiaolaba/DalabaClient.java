@@ -22,8 +22,19 @@ public class DalabaClient
 {
 	public static HttpClient client = new HttpClient(); 
 	public static String phpSessionID = "";
-	public static void main(String[] args) throws IOException {  
-		//register();
+	public static void main(String[] args) throws IOException {
+		get_short_message_verification_code();
+		
+		BufferedReader strin=new BufferedReader(new InputStreamReader(System.in));  
+        System.out.print("请输入验证码：");  
+        String code = "";
+        try {
+			 code = strin.readLine();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+		register();
 		//login(); 
 		//updateUserInfor();
 		//createAdvertisement();
@@ -47,7 +58,7 @@ public class DalabaClient
 		//delete_from_user_position_list();
 		//get_short_message_verification_code();
 		//validate_short_message_verification_code();
-		add_advertisement_read_count();
+		//add_advertisement_read_count();
 	 }  
 	
 	private static void register(){
@@ -305,7 +316,7 @@ public class DalabaClient
 	private static void call(String url, StringPart[] pairs, FilePart[] files){
 		System.out.println("call url"+url+"**********************************************");
 		try{
-			client.getHostConfiguration().setHost( "127.0.0.1" , 80, "http" );
+			client.getHostConfiguration().setHost( "180.76.154.120" , 80, "http" );
 			PostMethod post = new PostMethod(url);
 			//client.getParams().setParameter(HttpMethodParams.HTTP_CONTENT_CHARSET, "UTF-8");
 			//post.getParams().setParameter(HttpMethodParams.HTTP_CONTENT_CHARSET, "UTF-8");

@@ -3,9 +3,10 @@
     "REQUEST_TYPE":"CREATE_USER",
     "SESSION_KEY":"",
     "DATA":{
-        "name":"weichushunlalla",
+        "name":"zhouni2",
         "password":"12345",
-        "email":"weichushun2@qq.com",
-        "cellphone":"13426370460"
+        "email":"zhounixxp2@qq.com",
+        "cellphone":"13426370450",
+        "sms_code":"935771"
     }
 }

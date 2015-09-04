@@ -1178,3 +1178,38 @@ HOST: 127.0.0.1
 
 2015-09-03T20:26:18+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:465 Advertisement_model::read_advertisement
 2015-09-03T20:26:18+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\advertisement_model.php:471 sql = update advertisement set read_count = read_count +1 where id = 91
+2015-09-04T09:00:57+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:51 User::register
+2015-09-04T09:00:57+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:61 user_register_infor = {
+    "version":"1.0.0",
+    "REQUEST_TYPE":"CREATE_USER",
+    "SESSION_KEY":"",
+    "DATA":{
+        "name":"weichushunlalla",
+        "password":"12345",
+        "email":"weichushun2@qq.com",
+        "cellphone":"13426370460"
+    }
+}
+
+2015-09-04T09:00:57+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\controllers\user.php:64 dump user_infor_array:array(4) {
+  ["version"]=>
+  string(5) "1.0.0"
+  ["REQUEST_TYPE"]=>
+  string(11) "CREATE_USER"
+  ["SESSION_KEY"]=>
+  string(0) ""
+  ["DATA"]=>
+  array(4) {
+    ["name"]=>
+    string(15) "weichushunlalla"
+    ["password"]=>
+    string(5) "12345"
+    ["email"]=>
+    string(18) "weichushun2@qq.com"
+    ["cellphone"]=>
+    string(11) "13426370460"
+  }
+}
+
+2015-09-04T09:00:57+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:27 User_model::create_user
+2015-09-04T09:00:57+08:00 [root] E:\workbench\xiaolaba\webserver\web\dalaba\server\application\models\user_model.php:45 sql = insert into user(name, password,cellphone, email,credit_values,register_time) values('weichushunlalla', '827ccb0eea8a706c4c34a16891f84e7b', '13426370460', 'weichushun2@qq.com',0,'2015-09-04 09:00:57')
