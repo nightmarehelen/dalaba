@@ -50,11 +50,11 @@ public class DalabaClient
 		//uncollect();
 		//get_advertisement_infor();
 		//delete_advertisement();
-		get_nearby_published();
+		//get_nearby_published();
 		//get_my_focus();
 		//get_my_collect();
 		//get_user_published();
-		//add_to_user_position_list();
+		add_to_user_position_list();
 		//delete_from_user_position_list();
 		//get_short_message_verification_code();
 		//validate_short_message_verification_code();
