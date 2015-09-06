@@ -36,10 +36,11 @@ public class DalabaClient
 		} 
 		register();*/
 		login(); 
+		
 		//updateUserInfor();
 		//createAdvertisement();
 		//updateAdvertisement();
-		//get_published();
+		get_published();
 		//get_advertisement_type();
 		//get_user_infor();
 		//thumb_up_for_adv();
@@ -48,13 +49,14 @@ public class DalabaClient
 		//user_unfocus();
 		//collect();
 		//uncollect();
+		logout();
 		//get_advertisement_infor();
 		//delete_advertisement();
 		//get_nearby_published();
-		//get_my_focus();
+		get_my_focus();
 		//get_my_collect();
 		//get_user_published();
-		add_to_user_position_list();
+		//add_to_user_position_list();
 		//delete_from_user_position_list();
 		//get_short_message_verification_code();
 		//validate_short_message_verification_code();
@@ -321,6 +323,15 @@ public class DalabaClient
 		StringPart[] pairs = new StringPart[]{simcard};
 		call("/index.php/user/get_user_position_list", pairs, null);
 	}
+	
+	public static void logout(){
+		String json = getStringFromFile("data/logout.json");
+		StringPart simcard = new StringPart( "request_json" , json);
+		simcard.setCharSet("UTF-8");
+		StringPart[] pairs = new StringPart[]{simcard};
+		call("/index.php/user/logout", pairs, null);
+	}
+	
 	//httpclient 调用，是否包含
 	private static void call(String url, StringPart[] pairs, FilePart[] files){
 		System.out.println("call url"+url+"**********************************************");
