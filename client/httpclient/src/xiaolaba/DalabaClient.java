@@ -23,8 +23,8 @@ public class DalabaClient
 	public static HttpClient client = new HttpClient(); 
 	public static String phpSessionID = "";
 	public static void main(String[] args) throws IOException {
-		/*get_short_message_verification_code();
-		
+		get_short_message_verification_code();
+		/*
 		BufferedReader strin=new BufferedReader(new InputStreamReader(System.in));  
         System.out.print("请输入验证码：");  
         String code = "";
@@ -35,12 +35,12 @@ public class DalabaClient
 			e.printStackTrace();
 		} 
 		register();*/
-		login(); 
+		//login(); 
 		
 		//updateUserInfor();
 		//createAdvertisement();
 		//updateAdvertisement();
-		get_published();
+		//get_published();
 		//get_advertisement_type();
 		//get_user_infor();
 		//thumb_up_for_adv();
@@ -49,11 +49,11 @@ public class DalabaClient
 		//user_unfocus();
 		//collect();
 		//uncollect();
-		logout();
+		//logout();
 		//get_advertisement_infor();
 		//delete_advertisement();
 		//get_nearby_published();
-		get_my_focus();
+		//get_my_focus();
 		//get_my_collect();
 		//get_user_published();
 		//add_to_user_position_list();
